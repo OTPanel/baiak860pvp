@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Wind Minion" nameDescription="a wind minion" race="blood" experience="129000" speed="200" manacost="800">
+	<health now="50000" max="50000"/>
+	<look type="313" corpse="9938"/>
+	<targetchange interval="4000" chance="23"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2600" min="-240" max="-300"/>
+		<attack name="lifedrain" interval="1000" chance="20" range="1" min="-1020" max="-1450">
+			<attribute key="areaEffect" value="redspark"/>
+		</attack>
+		<attack name="earth" interval="2000" chance="64" radius="5" target="0" min="-1030" max="-1625">
+			<attribute key="areaEffect" value="yellowbubble"/>
+		</attack>
+	</attacks>
+	<defenses armor="20" defense="20">
+		<defense name="healing" interval="1000" chance="25" min="1600" max="3000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element deathPercent="0"/>
+		<element holyPercent="0"/>
+		<element physicalPercent="0"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+		<immunity paralyze="1"/>
+	</immunities>
+	<voices interval="3500" chance="60">
+		<voice sentence="Ihihihihihihiii"/>
+		<voice sentence="Como voce veio parar aqui?"/>
+	</voices>
+	<loot>
+		<item id="2520" chance="5000"/>
+		<item id="2152" chance="5000" countmax="15"/>
+		<item id="12637" chance="800" countmax="3"/>
+		<item id="2213" chance="400"/> <!-- dwarven ring -->
+		<item id="2146" chance="300"/> <!-- small sapphire -->
+		<item id="2051" chance="15000"/> <!-- torch -->
+		<item id="2510" chance="9000"/> <!-- plate shield -->
+	</loot>
+</monster>

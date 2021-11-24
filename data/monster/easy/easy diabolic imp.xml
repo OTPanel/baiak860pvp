@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Easy Diabolic Imp" nameDescription="a easy diabolic imp" race="blood" experience="2900" speed="250" manacost="0">
+  <health now="81000" max="81000"/>
+  <look type="237" corpse="6364"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="4"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1300" skill="110" attack="110"/>
+    <attack name="fire" interval="1300" chance="8" range="7" radius="4" target="1" min="-300" max="-750">
+      <attribute key="shootEffect" value="fire"/>
+      <attribute key="areaEffect" value="firearea"/>
+    </attack>
+    <attack name="fire" interval="1300" chance="16" range="7" radius="2" target="1" min="-300" max="-700">
+      <attribute key="shootEffect" value="fire"/>
+      <attribute key="areaEffect" value="firearea"/>
+    </attack>
+  </attacks>
+  <defenses armor="15" defense="15">
+    <defense name="healing" interval="1300" chance="22" min="175" max="245">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="speed" interval="1300" chance="18" speedchange="520" duration="4000">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </defense>
+    <defense name="invisible" interval="3000" chance="18" duration="4000"> 
+      <attribute key="areaEffect" value="redshimmer"/>
+    </defense>
+  </defenses>
+	<elements>
+		<element earthPercent="10"/>
+		<element icePercent="-20"/>
+		<element holyPercent="-15"/>
+		<element deathPercent="10"/>
+	</elements>
+  <immunities>
+    <immunity fire="1"/>
+    <immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="Muahaha!"/>
+    <voice sentence="He he he!"/>
+  </voices>
+  <loot>
+ </loot>
+</monster>

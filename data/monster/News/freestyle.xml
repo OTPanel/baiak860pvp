@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Freestyle" nameDescription="a freestyle" race="blood" experience="15000" speed="300" manacost="0">
+  <health now="170100" max="170100"/>
+  <look type="321" head="19" body="60" legs="60" feet="81" addons="1" corpse="4262"/>
+  <targetchange interval="5000" chance="50"/>
+  <strategy attack="90" defense="10"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="4"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="1000"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1000" skill="50" attack="50"/>
+    <attack name="ice" interval="2000" chance="12" range="7" target="1" min="-1500" attack="-1900">
+      <attribute key="shootEffect" value="ice"/>
+	  <attribute key="areaEffect" value="iceattack"/>
+    </attack>
+	<attack name="energy" interval="2000" chance="20" range="7" target="1" min="-1500" max="-2000">
+	  <attribute key="shootEffect" value="energyball"/>
+	  <attribute key="areaEffect" value="energy"/>
+	  </attack>
+    <attack name="manadrain" interval="2000" chance="24" range="7" min="-1350" max="-1505">
+	<attribute key="shootEffect" value="ice"/>
+	</attack>
+    <attack name="speed" interval="2000" chance="18" range="7" speedchange="-750" duration="40000">
+	  <attribute key="shootEffect" value="smallice"/>
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </attack>
+    <attack name="fire" interval="2000" chance="28" range="7" radius="3" target="1" min="-1500" max="-1900">
+      <attribute key="shootEffect" value="burstarrow"/>
+      <attribute key="areaEffect" value="firearea"/>
+    </attack>
+    <attack name="firefield" interval="2000" chance="20" range="7" radius="2" target="1">
+      <attribute key="shootEffect" value="fire"/>
+    </attack>
+    <attack name="energy" interval="2000" chance="58" length="8" spread="0" min="-1900" max="-2100">
+      <attribute key="areaEffect" value="bigclouds"/>
+    </attack>
+  </attacks>
+  <defenses armor="20" defense="20">
+    <defense name="healing" interval="1000" chance="25" min="2000" max="9000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="invisible" interval="2000" chance="10" duration="4000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+
+  </defenses>
+  <elements>
+	<element physicalPercent="-10"/>
+	<element holyPercent="-10"/>
+	<element earthPercent="90"/>
+  </elements>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="1"/>
+    <immunity fire="1"/>
+    <immunity ice="1"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <voices interval="1000" chance="10">
+    <voice sentence="Zapalimy ?"/>
+    <voice sentence="Oro!"/>
+    <voice sentence="Ale sie zajebalem!"/>
+    <voice sentence="Dziwka jestes!"/>
+    <voice sentence="Umyj Dupe Cwaniaku nie masz ziola!"/>
+  </voices>
+   
+</monster>

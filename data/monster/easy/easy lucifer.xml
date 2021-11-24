@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Easy Lucifer" nameDescription="a easy Lucifer" race="undead" experience="1500" speed="400" manacost="0">
+<health now="81000" max="81000"/>
+<look type="12" head="7" body="55" legs="127" feet="231" corpse="6068"/>
+<targetchange interval="5000" chance="15"/>
+<strategy attack="100" defense="100"/>
+
+<flags>
+        <flag summonable="1"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="1"/>
+        <flag convinceable="1"/>
+        <flag pushable="0"/>
+        <flag canpushitems="1"/>
+        <flag canpushcreatures="1"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="85"/>
+        <flag runonhealth="0"/>
+</flags>
+
+<attacks>
+    <attack name="melee" interval="1300" skill="145" attack="160"/>
+    <attack name="fire" interval="1300" chance="20" target="1" radius="4" min="-600" max="-1300">
+        <attribute key="areaEffect" value="explosion"/>
+    </attack>
+    <attack name="death" interval="1300" chance="15" target="0" radius="4" min="-800" max="-1370">
+        <attribute key="areaEffect" value="smallclouds"/>
+    </attack>
+    <attack name="manadrain" interval="1300" chance="13" radius="5" target="0" min="-800" max="-1300">
+        <attribute key="areaEffect" value="watersplash"/>
+    </attack>
+        <attack name="death" interval="1300" chance="15" length="7" spread="0" min="-1200" max="-1700">
+                <attribute key="areaEffect" value="mortarea"/>
+        </attack>
+</attacks>
+
+<defenses armor="450" defense="550">
+        <defense name="healing" interval="2000" chance="15" min="400" max="900">
+                <attribute key="areaEffect" value="greenshimmer"/>
+        </defense>
+        <defense name="invisible" interval="1000" chance="1" duration="600">
+                <attribute key="areaEffect" value="blueshimmer"/>
+        </defense>
+</defenses>
+
+<elements>
+    <element icePercent="-15"/>
+    <element energyPercent="-5"/>
+    <element earthPercent="-8"/>
+        <element firePercent="250"/>
+</elements>
+
+<immunities>
+        <immunity death="1"/>
+        <immunity paralyze="1"/>
+        <immunity invisible="1"/>
+</immunities>
+
+<voices interval="5000" chance="10">
+        <voice sentence="Burn, Burn HAHAHA!!" yell="1"/>
+        <voice sentence="One little mistake and your all are mine!"/>
+        <voice sentence="MWA HAHAHAHA!"/>
+        <voice sentence="You is my!!!"/>
+        <voice sentence="Impossible my death!!!"/>
+        <voice sentence="My Creator is Luck!"/>
+</voices>
+
+<loot>
+
+</loot>
+</monster>

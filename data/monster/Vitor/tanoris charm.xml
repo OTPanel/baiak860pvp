@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Tanoris Charm" nameDescription="a tanoris charm" race="blood" experience="134000" speed="220" manacost="0">
+<health now="58000" max="58000"/>
+<look type="356" corpse="5527"/>
+<targetchange interval="2000" chance="30"/>
+<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="80"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1400" min="-870" max="-1590"/>
+		<attack name="earth" interval="2000" chance="40" radius="3" max="-1580">
+			<attribute key="areaEffect" value="greenspark"/>
+		</attack>
+		<attack name="lifedrain" interval="2000" chance="50" length="8" spread="0" min="-1000" max="-1600">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+		<attack name="earth" interval="2000" chance="20" radius="3" min="-1000" max="-1400">
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+	</attacks>
+	<defenses armor="55" defense="60"/>
+	<elements>
+		<element physicalPercent="15"/>
+		<element firePercent="-10"/>
+		<element energyPercent="-10"/>
+		<element icePercent="20"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+		<immunity paralyze="1"/>
+	</immunities>
+	<voices interval="2000" chance="10">
+		<voice sentence="Saiam daqui!" yell="1"/>
+	</voices>
+	<loot>
+		<item id="2536" chance="5000"/>
+		<item id="12637" chance="800" countmax="3"/>
+		<item id="2195" chance="5000"/>
+		<item id="2475" chance="5000"/>
+		<item id="2152" chance="5000" countmax="15"/>
+	</loot>
+</monster>

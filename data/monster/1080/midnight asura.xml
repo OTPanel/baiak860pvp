@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Midnight Asura" nameDescription="a midnight asura" race="blood" experience="6150" speed="210" manacost="0">
+	<health now="3100" max="3100" />
+	<look type="150" head="0" body="114" legs="90" feet="90" addons="1" corpse="6081" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="80" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1250" min="0" max="-287" />
+		<attack name="manadrain" interval="2000" chance="10" range="7" min="0" max="-210" />
+		<attack name="firefield" interval="2000" chance="10" range="7" radius="1" target="1">
+			<attribute key="shootEffect" value="fire" />
+		</attack>
+		<attack name="energy strike" interval="2000" chance="10" range="1" min="-10" max="-100">
+		</attack>
+		<attack name="speed" interval="2000" chance="15" radius="1" target="1" speedchange="-100" duration="3000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</attack>
+		<attack name="death" interval="1000" chance="10" length="9" spread="3" min="0" max="-217">
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+		<attack name="physical" interval="2000" chance="25" range="7" min="0" max="-359">
+			<attribute key="shootEffect" value="suddendeath"/>
+		</attack>
+		<attack name="manadrain" interval="2000" chance="10" range="1" min="0" max="-95">
+				<attribute key="areaEffect" value="energy"/>
+		</attack>
+	</attacks>
+	<defenses armor="55" defense="55">
+		<defense name="healing" interval="2000" chance="15" min="120" max="170">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+		<defense name="speed" interval="2000" chance="15" speedchange="320" duration="5000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</defense>
+		<defense name="invisible" interval="5000" chance="50" duration="4000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element icePercent="10"/>
+		<element holyPercent="30"/>
+		<element firePercent="10"/>
+		<element energyPercent="-10"/>
+		<element earthPercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity death="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="2000" chance="7">
+		<voice sentence="Ah, the sweet music of a beating heart!" />
+		<voice sentence="Death and Darkness"/>
+		<voice sentence="Embrace the night!" />
+		<voice sentence="May night fall upon you!" />
+	</voices>
+	<loot>
+		<item id="2148" countmax="100" chance="97000" /><!-- gold coin -->	
+		<item id="2152" countmax="6" chance="97000" /><!-- gold coin -->
+		<item id="5944" chance="19000" /><!-- Soul Orb -->
+		<item id="6500" chance="15000" /><!-- Demonic Essence -->
+		<item id="7368" countmax="5" chance="10000" /><!-- Assassin Stars -->
+		<item id="2143" chance="8000" /><!-- White Pearl -->	
+		<item id="2145" countmax="3" chance="8000" /><!-- Small Diamond -->		
+		<item id="2149" countmax="3" chance="8000" /><!-- Small Emeralds -->		
+		<item id="2147" countmax="3" chance="7000" /><!-- Small Rubbie -->
+		<item id="2146" countmax="3" chance="4000" /><!-- Small Sapphire -->		
+		<item id="9970" countmax="3" chance="4000" /><!-- Small Topaz -->	
+		<item id="2144" chance="4000" /><!--  Black Pearls -->
+		<item id="2185" chance="3600" /><!-- Necrotic Rod -->	
+		<item id="3967" chance="100" /><!-- Tribal Mask -->	
+		<item id="2170" chance="1000" /><!-- Silver amulet -->
+		<item id="2154" chance="1000" /><!--  Yellow Gem  -->
+		<item id="8910" chance="1000" /><!-- Underworld Rod  -->
+		<item id="2656" chance="700" /><!-- Blue Robe -->	
+		<item id="7404" chance="500" /><!-- Assassin Dagger-->	
+		<item id="2124" chance="500" /><!--  crystal 2148 -->
+		<item id="8889" chance="400" /><!--  Skullcracker Armor -->
+		<item id="2158" chance="220" /><!--  Blue Gem -->	
+		<item id="8902" chance="180" /><!-- Spellbook of Mind Control -->
+	</loot>
+</monster>

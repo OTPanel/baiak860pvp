@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stages>
+	<world id="0" multiplier="1">
+		<stage minlevel="1" maxlevel="100" multiplier="400"/>
+		<stage minlevel="101" maxlevel="180" multiplier="350"/>
+		<stage minlevel="151" maxlevel="200" multiplier="300"/>
+        <stage minlevel="201" maxlevel="250" multiplier="250"/>
+		<stage minlevel="251" maxlevel="300" multiplier="100"/>
+		<stage minlevel="301" maxlevel="350" multiplier="60"/>
+		<stage minlevel="351" maxlevel="400" multiplier="20"/>		
+		<stage minlevel="401" maxlevel="430" multiplier="1"/>
+		<stage minlevel="431" maxlevel="450" multiplier="0.9"/>
+		<stage minlevel="451" maxlevel="500" multiplier="0.8"/>
+        <stage minlevel="501" multiplier="0.2"/>		
+	</world>
+</stages>

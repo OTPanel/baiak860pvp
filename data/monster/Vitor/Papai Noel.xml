@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Papai Noel" nameDescription="o papai noel" race="blood" experience="1000000" speed="0" manacost="0">
+	<health now="2500000" max="2500000"/>
+	<look type="160" head="0" body="112" legs="93" feet="95"/>
+	<targetchange interval="5000" chance="60"/>
+	<strategy attack="100" defense="30"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="0"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="85"/>
+		<flag runonhealth="0"/>
+		<flag skull="5"/>
+	</flags>
+	<attacks>
+		<attack name="teleportTarget" interval="2000" chance="50"/>
+		<attack name="santaHeal" interval="1000" chance="100"/>
+		<attack name="ice" interval="2000" chance="50" range="8" radius="8" target="0" min="-2000" max="-4700">
+			<attribute key="shootEffect" value="ice"/>
+			<attribute key="areaEffect" value="hearts"/>
+		</attack>
+		<attack name="speed" interval="2000" chance="30" range="14" duration="12000" speedchange="-700">
+			<attribute key="areaEffect" value="redshimmer"/>
+			<outfit type="31"/>
+		</attack>
+		<attack name="drunk" interval="2000" chance="40" range="14">
+		    <attribute key="shootEffect" value="energy"/>
+		    <attribute key="areaEffect" value="energyarea"/>
+    	</attack>
+	</attacks>
+		<defenses armor="90" defense="111">
+	</defenses>
+	<elements>
+		<element icePercent="1"/>
+		<element energyPercent="1"/>
+		<element deathPercent="1"/>
+		<element holyPercent="1"/>
+		<element firePercent="1"/>
+	</elements>
+		<immunities>
+		<immunity invisible="1"/>
+		<immunity paralyze="1"/>
+	</immunities>
+	<voices interval="5000" chance="60">
+		<voice sentence="Ho ho ho! Feeliz natal!" yell="0"/>
+		<voice sentence="Hohoho..." yell="0"/>
+		<voice sentence="A minha sacola de presentes está cheia!" yell="0"/>
+		<voice sentence="Muito obrigado pela ajuda, goblins!" yell="0"/>
+	</voices>
+<script> <event name="santaClaus"/> </script> 
+</monster>

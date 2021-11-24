@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Old Dark Skeleton" nameDescription="Old Dark Skeleton" race="undead" experience="900" speed="230" manacost="620">
+  <health now="55000" max="55000"/>
+  <look type="37" head="20" body="30" legs="40" feet="50" corpse="5963"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="250" defense="0"/>
+  <flags>
+    <flag summonable="1"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1500" min="-555" max="-785"/>
+    <attack name="lifedrain" interval="1000" chance="20" range="1" min="720" max="920"/>
+  </attacks>
+  <defenses armor="25" defense="25"/>
+  	<elements>
+		<element icePercent="-10"/>
+		<element holyPercent="-25"/>
+	</elements>
+  <immunities>
+    <immunity fire="1"/>
+    <immunity poison="1"/>
+    <immunity lifedrain="1"/>
+    <immunity death="1"/>
+    <immunity drunk="1"/>
+  </immunities>
+  <loot>
+    <item id="2148" countmax="40" chance1="100000" chancemax="0"/>
+    <item id="2515" chance="400"/>
+    <item id="2178" chance="1000"/>
+    <item id="2050" chance="10000"/>
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2417" chance="5000"/>
+        <item id="2482" chance="2857"/>
+        <item id="2194" chance="700"/>
+        <item id="2398" chance="10000"/>
+      </inside>
+    </item>
+  </loot>
+</monster>

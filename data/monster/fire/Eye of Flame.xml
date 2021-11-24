@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Eye of Flame" nameDescription="a eye of flame" race="blood" experience="600" speed="270" manacost="0">
+  <health now="15000" max="15000"/>
+  <look type="108" head="20" body="30" legs="40" feet="50" corpse="6037"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="0"/>
+    <flag targetdistance="4"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="55" attack="45"/>
+    <attack name="fire" interval="1500" chance="12" length="8" spread="3" min="-550" max="-850">
+      <attribute key="areaEffect" value="firearea"/>
+    </attack>
+    <attack name="fire" interval="1300" chance="17" range="7" radius="4" target="1" min="-670" max="-895">
+      <attribute key="shootEffect" value="fire"/>
+	  <attribute key="areaEffect" value="firearea"/>
+    </attack>
+  </attacks>
+  <defenses armor="13" defense="23"/>
+  <elements>
+  <element energy="20"/>
+  <element icePercent="10"/>
+  <element firePercent="-10"/>
+  </elements>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="0"/>
+    <immunity poison="1"/>
+    <immunity lifedrain="1"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <summons maxSummons="6">
+    <summon name="gazer" interval="1000" chance="9" max="4"/>
+    <summon name="crypt shambler" interval="1000" chance="10" max="2"/>
+  </summons>
+  <voices interval="5000" chance="10">
+    <voice sentence="Let me take a look at you!"/>
+    <voice sentence="Inferior creatures, bow before my power!"/>
+  </voices>
+  <loot>
+    <item id="2509" countmax="1" chance="6000"/>
+    <item id="2148" countmax="45" chance1="100000" chancemax="0"/>
+    <item id="2445" chance="400"/>
+    <item id="2397" chance="12000"/>
+    <item id="2518" chance="300"/>
+    <item id="2181" chance="1333" /> -- quagmire rod
+    <item id="2451" chance="300"/>
+    <item id="5898" chance="556" countmax="1" /> -- beholder eye
+    <item id="1987" chance="80000">
+      <inside>
+        <item id="2377" countmax="1" chance="6000"/>
+        <item id="2175" chance="1000"/>
+        <item id="2394" countmax="1" chance="10000"/>
+        <item id="2148" countmax="32" chance="80000"/>
+        <item id="2148" countmax="90" chance1="80000" chancemax="0"/>
+        <item id="2423" chance="5000"/>
+        <item id="2391" chance="1333"/>
+      </inside>
+    </item>
+  </loot>
+</monster>

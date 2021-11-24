@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Skeleton Elite Warrior" nameDescription="a skeleton elite warrior" race="undead" experience="8500" speed="220" manacost="350">
+	<health now="6500" max="6500"/>
+	<look type="298" corpse="5972"/>
+	<targetchange interval="2000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="80" attack="100"/>
+		<attack name="lifedrain" interval="2000" min="-80" max="-200" range="5">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+	</attacks>
+	<defenses armor="80" defense="60"/>
+	<elements>
+		<element holyPercent="10"/>
+	</elements>
+	<immunities>
+			<immunity death="1"/>
+	</immunities>
+	<loot>
+		<item id="2152" countmax="15" chance="90000"/><!-- platinum coin -->
+		<item id="2230" chance="50510"/><!-- bone -->
+		<item id="5944" countmax="5" chance="25440"/><!-- soul orb -->
+		<item id="2787" chance="25030"/><!-- white mushroom -->
+		<item id="2430" chance="5990"/><!-- knight axe -->
+		<item id="7381" chance="5270"/><!-- mammoth whopper -->
+		<item id="5741" chance="3140"/><!-- skull helmet -->
+		<item id="2789" chance="2050"/><!-- brown mushroom -->
+		<item id="2398" chance="2030"/><!-- mace -->
+		<item id="2376" chance="2030"/><!-- sword -->
+		<item id="6553" chance="350"/><!-- ruthless axe -->
+	</loot>
+</monster>

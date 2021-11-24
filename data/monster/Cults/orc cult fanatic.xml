@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Orc Cult Fanatic" nameDescription="a orc cult fanatic" race="blood" experience="1100" speed="250" manacost="640">
+	<health now="1300" max="1300"/>
+	<look type="59" corpse="6001"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="0" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-300" />	
+	<attack name="physical" interval="2000" chance="20" target="1" radius="4" min="-250" max="-330">
+			<attribute key="shootEffect" value="throwingknife" />
+			<attribute key="areaEffect" value="redspark" />
+	</attack>
+	</attacks>
+	<defenses armor="35" defense="35"/>
+	<elements>
+		<element energyPercent="20"/>
+		<element holyPercent="10"/>
+		<element earthPercent="-10"/>
+		<element deathPercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="WAAARRRG!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="100" chance="100000"/><!-- gold coin -->
+		<item id="2148" countmax="35" chance="100000"/><!-- gold coin -->
+		<item id="2667" chance="29000"/><!-- fish -->
+		<item id="12435" chance="22000"/><!-- orc leather -->
+		<item id="2510" chance="16000"/><!-- plate shield -->
+		<item id="2789" chance="15000"/><!-- brown mushroom -->
+		<item id="12436" chance="13000"/><!-- skull belt -->
+		<item id="2147" countmax="3" chance="11000"/><!-- small ruby -->
+		<item id="10556" chance="10000"/><!-- cultish robe -->
+		<item id="7591" chance="10000"/><!-- great health potion -->
+		<item id="2475" chance="10000"/><!-- warrior helmet -->
+		<item id="2207" chance="7900"/><!-- sword 2148 -->
+		<item id="2463" chance="5000"/><!-- plate armor -->
+		<item id="2647" chance="4700"/><!-- plate legs -->
+		<item id="2478" chance="2900"/><!-- brass legs -->
+		<item id="11113" chance="1300"/><!-- orc tooth -->
+	</loot>
+</monster>

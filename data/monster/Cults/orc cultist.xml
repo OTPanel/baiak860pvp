@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Orc Cultist" nameDescription="a orc cultist" race="blood" experience="950" speed="220" manacost="0">
+	<health now="1350" max="1350"/>
+	<look type="7" corpse="5979"/>
+	<targetchange interval="2000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="0" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-300" />	
+	</attacks>
+	<defenses armor="30" defense="30"/>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="All power to the orcs!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="100" chance="100000"/><!-- gold coin -->
+		<item id="2148" countmax="99" chance="100000"/><!-- gold coin -->
+		<item id="7588" chance="19000"/><!-- strong health potion -->
+		<item id="2428" chance="9400"/><!-- orcish axe -->
+		<item id="8614" chance="8200"/><!-- orc tusk -->
+		<item id="2671" countmax="3" chance="6900"/><!-- ham -->
+		<item id="9970" chance="6100"/><!-- small topaz -->
+		<item id="5910" chance="5300"/><!-- green piece of cloth -->
+		<item id="10556" chance="4900"/><!-- cultish robe -->
+		<item id="7439" chance="820"/><!-- berserk potion -->
+	</loot>
+</monster>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Prison Mutant" nameDescription="a prison mutant" race="venom" experience="550" speed="500" manacost="0">
+	<health now="13585" max="13585"/>
+	<look type="305" corpse="9871"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1500" min="-653" max="-825"/>
+		<attack name="poisonfield" interval="1000" chance="17" range="7" radius="1" target="1">
+			<attribute key="shootEffect" value="poison"/>
+		</attack>
+	</attacks>
+	<defenses armor="30" defense="30"/>
+	<elements>
+		<element firePercent="-10"/>
+		<element holyPercent="10"/>
+	</elements>
+	<immunities>
+		<immunity death="1"/>
+		<immunity earth="1"/>
+		<immunity paralyze="1"/>
+		<immunity lifedrain="1"/>
+		<immunity drunk="1"/>
+		<immunity drown="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="2500" chance="10">
+		<voice sentence="Grrrrrrrrrrrrrr!"/>
+		<voice sentence="Fcccccchhhhhh"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="65" chance="100000"/><!-- gold coin -->
+		<item id="2148" countmax="65" chance="100000"/><!-- gold coin -->
+		<item id="2320" chance="10000"/><!-- skull -->
+		<item id="2235" chance="13500"/><!-- moldy cheese -->
+		<item id="2799" chance="12500"/><!-- stone herb -->
+		<item id="2796" countmax="1" chance="3000"/><!-- green mushroom -->
+		<item id="7618" chance="1500"/><!-- health potion -->
+		<item id="1987" chance="100000"><!-- bag -->
+			<inside>
+				<item id="2510" countmax="1" chance="4000"/><!-- plate shield -->
+				<item id="2381" chance="3000"/><!-- halberd -->
+				<item id="2165" chance="1500"/><!-- stealth 2148 -->
+				<item id="8900" chance="300"/><!-- spellbook of enlightenment -->
+				<item id="2528" chance="200"/><!-- tower shield -->
+			</inside>
+		</item>
+	</loot>
+</monster>

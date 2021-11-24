@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Silencer" nameDescription="a silencer" race="blood" experience="5100" speed="470">
+	<health now="5400" max="5400" />
+	<look type="305" corpse="9871"/>
+	<targetchange interval="4000" chance="5" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+		<flag canwalkonenergy="0" />
+		<flag canwalkonfire="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-550" poison="750" />
+		<attack name="silencer skill reducer" range="3" interval="2000" chance="10" />
+		<attack name="manadrain" interval="2000" chance="15" radius="4" target="1" min="-40" max="-150">
+			<attribute key="shootEffect" value="onyxarrow" />
+			<attribute key="areaEffect" value="redshimmer" />
+		</attack>
+	</attacks>
+	<defenses armor="20" defense="20">
+		<defense name="speed" interval="2000" chance="15" speedchange="620" duration="5000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</defense>
+		<defense name="healing" interval="2000" chance="10" min="350" max="700">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="5" />
+		<element deathPercent="70" />
+		<element firePercent="30" />
+		<element energyPercent="15" />
+		<element icePercent="10" />
+		<element holyPercent="-25" />
+	</elements>
+	<immunities>
+		<immunity earth="1" />
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Prrrroooaaaah!!! PRROAAAH!!" />
+		<voice sentence="PRRRROOOOOAAAAAHHHH!!!" />
+		<voice sentence="HUUUSSSSSSSSH!!" />
+		<voice sentence="Hussssssh!!" />
+	</voices>
+	<loot>
+		<item id="2148" countmax="100" chance="100000" /><!-- gold coin -->
+		<item id="2152" countmax="5" chance="100000" /><!-- platinum coin -->
+		<item id="2165" chance="1200" /><!-- stealth ring -->
+		<item id="2195" chance="360" /><!-- boots of haste -->
+		<item id="2521" chance="2000" /><!-- dark shield -->
+		<item id="7368" countmax="10" chance="7600" /><!-- assassin star -->
+		<item id="7387" chance="960" /><!-- diamond sceptre -->
+		<item id="2393" chance="2000" /><!-- giant sword -->
+		<item id="7413" chance="2200" /><!-- titan axe -->
+		<item id="7451" chance="640" /><!-- shadow sceptre -->
+		<item id="7454" chance="2400" /><!-- glorious axe -->
+		<item id="7885" chance="960" /><!-- terra legs -->
+		<item id="7886" chance="480" /><!-- terra boots -->
+	</loot>
+</monster>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Giant Cyclops" nameDescription="a giant cyclops" race="blood" experience="19350" speed="320" manacost="0">
+	<health now="12350" max="12350"/>
+	<look type="277" corpse="7740"/>
+	<targetchange interval="2000" chance="5"/>
+	<strategy attack="70" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="130" attack="120"/>
+		<attack name="physical" interval="2000" chance="50" range="7" min="-400" max="-640">
+			<attribute key="shootEffect" value="whirlwindclub"/>
+		</attack>
+	</attacks>
+	<defenses armor="17" defense="24"/>
+	<elements>
+		<element energyPercent="20"/>
+		<element firePercent="10"/>
+		<element holyPercent="20"/>
+		<element earthPercent="-10"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Outis emoi g' onoma."/>
+		<voice sentence="Whack da humy!"/>
+		<voice sentence="Ai humy phary ty kaynon"/>
+	</voices>
+	<loot>
+    <item id="2152" countmax="4" chance="32275" /><!-- cc -->
+    <item id="2666" chance="51350" /><!-- meat -->
+    <item id="2393" chance="9300" /><!-- giant sword -->
+    <item id="2195" chance="5750" /><!-- boots of haste -->
+</loot>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</monster>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Necromancer Maximus Attack" nameDescription="a necromancer maximus attack" race="blood" experience="5080" speed="500" manacost="0">
+  <health now="9200080" max="9200080"/>
+  <look type="9" head="20" body="30" legs="40" feet="50" corpse="6080"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="4"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1000" skill="30" attack="730" poison="90"/>
+    <attack name="death" interval="1000" chance="300" range="1" min="-2300" max="-4000">
+      <attribute key="areaEffect" value="smallclouds"/>
+    </attack>
+    <attack name="poison" interval="1000" chance="370" range="7" min="-2735" max="-3925">
+      <attribute key="shootEffect" value="earth"/>
+    </attack>
+  </attacks>
+  <defenses armor="20" defense="20">
+    <defense name="healing" interval="1000" chance="25" min="42" max="68">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+      <elements>
+		<element firePercent="-5"/>
+		<element physicalPercent="-5"/>
+		<element icePercent="10"/>
+		<element energyPercent="20"/>
+		<element holyPercent="-5"/>
+	</elements>
+  <immunities>
+    <immunity earth="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <summons maxSummons="4">
+    <summon name="ghoul" interval="1000" chance="17" max="2"/>
+    <summon name="ghost" interval="1000" chance="15" max="1"/>
+    <summon name="mummy" interval="1000" chance="13" max="1"/>
+  </summons>
+  <voices interval="5000" chance="10">
+    <voice sentence="Your corpse will be mine!"/>
+    <voice sentence="Taste the sweetness of death!"/>
+  </voices>
+  <loot>
+		<item id="2148" chance="100000" countmax="100" /> -- gold coin
+		<item id="2152" chance="49000" countmax="5" /> -- platinum coin
+		<item id="1987" chance="100000" > -- bag
+		<item id="2498" chance="3333"/> --Royal Helmet
+		<item id="2492" chance="1400"/> --DSM
+			<inside>
+				<item id="6500" chance="1818" countmax="1" /> -- demonic essence
+				<item id="2148" chance="1538" countmax="1" /> -- soul orb
+				<item id="2547" chance="4000" countmax="15" /> -- power bolt
+				<item id="2466" chance="2888"/> --Golden armor
+			</inside>
+		</item>
+	</loot>
+ 
+</monster>

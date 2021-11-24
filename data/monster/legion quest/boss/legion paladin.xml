@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Legion Paladin" nameDescription="a legion paladin" race="blood" experience="150" speed="435" manacost="490">
+  <health now="312070" max="312070"/>
+  <look type="130" head="75" body="114" legs="114" feet="76" addons="3"/>
+  <targetchange interval="2000" chance="5"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="80"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="5"/>
+    <flag runonhealth="0"/>
+  </flags>
+<attacks>
+		<attack name="melee" interval="1000" min="-1260" max="-1480"/>
+		<attack name="earth" interval="1000" chance="35" range="7" min="-1285" max="-1985">
+			<attribute key="shootEffect" value="EARTHARROW"/>
+			</attack>
+		<attack name="energy" interval="1000" chance="35" range="7" min="-585" max="-985">
+			<attribute key="shootEffect" value="FLASHARROW"/>
+			</attack>
+		<attack name="exorigrancon" interval="2000" chance="35" range="7" min="-1285" max="-1685">
+			<attribute key="areaEffect" value="exorigrancon"/>
+		</attack>
+	</attacks>
+  <defenses armor="22" defense="23"/>
+  <immunities>
+	<immunity invisible="1"/>
+    <immunity fire="1"/>
+  </immunities>
+  <voices interval="3500" chance="5">
+    <voice sentence="Hmm Humansoup"/>
+    <voice sentence="Stand still ya tasy snack!"/>
+    <voice sentence="Joh Thun!"/>
+    <voice sentence="Brore Smode!"/>
+    <voice sentence="Horre Sjan Flan!"/>
+  </voices>
+  <loot>
+    <item id="2148" countmax="10" chance1="100000" chancemax="0"/> --Gold Coins
+    <item id="2406" chance="25000"/> --Short Sword
+    <item id="2381" chance="1955"/> --Halberd
+    <item id="7441" chance="3444"/> --Ice Cube
+    <item id="2510" chance="5333"/> --Plate Shield
+    <item id="7290" chance="1666"/> --Shard
+    <item id="2666" countmax="2" chance1="33333" chancemax="0"/> --Meat
+    <item id="1987" chance="100000"> --Bag
+      <inside>
+        <item id="2513" chance="2500"/> --Battle Shield
+        <item id="2490" chance="2777"/> --Dark Helmet
+        <item id="2209" chance="2055"/> --Club 2148
+        <item id="2671" countmax="2" chance1="33333" chancemax="0"/> --Ham
+      </inside>
+    </item>
+  </loot>
+<script>
+<event name="legion"/>
+</script>
+</monster>
+

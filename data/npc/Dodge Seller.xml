@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Stones Seller" script="data/npc/scripts/defau.lua" walkinterval="0" floorchange="0" emblem="red">
+	<health now="100" max="100"/>
+	<look type="268" head="94" body="114" legs="94" feet="94" addons="3"/>
+    <parameters> 
+        <parameter key="module_shop" value="1"/> 
+        <parameter key="shop_buyable" value="DodgeStone,12575,80000000;CriticalStone,12396,80000000"/> 
+	<parameter key="shop_sellable" value="DodgeStone,12575,10000000;CriticalStone,12396,10000000"/> 
+    </parameters> 
+</npc>

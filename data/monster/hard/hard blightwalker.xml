@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Hard Blightwalker" nameDescription="a hard blightwalker" race="undead" experience="3500" speed="240" manacost="0">
+	<health now="35000" max="35000"/>
+	<look type="246" corpse="6354"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-900" max="-1000"/>
+		<attack name="physical" interval="1500" chance="34" range="7" min="-1305" max="-1405">
+			<attribute key="shootEffect" value="smallstone"/>
+		</attack>
+		<attack name="manadrain" interval="1000" chance="25" range="7" min="-1040" max="-1220">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+	</attacks>
+	<defenses armor="15" defense="15">
+		<defense name="healing" interval="1000" chance="50" min="805" max="925">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="100"/>
+		<element deathPercent="100"/>
+		<element firePercent="60"/>
+		<element energyPercent="40"/>
+		<element icePercent="33"/>
+		<element physicalPercent="-5"/>
+		<element holyPercent="-30"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="I can see you decaying!"/>
+		<voice sentence="Let me taste your mortality!"/>
+	</voices>
+	<loot>
+
+	</loot>
+</monster>

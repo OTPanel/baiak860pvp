@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Death Saper" nameDescription="a death saper" race="blood" experience="1000" speed="560" manacost="0">
+  <health now="35950" max="35950"/>
+  <look type="289" head="0" body="38" legs="94" feet="0" addons="3" corpse="7349"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="95"/>
+    <flag runonhealth="500"/>
+  </flags>
+  <attacks>
+	<attack name="melee" interval="1000" min="-1200" max="-1700" poison="120"/>
+
+    <attack name="fire" interval="1600" chance="20" range="3" min="-800" max="-1650">
+      <attribute key="shootEffect" value="burstarrow"/>
+      <attribute key="areaEffect" value="explosionarea"/>
+    </attack>
+
+    <attack name="lifedrain" interval="1800" chance="30" radius="5" target="0" min="-900" max="-1500">
+      <attribute key="areaEffect" value="purplenote"/>
+    </attack>	
+	
+	<attack name="earth" interval="3000" chance="27" length="4" spread="3" min="-550" max="-1000">
+	<attribute key="areaEffect" value="yellowbubble"/>
+	</attack>
+	
+	<attack name="energy" interval="1600" chance="9" length="8" spread="0" min="-900" max="-1500">
+	<attribute key="areaEffect" value="redshimmer"/>
+	</attack>
+
+	<attack name="speed" interval="2000" chance="20" range="1" target="1" radius="4" speedchange="-400" duration="20000">
+	<attribute key="areaEffect" value="poison"/>
+	</attack>
+</attacks>
+  <defenses armor="65" defense="55">
+    <defense name="healing" interval="1000" chance="8" min="2300" max="3400">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="speed" interval="1000" chance="17" speedchange="360" duration="6000">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </defense>
+  </defenses>
+<elements>
+		<element physicalPercent="10"/>
+		<element energyPercent="10"/>
+		<element earthPercent="10"/>
+		<element icePercent="-10"/>
+		<element holyPercent="-5"/>
+		<element deathPercent="10"/>
+</elements>
+  <immunities>
+    <immunity drown="1"/>
+    <immunity fire="1"/>
+    <immunity paralyze="1"/>
+	<immunity lifedrain="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <summons maxSummons="4">
+    <summon name="bonebeast" interval="1000" chance="17" max="4"/>
+  </summons>
+  <voices interval="5000" chance="10">
+    <voice sentence="DSFOLDGYET!" yell="1"/>
+    <voice sentence="WETGEWVDSWGG!"/>
+  </voices>
+</monster>

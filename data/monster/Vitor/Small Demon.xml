@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Small Demon" nameDescription="a small demon" race="blood" experience="12300" speed="300" manacost="0">
+	<health now="8000" max="8000"/>
+	<look type="237" corpse="6364"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="300"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-180" max="-250"/>
+		<attack name="fire" interval="2000" chance="23" range="7" radius="4" target="1" min="-300" max="-610">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="firefield" interval="1000" chance="15" range="7" radius="4" target="1">
+			<attribute key="shootEffect" value="fire"/>
+		</attack>
+		<attack name="fire" interval="2000" chance="17" length="8" spread="3" min="-600" max="-700">
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+	</attacks>
+	<defenses armor="22" defense="35">
+		<defense name="healing" interval="1000" chance="25" min="800" max="1400">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element firePercent="100"/>
+		<element earthPercent="90"/>
+		<element energyPercent="20"/>
+		<element icePercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="ZCHHHHH" yell="1"/>
+		<voice sentence="YOU WILL BURN!" yell="1"/>
+	</voices>
+  <loot>
+ 	<item id="2148" countmax="100" chance1="100000" chancemax="0"/> <!-- gold coins-->
+ 	<item id="2148" countmax="100" chance1="100000" chancemax="0"/> <!-- gold coins-->
+ 	<item id="2514" chance="4900"/> <!--mastermind shield-->
+ 	<item id="2472" chance="2000"/> <!--magic plate armor-->
+	<item id="2795" countmax="6" chance1="7500"/> <!--Fire Mushroom-->
+    <item id="2165" chance="2300"/> <!--stealth ring-->
+ 	<item id="1987" chance="100000">
+		<inside>
+		 	<item id="2393" chance="4800"/> <!--giantsword-->
+		 	<item id="2432" chance="4800"/> <!--fire axe-->
+			<item id="2214" chance="2222"/> <!--ring of healing-->
+			<item id="2396" chance="4600"/> <!--ice rapier			-->
+			<item id="2795" countmax="6" chance1="13000"/> <!--fire mushroom-->
+			<item id="2158" countmax="4" chance1="5500" chancemax="0"/>
+			<item id="2149" countmax="3" chance1="11000" chancemax="0"/>
+			<item id="2470" chance="2350"/> <!--golden legs-->
+			<item id="7382" chance="300"/> <!-- Demonrage Sword-->
+			<item id="2520" chance="4100"/> <!--demon shield-->
+		</inside>
+ 	</item>
+</loot>
+</monster>

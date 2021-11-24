@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="The Mutated Pumpkin" tp="1" nameDescription="The Mutated Pumpkin" race="fire" experience="90000" speed="210" manacost="0">
+<health now="590000" max="590000"/>
+<look type="292" corpse="6068"/>
+<targetchange interval="2000" chance="100"/>
+<strategy attack="100" defense="0"/>
+<flags>
+<flag summonable="0"/>
+<flag attackable="1"/>
+<flag hostile="1"/>
+<flag illusionable="0"/>
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="1"/>
+<flag canpushcreatures="1"/>
+<flag staticattack="100"/>
+<flag targetdistance="1"/>
+<flag runonhealth="0"/>
+</flags>
+<attacks>
+    <attack name="melee" interval="2000" skill="230" attack="210"/>
+    <attack name="death" interval="1000" chance="8" radius="9" target="0" min="-800" max="-1900">
+      <attribute key="areaEffect" value="mortarea"/>
+    </attack>
+    <attack name="speed" interval="1000" chance="12" radius="6" target="0" speedchange="-850" duration="60000">
+      <attribute key="areaEffect" value="poison"/>
+    </attack>
+    <attack name="strength" interval="1000" chance="10" radius="5" target="0" min="-600" max="-1450">
+      <attribute key="areaEffect" value="blackspark"/>
+    </attack>
+    <attack name="fire" interval="1000" chance="13" range="7" radius="7" target="1" min="-800" max="-1400">
+      <attribute key="shootEffect" value="energy"/>
+      <attribute key="areaEffect" value="energyarea"/>
+    </attack>
+    <attack name="manadrain" interval="1000" chance="8" radius="10" target="0" min="-900" max="-1200">
+      <attribute key="areaEffect" value="energyarea"/>
+    </attack>
+    <attack name="lifedrain" interval="4000" chance="19" length="8" spread="0" min="-500" max="-1300">
+      <attribute key="areaEffect" value="purpleenergy"/>
+    </attack>
+    <attack name="poisoncondition" interval="1000" chance="18" length="0" spread="0" min="-800" max="-1000">
+      <attribute key="areaEffect" value="greenspark"/>
+    </attack>
+    <attack name="lifedrain" interval="1000" chance="6" radius="14" target="0" min="-600" max="-1200">
+      <attribute key="areaEffect" value="greenshimmer"/>
+    </attack>
+  </attacks>
+<defenses armor="1" defense="1">
+<defense name="healing" interval="1000" chance="100" min="50" max="100">
+<attribute key="areaEffect" value="blueshimmer"/>
+</defense>
+<defense name="strong haste" interval="5000" chance="100"/>
+</defenses>
+<immunities>
+<immunity physical="0"/>
+<immunity energy="0"/>
+<immunity fire="0"/>
+<immunity poison="0"/>
+<immunity lifedrain="0"/>
+<immunity paralyze="0"/>
+<immunity outfit="0"/>
+<immunity drunk="0"/>
+<immunity invisible="1"/>
+</immunities>
+<voices interval="2000" chance="10">
+<voice sentence="I had the Halloween Hare for breakfast!"/>
+<voice sentence="Your soul will be mine...wait, wrong line"/>
+<voice sentence="Trick or treat? I saw death!"/>
+<voice sentence="No wait! Don't kill me! It's me, your friend!"/>
+<voice sentence="Bunnies, bah! I'm the real thing!"/>
+<voice sentence="Muahahahaha!"/>
+<voice sentence="I've come to avenge all those mutilated pumpkins!"/>
+<voice sentence="Wait until I get you!"/>
+<voice sentence="Fear the spirit of Halloween!"/>
+</voices>
+<loot>
+<item id="2472" chance="12500"/>
+<item id="12604" chance="12500"/>
+<item id="2096" chance="90000">
+<inside>
+<item id="6492" chance="12500"/>
+<item id="2173" chance="12500"/>
+<item id="2152" chance="10000" countmax="20" /> -- crystal coin
+<item id="7590" chance="90000"/>
+</inside>
+</item>
+</loot>
+</monster>

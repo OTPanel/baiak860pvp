@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Flamer VIP II" nameDescription="a flamer vip ii" race="fire" experience="6890" speed="500" manacost="0">
+	<health now="4800" max="4800"/>
+	<look type="242" corpse="5527"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="80" attack="100" fire="500"/>
+		<attack name="firefield" interval="2000" chance="16" range="7" radius="3" target="1">
+			<attribute key="shootEffect" value="fire"/>
+		</attack>
+		<attack name="fire" interval="1000" chance="13" length="7" spread="3" min="-600" max="-900"/>
+		<attack name="fire" interval="1000" chance="11" radius="3" target="0" min="-300" max="-500">
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+	</attacks>
+	<defenses armor="25" defense="25"/>
+	<elements>
+		<element icePercent="-25"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<loot>
+		<item id="2152" countmax="30" chance="20000"/><!-- platinum coin -->
+		<item id="2148" countmax="95" chance="20000"/><!-- gold coin -->
+		<item id="2148" countmax="95" chance="20000"/><!-- gold coin -->
+		<item id="2148" countmax="90" chance="20000"/><!-- gold coin -->
+		<item id="5944" chance="27800"/><!-- soul orb -->
+		<item id="2151" chance="5500"/><!-- talon -->
+		<item id="2152" countmax="5" chance="2000"/><!-- crystal coin -->
+		<item id="2149" countmax="3" chance="2000"/><!-- small emeralds-->
+		<item id="2147" countmax="2" chance="2500"/><!-- small rubies -->
+		<item id="2466" chance="2000"/><!-- golden armor -->
+		<item id="8902" chance="2000"/><!-- spellbook of mind control -->
+	</loot>
+</monster>

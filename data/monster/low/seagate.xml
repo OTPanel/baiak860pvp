@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Seagate" nameDescription="Seagate" race="blood" experience="90000" speed="480" manacost="100">
+	<health now="690000" max="690000"/>
+        <look type="221" head="30" body="130" legs="80" feet="50" corpse="6020"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="500"/>
+	</flags>
+	<attacks>
+         <attack name="melee" interval="2000" skill="185" attack="175"/>
+    <attack name="ice" interval="1000" chance="12" range="7" target="1" min="-320" attack="-670">
+      <attribute key="shootEffect" value="ice"/>
+	  <attribute key="areaEffect" value="iceattack"/>
+    </attack>
+	<attack name="energy" interval="2000" chance="30" range="7" target="1" min="-390" max="-970">
+	  <attribute key="shootEffect" value="energyball"/>
+	  <attribute key="areaEffect" value="energy"/>
+	  </attack>
+    <attack name="manadrain" interval="2000" chance="24" range="7" min="-315" max="-815">
+	<attribute key="shootEffect" value="ice"/>
+	</attack>
+    <attack name="speed" interval="2000" chance="25" range="7" speedchange="-750" duration="40000">
+	  <attribute key="shootEffect" value="smallice"/>
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </attack>
+    <attack name="fire" interval="2000" chance="28" range="7" radius="3" target="1" min="-180" max="-980">
+      <attribute key="shootEffect" value="burstarrow"/>
+      <attribute key="areaEffect" value="firearea"/>
+    </attack>
+    <attack name="firefield" interval="2000" chance="20" range="7" radius="2" target="1">
+      <attribute key="shootEffect" value="fire"/>
+    </attack>
+    <attack name="energy" interval="3000" chance="30" length="8" spread="0" min="-350" max="-1030">
+      <attribute key="areaEffect" value="bigclouds"/>
+    </attack>
+
+  </attacks>
+	<defenses armor="55" defense="45"/>
+	<immunities>
+		<immunity physical="0"/>
+		<immunity energy="0"/>
+		<immunity fire="0"/>
+		<immunity poison="0"/>
+		<immunity lifedrain="0"/>
+		<immunity paralyze="0"/>
+		<immunity outfit="0"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Wooof!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="100" chance="100000"/><!-- gold coin -->
+		<item id="2148" countmax="20" chance="100000"/><!-- gold coin -->
+		<item id="2148" chance="5555"/><!-- soul orb -->
+		<item id="7708" chance="15388"/><!-- Experience Ring -->
+		<item id="2671" countmax="8" chance="50000"/><!-- ham -->
+		<item id="2230" chance="25000"/><!-- bone -->
+		<item id="6500" chance="7200"/><!-- demonic essence -->
+		<item id="1987" chance="100000"><!-- bag -->
+			<inside>
+				<item id="2430" chance="2857"/><!-- knight axe -->
+				<item id="2383" chance="2500"/><!-- spike sword -->
+				<item id="6558" chance="8888"/><!-- concentrated demonic blood -->
+   			      <item id="2148" chance="4100"/> --addon doll
+			</inside>
+		</item>
+	</loot>
+<script>
+<event name="removeall2"/>
+</script>
+</monster>

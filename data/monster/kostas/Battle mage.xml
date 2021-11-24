@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Battle Mage" nameDescription="a battle mage" race="fire" experience="20000" speed="756" manacost="0">
+	<health now="35500" max="35500"/>
+	<look type="130" head="95" body="116" legs="95" feet="114" addons="2" corpse="6080"/>
+	<targetchange interval="5000" chance="20"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-900" max="-1520"/>
+		<attack name="manadrain" interval="2000" chance="30" range="7" target="1" min="-5000" max="-9000">
+			<attribute key="shootEffect" value="suddendeath"/>
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+		<attack name="ice" interval="2000" chance="11" range="7" radius="4" target="1" min="-2200" max="-7250">
+			<attribute key="shootEffect" value="ice"/>
+			<attribute key="areaEffect" value="icearea"/>
+		</attack>
+		<attack name="poisonfield" interval="2000" chance="8" radius="4" target="1">
+			<attribute key="shootEffect" value="suddendeath"/>
+		</attack>
+	</attacks>
+	<defenses armor="50" defense="50">
+		<defense name="healing" interval="2000" chance="50" min="3000" max="4500">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="healing" interval="2000" chance="17" min="5000" max="6000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element icePercent="10"/>
+		<element deathPercent="15"/>
+		<element holyPercent="10"/>
+		<element firePercent="10"/>
+		<element earthPercent="10"/>
+		<element energyPercent="10"/>
+		<element physicalPercent="-30"/>
+	</elements>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<summons maxSummons="4">
+		<summon name="Hellhound" interval="5000" chance="20" max="3"/>
+		<summon name="Grim Reaper" interval="5000" chance="20" max="3"/>
+	</summons>
+	<voices interval="5000" chance="15">
+		<voice sentence="The elements will smite you!" yell="1"/>
+		<voice sentence="HERE WILL BE DEATH!" yell="1"/>
+		<voice sentence="Die, Die, DIE!" yell="1"/>
+		<voice sentence="YOU WILL DIE!"/>
+		<voice sentence="FELL MY WRATH!" yell="1"/>
+	</voices>
+	<loot>
+    <item id="2152" countmax="6" chance="7450" /><!-- crystal coin -->
+	<item id="7839" countmax="6" chance="7450" /><!-- shiver arrow -->
+	<item id="2520" chance="12050" /><!-- demon shield -->
+	<item id="2645" chance="8000" /><!-- steel boots -->
+	<item id="2183" chance="10000" /><!-- hailstorm rod -->
+	<item id="2002" chance="100000"><!-- backpack -->
+        <inside>
+	     	<item id="2146" countmax="25" chance="12350" /><!-- small sapphire -->
+			<item id="7441" chance="5300" /><!-- ice cube -->
+        </inside>
+    </item>
+</loot>
+</monster>

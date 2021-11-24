@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Waves" nameDescription="Waves" race="blood" experience="3000" speed="640" manacost="390">
+	<health now="129950" max="129950"/>
+	<look type="275" head="0" body="0" legs="0" feet="0" corpse="7349"/>
+	<targetchange interval="2000" chance="50"/>
+	<strategy attack="80" defense="20"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="85"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="0"/>
+		<flag runonhealth="8"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="100" attack="350"/>
+		<attack name="ice" interval="1800" chance="80" length="9" spread="3" min="-1500" max="-1950">
+			<attribute key="areaEffect" value="icearea"/>
+		</attack>
+	</attacks>
+  <defenses armor="16" defense="20">
+    <defense name="healing" interval="1000" chance="30" min="500" max="1200">
+      <attribute key="areaEffect" value="blueshimmer"/>
+	</defense>
+	</defenses>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="3000" chance="20">
+		<voice sentence="CHHHRRRR"/>
+		<voice sentence="HISSSS"/>
+	</voices>
+	<loot capacity="500">
+	</loot>
+	
+</monster>
+

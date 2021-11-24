@@ -1,0 +1,162 @@
+GNU gdb (Ubuntu 8.1-0ubuntu3.2) 8.1.0.20180409-git
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./theotxserver...done.
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[New Thread 0x7ffff211e700 (LWP 9066)]
+[New Thread 0x7ffff170b700 (LWP 9068)]
+>> Checking inactive houses
+Draken Abomination
+> Broadcasted message: "[RealBaiak], Para informações sobre os eventos e os sistemas do servidor, acesse nosso site: www.RealBaiak.com".
+[Defend The Tower] Todos os globais storages foram resetados...
+[DEFEND THE TOWERS] Items torre limpos da arena de batalha...
+> Broadcasted message: "[Defend The Tower] Acabou de abrir, acesse o teleporte do templo principal para participar. Inicia em minutos...".
+> Broadcasted message: "[Defend The Tower] - Resta(m) 2 minuto(s) para iniciar o evento!".
+> Broadcasted message: "[Defend The Tower] - Resta(m) 1 minuto(s) para iniciar o evento!".
+> Broadcasted message: "[Defend The Tower] Fechou o teleporte de entrada e cancelou o evento por falta de jogadores.".
+> Broadcasted message: "[RealBaiak], Para ver quem está matando quem, abra o canal Mortes (Ctrl + O)".
+> Broadcasted message: "[Aviso de Segurança] NUNCA digite sua senha em sites que não sejam o OFICIAL e nem crie contas com a mesma senha em outros servidores. Site oficial: www.RealBaiak.com/".
+> Broadcasted message: "[RealBaiak] Ao dominar o RealCastle a guild vencedora ganha um boost de 30% a mais de experience.".
+> Broadcasted message: "Servidor sera salvo e o mapa ficara limpo em um minuto, cuidado pode haver freeze!".
+> Broadcasted message: "O mapa ficara limpo em 15 segundos, cuidado pode haver freeze!".
+> Broadcasted message: "[RealBaiak], Informação: O Npc Viajante se encontra no barco ao sudeste da PvP city.
+Bom Jogo".
+> Broadcasted message: "[Aviso de Segurança] NUNCA digite sua senha em sites que não sejam o OFICIAL e nem crie contas com a mesma senha em outros servidores. Site oficial: www.RealBaiak.com/".
+> Broadcasted message: "[RealBaiak], Para ver quem está matando quem, abra o canal Mortes (Ctrl + O)".
+> Broadcasted message: "[RealBaiak], Informação: O Npc Viajante se encontra no barco ao sudeste da PvP city.
+Bom Jogo".
+> Broadcasted message: "Servidor sera salvo e o mapa ficara limpo em um minuto, cuidado pode haver freeze!".
+> Broadcasted message: "[RealBaiak], Para ver quem está matando quem, abra o canal Mortes (Ctrl + O)".
+> Broadcasted message: "O mapa ficara limpo em 15 segundos, cuidado pode haver freeze!".
+> Broadcasted message: "[RealBaiak], Comandos básicos:
+Dodge System: !dodge
+Critical System: !critical
+Remover Skull: !removeskull
+Cast system: !cast
+Ver lista de spells: !spells
+Para mais comandos digite !commands
+Bom Jogo!!".
+> Broadcasted message: "[RealBaiak] Ao dominar o RealCastle a guild vencedora ganha um boost de 30% a mais de experience.".
+> Broadcasted message: "[RealBaiak] Ao dominar o RealCastle a guild vencedora ganha um boost de 30% a mais de experience.".
+> Broadcasted message: "Servidor sera salvo e o mapa ficara limpo em um minuto, cuidado pode haver freeze!".
+> Broadcasted message: "[RealBaiak] O servidor conta com um sistema de mining, quanto mais MC, mais dinheiro você pode fazer! http://RealBaiak.com/?subtopic=miningsystem.".
+> Broadcasted message: "[SNOWBALL WAR] Abriu o teleport de ingresso para o evento, para participar se dirija ate o templo.".
+> Broadcasted message: "[SNOWBALL WAR] - Resta(m) 1 minuto(s) para iniciar o evento!".
+> Broadcasted message: "[SNOWBALL WAR] O teleport foi removido e o evento foi iniciado, boa sorte a todos participantes.".
+> Broadcasted message: "[RealBaiak], Para ver quem está matando quem, abra o canal Mortes (Ctrl + O)".
+> Broadcasted message: "O mapa ficara limpo em 15 segundos, cuidado pode haver freeze!".
+> Broadcasted message: "[RealBaiak], Informação: O Npc Viajante se encontra no barco ao sudeste da PvP city.
+Bom Jogo".
+> Broadcasted message: "[DoublePoints] Promoção Double Points Ativa em Doações acima de R$:20,00 e Triple Poins acima de R$:100,00! Adquira os melhores items no shop!".
+> Broadcasted message: "Servidor sera salvo e o mapa ficara limpo em um minuto, cuidado pode haver freeze!".
+> Broadcasted message: "[SEGURANÇA] Cadastre um E-Mail verdadeiro em sua conta do site e gere sua Recovery Key - Não seja hackeado! Site oficial: www.RealBaiak.com/".
+> Broadcasted message: "[RealBaiak], Informação: O Npc Viajante se encontra no barco ao sudeste da PvP city.
+Bom Jogo".
+> Broadcasted message: "[DoublePoints] Promoção Double Points Ativa em Doações acima de R$:20,00 e Triple Poins acima de R$:100,00! Adquira os melhores items no shop!".
+> Broadcasted message: "Desert WAR starting in 3 minutes! The teleport will be closed when the event start!".
+> Broadcasted message: "Desert War hasn't started beacuse there were not enough players.".
+> Broadcasted message: "O mapa ficara limpo em 15 segundos, cuidado pode haver freeze!".
+> Broadcasted message: "[RealBaiak] Ao dominar o RealCastle a guild vencedora ganha um boost de 30% a mais de experience.".
+> Broadcasted message: "Servidor sera salvo e o mapa ficara limpo em um minuto, cuidado pode haver freeze!".
+> Broadcasted message: "[DoublePoints] Promoção Double Points Ativa em Doações acima de R$:20,00 e Triple Poins acima de R$:100,00! Adquira os melhores items no shop!".
+> Broadcasted message: "[RealBaiak] O servidor conta com um sistema de mining, quanto mais MC, mais dinheiro você pode fazer! http://RealBaiak.com/?subtopic=miningsystem.".
+> Broadcasted message: "[RealBaiak], Comandos úteis:
+Auto Loot: !autoloot
+Reparar Fire Walker: !repairfirewalker
+Reparar Soft: !repairsoft
+Vender pontos: !sellpoints
+Saber quanto tempo de double exp: !doubleexp
+Dar creu em um jogador: Creu".
+> Broadcasted message: "[RealBaiak] Ao dominar o RealCastle a guild vencedora ganha um boost de 30% a mais de experience.".
+> Broadcasted message: "O mapa ficara limpo em 15 segundos, cuidado pode haver freeze!".
+> Broadcasted message: "Servidor sera salvo e o mapa ficara limpo em um minuto, cuidado pode haver freeze!".
+> Broadcasted message: "[DoublePoints] Promoção Double Points Ativa em Doações acima de R$:20,00 e Triple Poins acima de R$:100,00! Adquira os melhores items no shop!".
+> Broadcasted message: "CTF Event starting in 4 minutes! The teleport will be closed when the event start!".
+> Broadcasted message: "[DoublePoints] Promoção Double Points Ativa em Doações acima de R$:20,00 e Triple Poins acima de R$:100,00! Adquira os melhores items no shop!".
+> Broadcasted message: "CTF Event hasn't started beacuse there were not enough players.".
+> Broadcasted message: "[RealBaiak], Para ver quem está matando quem, abra o canal Mortes (Ctrl + O)".
+> Broadcasted message: "[RealBaiak], Comandos básicos:
+Dodge System: !dodge
+Critical System: !critical
+Remover Skull: !removeskull
+Cast system: !cast
+Ver lista de spells: !spells
+Para mais comandos digite !commands
+Bom Jogo!!".
+> Broadcasted message: "[RealBaiak], Comandos úteis:
+Auto Loot: !autoloot
+Reparar Fire Walker: !repairfirewalker
+Reparar Soft: !repairsoft
+Vender pontos: !sellpoints
+Saber quanto tempo de double exp: !doubleexp
+Dar creu em um jogador: Creu".
+> Broadcasted message: "Servidor sera salvo e o mapa ficara limpo em um minuto, cuidado pode haver freeze!".
+> Broadcasted message: "O mapa ficara limpo em 15 segundos, cuidado pode haver freeze!".
+> Broadcasted message: "[RealBaiak], Comandos úteis:
+Auto Loot: !autoloot
+Reparar Fire Walker: !repairfirewalker
+Reparar Soft: !repairsoft
+Vender pontos: !sellpoints
+Saber quanto tempo de double exp: !doubleexp
+Dar creu em um jogador: Creu".
+> Broadcasted message: "[SEGURANÇA] Cadastre um E-Mail verdadeiro em sua conta do site e gere sua Recovery Key - Não seja hackeado! Site oficial: www.RealBaiak.com/".
+> Broadcasted message: "FireStorm event starting in 3 minutes! The teleport will be closed when the event start!".
+> Broadcasted message: "FireStorm Event hasn't started beacuse there were not enough players.".
+> Broadcasted message: "[RealBaiak], Comandos úteis:
+Auto Loot: !autoloot
+Reparar Fire Walker: !repairfirewalker
+Reparar Soft: !repairsoft
+Vender pontos: !sellpoints
+Saber quanto tempo de double exp: !doubleexp
+Dar creu em um jogador: Creu".
+> Broadcasted message: "[RealBaiak], Comandos básicos:
+Dodge System: !dodge
+Critical System: !critical
+Remover Skull: !removeskull
+Cast system: !cast
+Ver lista de spells: !spells
+Para mais comandos digite !commands
+Bom Jogo!!".
+> Broadcasted message: "Servidor sera salvo e o mapa ficara limpo em um minuto, cuidado pode haver freeze!".
+> Broadcasted message: "[RealBaiak], Para ver quem está matando quem, abra o canal Mortes (Ctrl + O)".
+> Broadcasted message: "O mapa ficara limpo em 15 segundos, cuidado pode haver freeze!".
+> Broadcasted message: "[RealBaiak] Ao dominar o RealCastle a guild vencedora ganha um boost de 30% a mais de experience.".
+> Broadcasted message: "[RealBaiak], Comandos básicos:
+Dodge System: !dodge
+Critical System: !critical
+Remover Skull: !removeskull
+Cast system: !cast
+Ver lista de spells: !spells
+Para mais comandos digite !commands
+Bom Jogo!!".
+> Broadcasted message: "[Aviso de Segurança] NUNCA digite sua senha em sites que não sejam o OFICIAL e nem crie contas com a mesma senha em outros servidores. Site oficial: www.RealBaiak.com/".
+> Broadcasted message: "Servidor sera salvo e o mapa ficara limpo em um minuto, cuidado pode haver freeze!".
+> Broadcasted message: "[SEGURANÇA] Cadastre um E-Mail verdadeiro em sua conta do site e gere sua Recovery Key - Não seja hackeado! Site oficial: www.RealBaiak.com/".
+> Broadcasted message: "[RealBaiak], Para ver quem está matando quem, abra o canal Mortes (Ctrl + O)".
+> Broadcasted message: "O mapa ficara limpo em 15 segundos, cuidado pode haver freeze!".
+> Broadcasted message: "[RealBaiak], Para informações sobre os eventos e os sistemas do servidor, acesse nosso site: www.RealBaiak.com".
+> Broadcasted message: "[Aviso de Segurança] NUNCA digite sua senha em sites que não sejam o OFICIAL e nem crie contas com a mesma senha em outros servidores. Site oficial: www.RealBaiak.com/".
+> Broadcasted message: "Servidor sera salvo e o mapa ficara limpo em um minuto, cuidado pode haver freeze!".
+> Broadcasted message: "[RealBaiak], Informação: O Npc Viajante se encontra no barco ao sudeste da PvP city.
+Bom Jogo".
+> Broadcasted message: "[RealBaiak], Para informações sobre os eventos e os sistemas do servidor, acesse nosso site: www.RealBaiak.com".
+> Broadcasted message: "Server is going down in 5 minutes for global save.".
+> Broadcasted message: "Server is going down in 4 minutes for global save.".
+> Broadcasted message: "Server is going down in 3 minutes for global save, please log out.".
+> Broadcasted message: "Server is going down in 2 minutes for global save, please log out.".
+> Broadcasted message: "Server is going down in 1 minute for global save, please log out now!".
+[Thread 0x7ffff211e700 (LWP 9066) exited]
+[Thread 0x7ffff170b700 (LWP 9068) exited]
+[Inferior 1 (process 9062) exited normally]

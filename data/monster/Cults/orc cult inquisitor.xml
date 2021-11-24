@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Orc Cult Inquisitor" nameDescription="a orc cult inquisitor" race="blood" experience="1150" speed="170" manacost="590">
+	<health now="1500" max="1500"/>
+	<look type="8" corpse="5980"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="0" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-500" />	
+	</attacks>
+	<defenses armor="40" defense="40">
+		<defense name="speed" interval="1000" chance="15" speedchange="310" duration="6000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="You unorcish scum will die!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="100" chance="100000"/><!-- gold coin -->
+		<item id="2148" countmax="100" chance="100000"/><!-- gold coin -->
+		<item id="2148" countmax="21" chance="100000"/><!-- gold coin -->
+		<item id="7588" chance="18000"/><!-- strong health potion -->
+		<item id="12433" chance="15000"/><!-- orcish gear -->
+		<item id="2381" chance="10000"/><!-- halberd -->
+		<item id="10556" chance="9700"/><!-- cultish robe -->
+		<item id="2671" countmax="2" chance="9300"/><!-- ham -->
+		<item id="2428" chance="8300"/><!-- orcish axe -->
+		<item id="12435" chance="7900"/><!-- orc leather -->
+		<item id="2788" countmax="3" chance="7700"/><!-- red mushroom -->
+		<item id="2378" chance="6500"/><!-- battle axe -->
+		<item id="11113" chance="5600"/><!-- orc tooth -->
+		<item id="2144" countmax="2" chance="5000"/><!-- black pearl -->
+		<item id="2147" countmax="5" chance="4000"/><!-- small ruby -->
+		<item id="7439" chance="3000"/><!-- berserk potion -->
+	</loot>
+</monster>

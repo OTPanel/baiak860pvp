@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Obelisco Do Mar" nameDescription="a obelisco do mar" race="blood" experience="12700" speed="400" manacost="0">
+    <health now="15200" max="15200"/>
+    <look type="275" corpse="8307"/>
+    <targetchange interval="2000" chance="50"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+        <flag summonable="0"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="0"/>
+        <flag convinceable="0"/>
+        <flag pushable="0"/>
+        <flag canpushitems="1"/>
+        <flag canpushcreatures="1"/>
+        <flag targetdistance="0"/>
+        <flag runonhealth="320"/>
+    </flags>
+    <attacks>
+        <attack name="melee" interval="1500" skill="75" attack="70"/>
+        <attack name="ice" interval="1000" chance="10" length="9" spread="3" min="-120" max="-300">
+            <attribute key="areaEffect" value="icearea"/>
+        </attack>
+        <attack name="drown" interval="1500" chance="80" radius="4" target ="1" min ="-300" max="-400">
+            <attribute key="areaEffect" value="bluebubble"/>
+        </attack>
+    </attacks>
+    <defenses armor="16" defense="25">
+        <defense name="healing" interval="1000" chance="25" min="50" max="150">
+            <attribute key="areaEffect" value="blueshimmer"/>
+        </defense>
+    </defenses>
+    <immunities>
+        <immunity ice="1"/>
+        <immunity paralyze="1"/>
+        <immunity invisible="1"/>
+        <immunity drown="1"/>
+    </immunities>
+    <voices interval="3000" chance="200">
+        <voice sentence="CHHHRRRR"/>
+        <voice sentence="HISSSS"/>
+    </voices>
+    <elements>
+        <element firePercent="20"/>
+        <element energyPercent="-15"/>
+        <element physicalPercent="-15"/>
+        <element deathPercent="-15"/>
+    </elements>
+         <loot>
+		<item id="2152" countmax="2" chance="1228"/><!-- gold coin -->
+		<item id="2393" chance="1428"/><!-- giant sword -->
+		<item id="2514" chance="1100"/><!-- mastermind shield -->
+		<item id="2432" chance="2500"/><!-- fire axe -->
+		<item id="1987" chance="100000"><!-- bag -->
+			<inside>
+				<item id="2214" chance="500"/><!-- ring of healing -->
+				<item id="2678" countmax="3" chance="10000"/><!-- coconut -->
+				<item id="2148" countmax="100" chance="100000"/><!-- gold coin -->
+				<item id="2470" chance="900"/><!-- golden legs -->
+				<item id="2520" chance="1800"/><!-- demon shield -->
+			</inside>
+		</item>
+	</loot>
+</monster>

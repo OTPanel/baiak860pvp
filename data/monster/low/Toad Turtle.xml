@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Toad Turtle" nameDescription="a toad turtle" race="blood" experience="12700" speed="340" manacost="0">
+<health now="16500" max="16500"/>
+<look type="303" corpse="5527"/>
+<targetchange interval="5000" chance="8"/>
+<strategy attack="100" defense="0"/>
+<flags>
+<flag summonable="0"/>
+<flag attackable="1"/>
+<flag hostile="1"/>
+<flag illusionable="1"/>
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="1"/>
+<flag canpushcreatures="0"/>
+<flag targetdistance="1"/>
+<flag staticattack="90"/>
+<flag runonhealth="50"/>
+</flags>
+<attacks>
+<attack name="melee" interval="2000" skill="140" attack="240"/>
+<attack name="poison" interval="2000" chance="50" length="8" spread="3" min="-600" max="-900">
+<attribute key="areaEffect" value="poison"/>
+</attack>
+</attacks>
+<defenses armor="25" defense="25">
+<defense name="healing" interval="2000" chance="20" max="100">
+<attribute key="areaEffect" value="blueshimmer"/>
+</defense>
+</defenses>
+<elements>
+<element firePercent="0"/>
+<element energyPercent="0"/>
+<element icePercent="0"/>
+</elements>
+<immunities>
+<immunity earth="0"/>
+<immunity invisible="1"/>
+</immunities>
+<voices interval="5000" chance="10">
+<voice sentence="Grzzzzzzz!"/>
+</voices>
+<loot>
+<item id="2148" countmax="90" chance="25000"/><!-- gold coin -->
+<item id="2148" countmax="70" chance="25000"/><!-- gold coin -->
+<item id="2148" countmax="64" chance="25000"/><!-- gold coin -->
+<item id="7591" chance="7000"/><!-- great health potion -->
+<item id="1987" chance="100000"><!-- bag -->
+<inside>
+<item id="2478" chance="8000"/><!-- CROWN ARMOR -->
+<item id="5881" chance="1250"/><!-- lizard scale -->
+</inside>
+</item>
+</loot>
+</monster>

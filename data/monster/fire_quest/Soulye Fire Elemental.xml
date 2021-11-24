@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Soulye Fire Elemental" nameDescription="Soulye Fire Elemental" race="fire" experience="900" speed="560" manacost="0">
+  <health now="49500" max="49500"/>
+  <look type="242" corpse="1492"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1000" skill="80" attack="100" fire="350"/>
+    <attack name="fire" interval="2000" chance="16" range="7" radius="3" target="1">
+      <attribute key="shootEffect" value="fire"/>
+    </attack>
+    <attack name="fire" interval="1300" chance="1000" length="7" spread="3" min="-900" max="-1120"/>
+     <attack name="fire" interval="1200" chance="1000" radius="3" target="0" min="-1160" max="-1250">
+      <attribute key="areaEffect" value="firearea"/>
+    </attack>
+  </attacks>
+  <defenses armor="25" defense="25">
+
+  </defenses>
+  <elements>
+		<element icePercent="-25"/>
+</elements>
+  <immunities>
+    <immunity fire="1"/>
+    <immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+</monster>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Under Barbatos" nameDescription="an under barbatos" race="undead" experience="15000" species="earth" speed="380" manacost="0">
+    <health now="34500" max="34500"/>
+    <look type="103" head="20" body="30" legs="40" feet="50" corpse="6032"/>
+    <targetchange interval="20000" chance="50"/>
+    <strategy attack="80" defense="20"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag staticattack="90"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="1"/>
+      <flag runonhealth="1"/>
+    </flags>
+    <attacks>
+         	<attack name="melee" interval="1325" skill="135" attack="165"/>
+	<attack name="earth" interval="1000" chance="10" length="6" spread="0" min="-110" max="-1200">
+		<attribute key="areaEffect" value="stones"/>
+			</attack>
+	<attack name="earth" interval="1000" chance="11" target="1" range="7" radius="6" min="-850" max="-1160">
+		<attribute key="shootEffect" value="smallearth"/>
+		<attribute key="areaEffect" value="poison"/>
+  		 	</attack>
+    </attacks>
+    <defenses armor="25" defense="25"/>
+    <elements>
+     <element deathPercent="10"/>
+     <element icePercent="10"/>
+     <element energyPercent="10"/>
+     <element firePercent="-10"/>
+    </elements>
+    <immunities>
+      <immunity paralyze="1"/>
+      <immunity invisible="1"/>
+      <immunity earth="1"/>
+	  <immunity fire="100"/>
+    </immunities>
+	<voices interval="5000" chance="10">
+    <voice sentence="I came all the wat from Magi for this??"/>
+  </voices>
+    <loot>
+    </loot>
+    
+  </monster>

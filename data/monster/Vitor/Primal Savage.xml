@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Primal Savage" nameDescription="a primal savage" race="blood" experience="20500" speed="320" manacost="0">
+	<health now="15300" max="15300"/>
+	<look type="116" head="20" body="30" legs="40" feet="50" corpse="6043"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-300" max="-600"/>
+		<attack name="melee" interval="2000" chance="73" range="7" radius="3" target="0" min="-300" max="-600">
+  			<attribute key="areaEffect" value="blackspark"/>
+		</attack>
+	</attacks>
+	<defenses armor="5" defense="35"/>
+	<elements>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Haaaaaaauuuu" yell="1"/>
+	</voices>
+	<loot>
+		<item id="2152" countmax="22" chance="80000"/><!-- platinum coin -->
+		<item id="2393" chance="8200"/><!-- giant sword -->
+		<item id="2466" chance="8200"/><!-- golden armor -->
+	</loot>
+	
+</monster>

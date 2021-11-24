@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Mago Branco" script="DonateWeaponsHenrique.lua" walkinterval="0" speed="0" floorchange="0">
+<health now="100" max="100"/>
+<look type="278" head="0" body="0" legs="0" feet="0" addons="3"/>
+    <parameters>
+        <parameter key="module_travel" value="1"/>
+		<parameter key="message_greet" value="Olá |PLAYERNAME|. eu sou o Mago Branco, e posso te levar a Quest das Armas Donate, mais pra isso você tem que concluir a task dos demons do NPC [TASK] Maria no templo, você ja concluiu? {claro}."/>
+</parameters>
+</npc>

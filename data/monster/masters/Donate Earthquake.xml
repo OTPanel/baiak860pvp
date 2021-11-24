@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Donate Earthquake" nameDescription="an donate earthquake" race="undead" experience="11900" speed="450" manacost="0">
+	<health now="17000" max="17000"/>
+	<look type="285" corpse="8933"/>
+	<targetchange interval="20000" chance="50"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="80"/>
+		<flag lightlevel="0"/>
+		<flag lightcolor="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1500" min="-700" max="-930"/>
+		<attack name="physical" interval="2000" chance="20" range="7" min="-500" max="-650">
+			<attribute key="shootEffect" value="largerock"/>
+		</attack>
+	</attacks>
+	<defenses armor="30" defense="30"/>
+	<elements>
+		<element deathPercent="20"/>
+		<element icePercent="20"/>
+		<element physicalPercent="20"/>
+		<element holyPercent="20"/>
+		<element firePercent="-25"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+		<immunity earth="1"/>
+		<immunity energy="1"/>
+	</immunities>
+	<loot>
+		<item id="2472" chance="2000"/>
+    </loot>
+</monster>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Enceladus" nameDescription="a Enceladus" race="blood" experience="20500" speed="300" manacost="0">
+	<health now="8825" max="8825"/>
+	<look type="291" corpse="8941"/>
+	<targetchange interval="60000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="50"/>
+		<flag lightlevel="0"/>
+		<flag lightcolor="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="1"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-214" max="-514"/>
+		<attack name="physical" interval="2000" chance="25" range="7" radius="4" target="1" min="-270" max="-570">
+			<attribute key="shootEffect" value="energy"/>
+			<attribute key="areaEffect" value="blackspark"/>
+		</attack>
+		<attack name="physical" interval="3000" chance="50" length="7" spread="3" min="-250" max="-444">
+			<attribute key="areaEffect" value="poff"/>
+		</attack>
+	</attacks>
+	<defenses armor="30" defense="31">
+		<defense name="healing" interval="6000" chance="65" min="250" max="375">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity energy="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="2000" chance="5">
+		<voice sentence="GRRR!"/>
+		<voice sentence="GROOOOAAAAAAAAR!"/>
+	</voices>
+	<loot>
+		<item id="2152" countmax="3" chance="50000"/><!-- dragon ham -->
+		<item id="2647" chance="1222"/><!-- plate legs -->
+		<item id="8855" chance="400"/><!-- composite hornbow -->
+		<item id="2546" countmax="10" chance="6000"/><!-- burst arrow -->
+		<item id="1987" chance="100000"><!-- bag -->
+			<inside>
+				<item id="2148" countmax="200" chance="100000"/><!-- gold coin -->
+				<item id="7430" chance="1354"/><!-- dragonbone staff -->
+				<item id="8920" chance="920"/><!-- Wand of Starstorm -->
+				<item id="8873" chance="720"/><!-- Hibiscus Dress -->
+				<item id="7889" chance="1020"/><!-- lightning pendant -->
+				<item id="10221" chance="920"/><!-- Shockwave Amulet -->
+				<item id="7588" chance="5332"/><!-- strong health potion -->
+				<item id="8871" chance="900"/><!-- focus cape -->
+			</inside>
+		</item>
+	</loot>
+</monster>

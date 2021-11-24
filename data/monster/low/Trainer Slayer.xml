@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Personal Treiner" nameDescription="a personal treiner" race="undead" experience="200" speed="0" manacost="600">
+    <health now="100000000" max="100000000"/>
+    <look typeex="5787"/>
+    <targetchange interval="5000" chance="8"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+        <flag summonable="0"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="1"/>
+        <flag convinceable="0"/>
+        <flag pushable="0"/>
+        <flag canpushitems="1"/>
+        <flag canpushcreatures="1"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="90"/>
+        <flag runonhealth="0"/>
+        <flag emblem="blue"/>
+    </flags>
+    <attacks>
+        <attack name="melee" interval="2000" skill="20" attack="12"/>
+    </attacks>
+    <defenses armor="10" defense="10">
+        <defense name="healing" interval="55000" chance="95" min="1000000" max="2000000">
+            <attribute key="areaEffect" value="greenshimmer"/>
+        </defense>
+    </defenses>
+    <elements>
+        <element holyPercent="1"/>
+        <element deathPercent="1"/>
+        <element physicalPercent="-1"/>
+    </elements>
+    <immunities>
+        <immunity invisible="1"/>
+    </immunities>
+</monster>

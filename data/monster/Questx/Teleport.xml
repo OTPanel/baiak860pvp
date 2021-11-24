@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Monsters" nameDescription="a monsters" experience="0" speed="0" race="blood">
+ 
+*******************************************************************************************
+*                      TELEPORT: This monster Was made by Amy Azzkaban                    *
+*                                    Decoracion                                           *
+*******************************************************************************************
+ 
+<health now="1" max="1"/>
+<strategy attack="100" defense="0"/>
+<targetchange speed="0" chance="8"/>
+<look type="5"/>
+<flags>        
+<flag summonable="0"/>
+<flag attackable="0"/>
+<flag hostile="0"/>
+<flag illusionable="0"/>
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="0"/>
+<flag canpushcreatures="0"/>
+<flag targetdistance="0"/>
+<flag staticattack="100"/>
+<flag runonhealth="0"/>
+</flags>
+<attacks>        
+<attack name="melee" interval="2000" chance="0" min="-0" max="-0"/>
+   </attacks>
+<defenses armor="50" defense="55">
+<defense name="outfit" interval="1000" chance="10" type="15" duration="1000">
+<attribute key="areaEffect" value="greenshimmer"/>        
+</defense>
+<defense name="outfit" interval="1000" chance="10" type="62" duration="1000">
+<attribute key="areaEffect" value="blueshimmer"/>          
+</defense>            
+<defense name="outfit" interval="1000" chance="10" type="25" duration="1000">
+    <attribute key="areaEffect" value="redshimmer"/>        
+</defense>
+<defense name="outfit" interval="1000" chance="10" type="129" head="95" body="116" legs="121" feet="115" duration="1000">
+    <attribute key="areaEffect" value="redshimmer"/>        
+</defense>
+<defense name="outfit" interval="1000" chance="10" type="308" duration="1000">
+    <attribute key="areaEffect" value="redshimmer"/>        
+</defense>
+<defense name="outfit" interval="1000" chance="10" type="229" duration="1000">
+    <attribute key="areaEffect" value="redshimmer"/>        
+</defense>  
+<defense name="outfit" interval="1000" chance="10" type="139" head="113" body="57" legs="95" feet="113" duration="1000">
+<attribute key="areaEffect" value="greenshimmer"/>        
+</defense>
+<defense name="outfit" interval="1000" chance="10" type="37" duration="1000">
+<attribute key="areaEffect" value="greenshimmer"/>        
+</defense>
+<defense name="outfit" interval="1000" chance="10" type="306" duration="1000">
+<attribute key="areaEffect" value="greenshimmer"/>        
+</defense>
+<defense name="outfit" interval="1000" chance="10" type="40" duration="1000">
+<attribute key="areaEffect" value="greenshimmer"/>        
+</defense>
+<defense name="outfit" interval="1000" chance="10" type="49" duration="1000">
+<attribute key="areaEffect" value="greenshimmer"/>        
+</defense>
+<defense name="outfit" interval="1000" chance="10" type="57" duration="1000">
+<attribute key="areaEffect" value="greenshimmer"/>        
+</defense>
+<defense name="outfit" interval="1000" chance="10" type="73" duration="1000">
+<attribute key="areaEffect" value="greenshimmer"/>        
+</defense>
+<defense name="outfit" interval="1000" chance="10" type="297" duration="1000">
+<attribute key="areaEffect" value="greenshimmer"/>        
+</defense>
+<defense name="outfit" interval="1000" chance="10" type="203" duration="1000">
+<attribute key="areaEffect" value="greenshimmer"/>        
+</defense>
+<defense name="outfit" interval="1000" chance="10" type="5" duration="1000">
+<attribute key="areaEffect" value="greenshimmer"/>        
+</defense>
+<defense name="outfit" interval="1000" chance="10" type="130" head="19" body="71" legs="128" feet="128" addons="1"
+ 
+duration="1000">
+<attribute key="areaEffect" value="greenshimmer"/>        
+</defense>
+<defense name="outfit" interval="1000" chance="30" type="20" duration="1000">
+<attribute key="areaEffect" value="greenshimmer"/>        
+</defense>
+<defense name="outfit" interval="1000" chance="30" type="113" duration="1000">
+<attribute key="areaEffect" value="greenshimmer"/>        
+</defense>
+<defense name="outfit" interval="1000" chance="30" type="23" duration="1000">
+<attribute key="areaEffect" value="greenshimmer"/>        
+</defense>
+<defense name="outfit" interval="1000" chance="30" type="23" duration="1000">
+<attribute key="areaEffect" value="greenshimmer"/>        
+</defense>          
+</defenses>
+</monster>

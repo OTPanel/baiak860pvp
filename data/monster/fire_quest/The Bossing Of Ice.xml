@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="The Bossing Of Ice" nameDescription="a The Bossing Of Ice" race="blood" experience="3000" speed="420" manacost="0">
+<health now="75000" max="75000"/>
+<look type="12" head="85" body="85" legs="85" feet="85" corpse="6068"/>
+<targetchange interval="5000" chance="12"/>
+<strategy attack="100" defense="0"/>
+<flags>
+<flag summonable="1"/>
+<flag attackable="1"/>
+<flag hostile="1"/>
+<flag illusionable="1"/>
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="1"/>
+<flag canpushcreatures="0"/>
+<flag targetdistance="1"/>
+<flag staticattack="90"/>
+<flag runonhealth="0"/>
+</flags>
+<attacks>
+<attack name="ice" interval="2000" skill="150" attack="150"/>
+<attack name="ice" interval="1000" chance="50" length="8" spread="0" min="-425" max="-1100">
+<attribute key="areaEffect" value="icearea"/>
+</attack>
+<attack name="ice" interval="1325" chance="20" length="8" spread="3" min="-700" max="-1250">
+<attribute key="areaEffect" value="poison"/>
+</attack>
+<attack name="ice" interval="1415" chance="30" radius="6" target ="0" min="-950" max="-1055">
+<attribute key="areaEffect" value="icearea"/>
+</attack>
+<attack name="ice" interval="1150" chance="40" radius="7" target="1" min="-1150" max="-1300">
+<attribute key="areaEffect" value="icearea"/>
+</attack>
+</attacks>
+<defenses armor="16" defense="19"/>
+<elements>
+<element physicalPercent="1"/>
+<element holyPercent="1"/>
+<element deathPercent="10"/>
+<element firePercent="-1"/>
+<element energyPercent="-1"/>
+<element icePercent="15"/>
+<element earthPercent="1"/>
+</elements>
+<immunities>
+<immunity invisible="1"/>
+</immunities>
+<voices interval="5000" chance="10">
+<voice sentence="Hahahaha!"/>
+</voices>
+</monster>

@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Gaz'Haragoth" nameDescription="Gaz'Haragoth" race="fire" experience="1000000" speed="530" manacost="0">
+<health now="5000000" max="5000000"/>
+<look type="364" corpse="6068"/>
+<targetchange interval="6000" chance="0"/>
+<strategy attack="60000" defense="20"/>
+<flags>
+<flag summonable="0"/>
+<flag attackable="1"/>
+<flag hostile="1"/>
+<flag illusionable="0"/>
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="1"/>
+<flag canpushcreatures="1"/>
+<flag targetdistance="1"/>
+<flag runonhealth="3000"/>
+</flags>
+<attacks>
+<attack name="melee" interval="2000" skill="150" attack="250"/>
+<attack name="manadrain" interval="1000" chance="7" range="7" min="-100" max="-400">
+<attribute key="shootEffect" value="energy"/>
+<attribute key="areaEffect" value="poff"/>
+</attack>
+<attack name="manadrain" interval="1000" chance="7" length="0" spread="3" min="-700" max="-1100">
+<attribute key="areaEffect" value="energyarea"/>
+</attack>
+<attack name="strength" interval="1000" chance="9" range="7">
+<attribute key="shootEffect" value="largerock"/>
+<attribute key="areaEffect" value="energyarea"/>
+</attack>
+<attack name="lifedrain" interval="1000" chance="130" radius="8" target="0" min="-1400" max="-1900">
+<attribute key="areaEffect" value="bluebubble"/>
+</attack>
+<attack name="manadrain" interval="1000" chance="100" radius="8" target="0" min="-720" max="-1600">
+<attribute key="areaEffect" value="greenshimmer"/>
+</attack>
+<attack name="speed" interval="1000" chance="12" radius="6" target="0" speedchange="-190" duration="600">
+<attribute key="areaEffect" value="poison"/>
+</attack>
+<attack name="strength" interval="1000" chance="8" radius="5" target="0">
+<attribute key="areaEffect" value="blackspark"/>
+</attack>
+<attack name="outfit" interval="1000" chance="2" radius="8" target="0" monster="demon" duration="500">
+<attribute key="areaEffect" value="bluebubble"/>
+</attack>
+<attack name="outfit" interval="1000" chance="2" radius="8" target="0" item="2058" duration="2320">
+<attribute key="areaEffect" value="bluebubble"/>
+</attack>
+<attack name="fire" interval="1000" chance="34" range="7" radius="7" target="1" min="-1300" max="-1900">
+<attribute key="shootEffect" value="fire"/>
+<attribute key="areaEffect" value="firearea"/>
+</attack>
+<attack name="lifedrain" interval="1000" chance="15" length="8" spread="0" min="-900" max="-1150">
+<attribute key="areaEffect" value="redshimmer"/>
+</attack>
+</attacks>
+<defenses armor="160" defense="160">
+<defense name="healing" interval="1000" chance="15" min="100" max="200">
+<attribute key="areaEffect" value="blueshimmer"/>
+</defense>
+<defense name="healing" interval="1000" chance="25" min="100" max="200">
+<attribute key="areaEffect" value="blueshimmer"/>
+</defense>
+<defense name="speed" interval="1000" chance="8" speedchange="901" duration="500">
+<attribute key="areaEffect" value="redshimmer"/>
+</defense>
+<defense name="healing" interval="3000" chance="20" min="100" max="250">
+<attribute key="areaEffect" value="blueshimmer"/>
+</defense>
+<defense name="invisible" interval="1000" chance="17" duration="2000">
+<attribute key="areaEffect" value="blueshimmer"/>
+</defense>
+<defense name="outfit" interval="1000" chance="2" item="2916" duration="7000">
+<attribute key="areaEffect" value="blueshimmer"/>
+</defense>
+</defenses>
+<immunities>
+<immunity physical="0"/>
+<immunity poison="1"/>
+<immunity lifedrain="1"/>
+<immunity paralyze="1"/>
+<immunity outfit="1"/>
+<immunity drunk="1"/>
+<immunity invisible="1"/>
+</immunities>
+<voices interval="5000" chance="10">
+<voice sentence="hahahahhahah!" yell="1"/>
+<voice sentence="hehehehehehehe!"/>
+<voice sentence="hsahsahshashah!" yell="1"/>
+<voice sentence="aoskpkaspok!" yell="1"/>
+</voices>
+<loot capacity="5000">
+<item id="10310" chance="30000"/>
+<item id="5957" chance="30000"/>
+<item id="2148" chance="30000"/>
+<item id="10310" chance="30000"/>
+<item id="7488" chance="30000"/>
+<item id="12575" chance="30000"/>
+<item id="12396" chance="30000"/>
+</loot>
+</monster> 

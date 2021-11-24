@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Lucifer" script="promotionquest.lua" walkinterval="0" floorchange="0">
+<health now="100" max="100"/>
+<look type="325" body="94" feet="94" head="94"  legs="94"  addons="3"/>
+    <parameters>
+        <parameter key="module_travel" value="1"/>
+		<parameter key="message_greet" value="Olá |PLAYERNAME|. O mundo esta em perigo! Irei resumir a historia. LUCIFER esta vindo do inferno para invadir o nosso paraiso e nossa unica chance será você nos ajudar. Você tera que descer ate o inferno e ir por caminhos sombrios ate o fim e matar lucifer para selar a paz, e em recompensa você ganhara uma Promotion que lhe tornara mais forte. Para provar que você é um grande guerreiro eu cobrarei 15kk para lhe teletransportar para o inicio deste caminho! Você deseja iniciar agora? diga {quero ir}."/>
+</parameters>
+</npc>

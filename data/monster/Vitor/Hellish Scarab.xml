@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Hellish Scarab" nameDescription="a hellish scarab" race="venom" experience="1200" speed="450" manacost="0">
+  <health now="90000" max="90000"/>
+  <look type="79" head="20" body="30" legs="40" feet="50" corpse="6021"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1000" min="-900" max="-1100" poison="599"/>
+    <attack name="poison" interval="1000" chance="35" range="7" min="-1100" max="-1600">
+      <attribute key="shootEffect" value="poison"/>
+      <attribute key="areaEffect" value="poison"/>
+    </attack>
+    <attack name="speed" interval="1000" chance="13" range="7" speedchange="-700" duration="25000">
+      <attribute key="shootEffect" value="poison"/>
+      <attribute key="areaEffect" value="poison"/>
+    </attack>
+  </attacks>
+  <defenses armor="25" defense="20">
+    <defense name="speed" interval="1000" chance="8" speedchange="350" duration="9000">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </defense>
+  </defenses>
+  	<elements>
+	    <element physicalPercent="30"/>
+		<element energyPercent="20"/>
+		<element icePercent="-5"/>
+		<element firePercent="-20"/>
+	</elements>
+  <immunities>
+    <immunity earth="1"/>
+    <immunity paralyze="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <summons maxSummons="2">
+    <summon name="escaravelho" interval="1000" chance="15" max="2"/>
+  </summons>
+  <loot>
+  </loot>
+</monster>

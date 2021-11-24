@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channels>
+	<!-- README:
+		0 - dynamic, reserved for guilds
+		1 - always acts as Party channel, only "name" tag available
+		3 - always acts as Rule Violations channel
+		9 - acts as Help channel- clientsided message
+		65535 - DO NOT CHANGE THE ID- only "name", "enabled", "active" and "logged" tags available
+	 -->
+	<channel id="1" name="Party"/>
+	<channel id="21" name="Loot" level="5000"/>
+	<channel id="2" name="Administracao" access="3"/>
+	<channel id="3" name="Reportar Bugs" logged="yes"/>
+	<channel id="6" name="Trade" level="150" muted="20" conditionId="3" conditionMessage="Aguarde 20 segundos para enviar mensagem novamente." logged="yes">
+		<vocation id="1-8"/>
+	</channel>
+	<channel id="8" name="Mortes" level="5000"/>
+	<channel id="9" name="Help" level="150" muted="60" conditionId="6" conditionMessage="Aguarde 1 minuto para enviar uma mensagem novamente." logged="yes"/>
+	 <!--channel id="10" name="City War" active="no"/-->
+	<channel id="65535" name="Tibiacast"/>
+</channels>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Flame Dragon" nameDescription="a flame dragon" race="blood" experience="6450" speed="300" manacost="0">
+	<health now="180000" max="180000"/>
+	<look type="272" head="0" body="0" legs="0" feet="0" corpse="7622"/>
+	<targetchange interval="2000" chance="5"/>
+	<strategy attack="70" defense="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="80"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="130" attack="120"/>
+		<attack name="fire" interval="1000" chance="12" length="8" spread="3" min="-1400" max="-2020">
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="lifedrain" interval="1000" chance="14" length="8" spread="3" min="-600" max="-900">
+			<attribute key="areaEffect" value="poff"/>
+		</attack>
+		<attack name="fire" interval="1000" chance="15" range="7" min="-1400" max="-1800">
+			<attribute key="shootEffect" value="fire"/>
+		</attack>
+		<attack name="fire" interval="1000" chance="17" range="7" radius="4" target="1" min="-800" max="-1400">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="firefield" interval="1000" chance="15" range="7" radius="4" target="1">
+			<attribute key="shootEffect" value="fire"/>
+		</attack>
+	</attacks>
+	<defenses armor="25" defense="38">
+		<defense name="healing" interval="1000" chance="13" min="2600" max="10800">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity physical="0"/>
+		<immunity energy="0"/>
+		<immunity fire="1"/>
+		<immunity poison="0"/>
+		<immunity lifedrain="0"/>
+		<immunity paralyze="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="50">
+		<voice sentence="Zchu?" yell="0"/>
+	</voices>
+	<loot capacity="800">
+	</loot>
+</monster>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Mao Do Destino Amaldicoado" nameDescription="a mao do destino amaldicoado" race="undead" experience="5000" speed="300" manacost="0">
+  <health now="42500" max="42500"/>
+  <look type="230" corpse="6312"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="1500"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1250" skill="120" attack="135"/>
+	    <attack name="manadrain" interval="1250" chance="22" range="7" min="-850" max="-1200">
+      <attribute key="areaEffect" value="blueshimmer"/>
+  </attack>
+    <attack name="lifedrain" interval="1250" chance="20" range="7" min="-950" max="-1180">
+      <attribute key="areaEffect" value="blueshimmer"/>
+  </attack>
+  </attacks>
+  <defenses armor="25" defense="35">
+    <defense name="healing" interval="1250" chance="10" min="450" max="555">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="speed" interval="1250" chance="25" speedchange="1000" duration="8000">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </defense>
+	<defense name="invisible" interval="3000" chance="20" duration="4000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+  <elements>
+	<element icePercent="-15"/>
+	<element holyPercent="-15"/>
+  </elements>
+  <immunities>
+    <immunity physical="0"/>
+	<immunity death="1"/>
+    <immunity energy="1"/>
+    <immunity fire="1"/>
+    <immunity poison="1"/>
+    <immunity paralyze="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <voices interval="5000" chance="10"/>
+  <loot>
+
+   </loot>
+</monster>
+

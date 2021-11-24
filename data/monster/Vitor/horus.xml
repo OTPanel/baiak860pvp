@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<monster name="Horus" nameDescription="horus" race="blood" experience="80000" speed="0" manacost="0"> 
+    <health now="990000" max="990000" /> 
+    <look type="91" head="19" body="96" legs="21" feet="81" corpse="7349"/> 
+    <targetchange interval="2000" chance="9"/> 
+    <strategy attack="100" defense="0"/> 
+    <flags> 
+        <flag summonable="0"/> 
+        <flag attackable="1"/> 
+        <flag hostile="1"/> 
+        <flag illusionable="0"/> 
+        <flag convinceable="0"/> 
+        <flag pushable="0"/> 
+        <flag canpushitems="1"/> 
+        <flag canpushcreatures="1"/> 
+        <flag targetdistance="1"/> 
+        <flag staticattack="85"/> 
+        <flag runonhealth="0"/> 
+		<flag skull="5" />
+    </flags> 
+    <attacks> 
+        <attack name="melee" interval="2000" skill="110" attack="150"/>		
+	  <attack name="death" interval="2000" chance="100" range="7" radius="20" target="0" min="-900" max="-1600">
+			<attribute key="areaEffect" value="hearts"/>
+		</attack>	
+		<attack name="physical" interval="2000" chance="55" radius="20" target="0" min="-930" max="-1200">
+                    <attribute key="areaEffect" value="bluefirework"/>
+		</attack>	
+		<attack name="fire" interval="2000" chance="2000" range="7" radius="5" target="1" min="-1610" max="-2000">
+			<attribute key="shootEffect" value="burstarrow"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>	
+		</attacks>
+	<defenses armor="22" defense="35">
+		<defense name="healing" interval="2000" chance="9" min="8075" max="1225">
+			<attribute key="areaEffect" value="icetornado"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element deathPercent="10"/>
+		<element physicalPercent="15"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+		<immunity ice="1"/>
+		<immunity earth="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+    <voices interval="2000" chance="9"> 
+        <voice sentence="The power of the Abominator will all be mine!" /> 
+        <voice sentence="My masters and I will tear down barriers and join the ultimate in its realm!" /> 
+		<voice sentence="The power of the Abominator will all be mine!" /> 
+        <voice sentence="The power of the Abominator will all be mine!" /> 
+        <voice sentence="He who has returned from beyond has taught me secrets you can't even grasp!" /> 
+		<voice sentence="The power of the Abominator will all be mine!" /> 
+		<voice sentence="The great machinator will make his entrance soon!" /> 
+		<voice sentence="You might scratch my shields but they will never break!" /> 
+        <voice sentence="You can't hope to penetrate my shields!" /> 
+        <voice sentence="Do you really think you could beat me?" /> 
+    </voices> 
+    <script>  </script> 
+</monster>

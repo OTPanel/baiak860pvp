@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ghalapago" nameDescription="a ghalapago" race="blood" experience="33200" speed="400" manacost="0">
+	<health now="16300" max="16300"/>
+	<look type="361" corpse="6068"/>
+	<targetchange interval="2000" chance="30"/>
+	<strategy attack="80" defense="50"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="85"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+			<attack name="melee" interval="1400" chance="95" min="-100" max="-320"/>
+			<attack name="death" interval="2000" chance="15" target="0" radius="4" min="-300" max="-600">
+				<attribute key="areaEffect" value="smallclouds"/>
+			</attack>
+			<attack name="death" interval="2000" chance="12" length="8" spread="0" min="-300" max="-900">
+				<attribute key="areaEffect" value="mortarea"/>
+			</attack>
+	</attacks>
+		<defenses armor="90" defense="111">
+		<defense name="healing" interval="1000" chance="9" min="200" max="500">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element icePercent="1"/>
+		<element energyPercent="1"/>
+		<element deathPercent="1"/>
+		<element holyPercent="1"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+		<immunity paralyze="1"/>
+	</immunities>
+	<voices interval="5000" chance="20">
+		<voice sentence="Grrrrrrrrrr" yell="1"/>
+	</voices>
+	<loot>
+		<item id="2152" countmax="8" chance="8000"/><!-- crystal coin -->
+	</loot>
+</monster>

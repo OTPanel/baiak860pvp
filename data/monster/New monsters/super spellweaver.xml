@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Super Spellweaver" nameDescription="a super spellweaver" race="blood" experience="1000" speed="240" manacost="0">
+    <health now="6530" max="6530"/>
+    <look type="340" corpse="6068"/>
+	<targetchange interval="5000" chance="8"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+        <flag runonhealth="0"/>
+     </flags>
+<attacks>
+   <attack name="melee" interval="2000" skill="75" attack="110"/>
+   <attack name="manadrain" interval="4000" chance="18" radius="8" target="0" min="-300" max="-800">
+      <attribute key="areaEffect" value="bluebubble"/>
+   </attack>
+   <attack name="physical" interval="30000" chance="100" range="4" target="1" radius="4" min="-100" max="-430">
+      <attribute key="areaEffect" value="teleport"/>
+   </attack>
+   <attack name="physical" interval="5000" chance="20" range="2" target="1" min="-50" max="-875">
+      <attribute key="shootEffect" value="whirlwindsword"/>
+   </attack>
+   <attack name="death" interval="3000" chance="15" length="8" spread="0" min="-550" max="-600">
+      <attribute key="areaEffect" value="mortarea"/>
+   </attack>
+   <attack name="ice" interval="3000" chance="18" radius="6" target="0" min="-660" max="-780">
+      <attribute key="areaEffect" value="bigplants"/>
+   </attack>
+</attacks>
+	<defenses armor="25" defense="25">
+<defense name="invisible" interval="1000" chance="10" duration="3000">
+<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+<elements>
+<element holyPercent="20"/>
+<element energyPercent="25"/>
+<element deathPercent="-10"/>
+<element earthPercent="-10"/>
+</elements>
+<immunities>
+<immunity fire="1"/>
+<immunity invisible="1"/>
+</immunities>
+<loot>
+<item id="2152" countmax="2" chance="25000"/><!-- platinum coin -->
+<item id="2666" chance="22500"/><!-- meat -->
+<item id="2147" chance="10000"/><!-- small ruby -->
+	<item id="1987" chance="100000"><!-- bag -->
+		<inside>
+	 	<item id="11308" chance="7000"/><!-- weaver's wandtip -->
+		<item id="11297" chance="1250"/><!-- Zaoan Shoes -->
+		<item id="8871" chance="1000"/><!-- focus cape -->
+		</inside>
+	</item>
+</loot>
+</monster>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Orc Cult Minion" nameDescription="a orc cult minion" race="blood" experience="850" speed="200" manacost="310">
+	<health now="1000" max="1000"/>
+	<look type="50" corpse="5996"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="0" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-230" />	
+		<attack name="physical" interval="1000" chance="7" range="7" min="-120" max="-170">
+			<attribute key="shootEffect" value="spear"/>
+		</attack>
+	</attacks>
+	<defenses armor="30" defense="30"/>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Orc powaaa!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="100" chance="100000"/><!-- gold coin -->
+		<item id="2148" countmax="91" chance="100000"/><!-- gold coin -->
+		<item id="7588" chance="15000"/><!-- strong health potion -->
+		<item id="9970" countmax="3" chance="12000"/><!-- small topaz -->
+		<item id="2428" chance="9000"/><!-- orcish axe -->
+		<item id="2788" countmax="3" chance="6000"/><!-- red mushroom -->
+		<item id="2666" countmax="6" chance="4000"/><!-- meat -->
+		<item id="7439" countmax="2" chance="17250"/><!-- berserk potion -->
+	</loot>
+</monster>

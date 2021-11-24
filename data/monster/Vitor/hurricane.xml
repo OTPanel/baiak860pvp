@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Hurricane" nameDescription="Hurricane" race="fire" experience="24145" speed="800" manacost="0">
+<health now="18900" max="18900"/>
+<look typeex="9110" corpse="6068"/>
+<targetchange interval="10000" chance="5"/>
+<strategy attack="5000" defense="0"/>
+<flags>
+<flag summonable="0"/>
+<flag attackable="1"/>
+<flag hostile="1"/>
+<flag illusionable="0"/>
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="1"/>
+<flag canpushcreatures="1"/>
+<flag staticattack="85"/>
+<flag targetdistance="1"/>
+<flag runonhealth="0"/>
+</flags>
+<attacks>
+<attack name="melee" interval="2000" skill="220" attack="215"/>
+<attack name="fire" interval="2000" chance="13" range="7" radius="8" target="1" min="-600" max="-900">
+<attribute key="shootEffect" value="fire"/>
+<attribute key="areaEffect" value="firearea"/>
+</attack>
+<attack name="lifedrain" interval="3000" chance="18" radius="8" target="0" min="-650" max="-890">
+<attribute key="areaEffect" value="rednote"/>
+</attack>
+<attack name="death" interval="3000" chance="15" radius="8" target="0" min="-500" max="-890">
+<attribute key="areaEffect" value="mortarea"/>
+</attack>
+<attack name="death" interval="2000" chance="16" length="8" spread="0" min="-300" max="-900">
+<attribute key="areaEffect" value="mortarea"/>
+</attack>
+<attack name="speed" interval="3000" chance="25" target="1" speedchange="-800" duration="4000">
+<attribute key="areaEffect" value="redshimmer"/>
+</attack>
+</attacks>
+<defenses armor="70" defense="70">
+<defense name="healing" interval="1000" chance="18" min="300" max="700">
+<attribute key="areaEffect" value="blueshimmer"/>
+</defense>
+</defenses>
+<elements>
+<element physicalPercent="20"/>
+<element icePercent="-20"/>
+<element deathPercent="35"/>
+</elements>
+<immunities>
+<immunity energy="1"/>
+<immunity fire="1"/>
+<immunity poison="1"/>
+<immunity lifedrain="1"/>
+<immunity paralyze="1"/>
+<immunity invisible="1"/>
+</immunities>
+<summons maxSummons="0">
+</summons>
+<voices interval="5000" chance="10">
+</voices>
+<loot>
+<item id="2158" chance="5000" countmax="5" />
+<item id="2158" chance="4500" countmax="13"/>
+<item id="2149" chance="5500" countmax="4" />
+<item id="2186" chance="1538" />
+<item id="2396" chance="1429" />
+<item id="2462" chance="4700" />
+<item id="2214" chance="4000" />
+<item id="2004" chance="100000" >
+<inside>
+<item id="2387" chance="10000" />
+<item id="7431" chance="7900" />
+<item if="2514" chance="9000" />
+<item id="2393" chance="12000" />
+<item id="2195" chance="10333" />
+<item id="2421" chance="7509" />
+</inside>
+</item>
+</loot>
+
+</monster>

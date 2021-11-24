@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Muddy Earth Elemental" nameDescription="a muddy earth elemental" race="undead" experience="9600" species="earth" speed="360" manacost="0">
+    <health now="9999" max="9999"/>
+    <look type="301" corpse="8933"/>
+    <targetchange interval="20000" chance="50"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag staticattack="80"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="1"/>
+      <flag runonhealth="1"/>
+    </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="28" attack="45"/>
+    <attack name="energy" interval="1000" chance="14" range="7" min="-215" max="-745">
+      <attribute key="shootEffect" value="energy"/>
+      <attribute key="areaEffect" value="energy"/>
+    </attack>
+    <attack name="fire" interval="2000" chance="10" range="7" radius="1" target="1" min="-135" max="-395">
+      <attribute key="shootEffect" value="fire"/>
+      <attribute key="areaEffect" value="firearea"/>
+    </attack>
+    <attack name="energyfield" interval="1000" chance="9" range="7" radius="1" target="1">
+      <attribute key="shootEffect" value="energy"/>
+    </attack>
+  </attacks>
+    <defenses armor="30" defense="30"/>
+    <elements>
+     <element deathPercent="20"/>
+     <element icePercent="20"/>
+     <element physicalPercent="20"/>
+     <element energyPercent="20"/>
+     <element firePercent="-25"/>
+    </elements>
+    <immunities>
+      <immunity paralyze="1"/>
+      <immunity invisible="1"/>
+      <immunity earth="1"/>
+    </immunities>
+    <loot>
+      <item id="2148" countmax="44" chance1="100000" chancemax="0"/> -- Gold Coin
+      <item id="2158" countmax="1" chance1="100" chancemax="0"/> -- Iron ore
+      <item id="8298" chance="2000"/> -- Natural Soil
+    </loot>
+  </monster>

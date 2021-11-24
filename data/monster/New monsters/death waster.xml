@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Death Waster" nameDescription="a death waster" race="blood" experience="1000" speed="560" manacost="0">
+  <health now="229950" max="229950"/>
+  <look type="12" head="89" body="96" legs="14" feet="23" corpse="7349"/>
+  <targetchange interval="5000" chance="20"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="98"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+  	<attack name="drunk" interval="1000" chance="15" range="6" target="1" min="-1200" max="-3000">
+        <attribute key="areaEffect" value="redshimmer"/>
+    </attack>
+	<attack name="melee" interval="2000" min="-1000" max="-2900"/>
+    <attack name="manadrain" interval="2000" chance="13" range="7" min="-2640" max="-3220"/>
+    <attack name="fire" interval="2000" chance="15" range="7" radius="7" target="1" min="-1500" max="-2250">
+		<attribute key="shootEffect" value="fire"/>
+		<attribute key="areaEffect" value="firearea"/>
+	</attack>
+    <attack name="lifedrain" interval="1000" chance="15" target="1" range="1" min="-1600" max="-2280"/>	
+    <attack name="sudden death" interval="2000" chance="100" min="-2319" max="-2966"/>
+  </attacks>
+  
+  <defenses armor="78" defense="79">
+    <defense name="healing" interval="2000" chance="15" min="4000" max="6000">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </defense>
+	<defense name="speed" interval="1000" chance="6" speedchange="360" duration="10000">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </defense>
+  </defenses>
+<elements>
+		<element physicalPercent="10"/>
+		<element energyPercent="10"/>
+		<element earthPercent="10"/>
+		<element icePercent="-10"/>
+		<element holyPercent="-5"/>
+		<element deathPercent="10"/>
+</elements>
+  <immunities>
+    <immunity drown="1"/>
+    <immunity fire="1"/>
+    <immunity paralyze="1"/>
+	<immunity lifedrain="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <summons maxSummons="4">
+    <summon name="bonebeast" interval="1000" chance="17" max="4"/>
+  </summons>
+  <voices interval="5000" chance="10">
+    <voice sentence="DSFOLDGYET!" yell="1"/>
+    <voice sentence="WETGEWVDSWGG!"/>
+  </voices>
+</monster>

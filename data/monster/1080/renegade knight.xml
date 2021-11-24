@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Renegade Knight" nameDescription="a renegade knight" race="blood" experience="7000" speed="270" manacost="390">
+	<health now="7595" max="7595" />
+	<look type="268" head="97" body="132" legs="76" feet="98" addons="2" corpse="6080" />
+	<targetchange interval="4000" chance="20" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="0" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="renegade knight" interval="1800" chance="30"/> <!-- Yellow Spark Exori -->
+		<attack name="melee" interval="1400" min="0" max="-290"/>	
+	</attacks>
+	<defenses armor="38" defense="50">
+		<defense name="healing" interval="4000" chance="15" min="200" max="250">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1" />
+	</immunities>
+	<elements>
+		<element deathPercent="-10" />
+		<element energyPercent="35" />
+		<element earthPercent="20" />
+		<element firePercent="20" />
+		<element holyPercent="50" />
+		<element physicalPercent="15" />
+	</elements>
+	<voices interval="2000" chance="13">
+		<voice sentence="I'll teach you a lesson!" />
+		<voice sentence="Feel my steel!" />
+		<voice sentence="Take this!" />
+		<voice sentence="Let's see how good you are!" />
+		<voice sentence="A challenge at last!" />
+	</voices>
+	<loot>
+		<item id="2148" countmax="100" chance="99800" /><!-- gold coin -->
+		<item id="2152" countmax="2" chance="25670" /><!-- platinum coin -->
+		<item id="2666" countmax="2" chance="9140" /><!-- Meat -->	
+		<item id="7591" chance="7250" /><!-- Great Health Potion -->
+		<item id="2377" chance="5230" /><!-- Two Handed Sword-->
+		<item id="2147" chance="3690" /><!-- Small Ruby -->
+		<item id="2391" chance="1020" /><!-- war hammer -->	
+		<item id="5911" chance="1920" /><!-- Red Piece of Cloth -->		
+		<item id="2487" chance="590" /><!-- Crown Armor -->
+		<item id="2392" chance="480" /><!-- Fire Sword -->
+		<item id="2488" chance="650" /><!-- Crown Legs -->			
+		<item id="2491" chance="590" /><!-- Crown Helmet -->		
+		<item id="2519" chance="160" /><!-- Crown Shield -->
+		<item id="2114" chance="110" /><!-- piggy bank -->		
+	</loot>
+</monster>

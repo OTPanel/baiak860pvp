@@ -1,0 +1,38 @@
+GNU gdb (Ubuntu 8.1-0ubuntu3.2) 8.1.0.20180409-git
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./theotxserver...done.
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[New Thread 0x7ffff211e700 (LWP 8148)]
+[New Thread 0x7ffff170b700 (LWP 8149)]
+>> Checking inactive houses
+Serpent Spawn
+> Broadcasted message: "[PvP Castle] A batalhar terminou e nenhuma guild conseguiu dominar o castelo!".
+> Broadcasted message: "The event BattleField was opened and We are waiting 20 Players! Team divided into 10 VS 10".
+> Broadcasted message: "[BattleField Event] We are waiting 20 players to Battlefield starts".
+> Broadcasted message: "[RealBaiak], Para ver quem está matando quem, abra o canal Mortes (Ctrl + O)".
+> Broadcasted message: "[BattleField Event] We are waiting 20 players to Battlefield starts".
+> Broadcasted message: "[BattleField Event] We are waiting 20 players to Battlefield starts".
+> Broadcasted message: "[BattleField Event] We are waiting 20 players to Battlefield starts".
+> Broadcasted message: "The event cannot be started because not had enough players.".
+> Broadcasted message: "[Aviso de Segurança] NUNCA digite sua senha em sites que não sejam o OFICIAL e nem crie contas com a mesma senha em outros servidores. Site oficial: www.RealBaiak.com/".
+> Broadcasted message: "[RealBaiak], Para ver quem está matando quem, abra o canal Mortes (Ctrl + O)".
+> Broadcasted message: "[Aviso de Segurança] NUNCA digite sua senha em sites que não sejam o OFICIAL e nem crie contas com a mesma senha em outros servidores. Site oficial: www.RealBaiak.com/".
+> Broadcasted message: "Servidor sera salvo e o mapa ficara limpo em um minuto, cuidado pode haver freeze!".
+> Broadcasted message: "O mapa ficara limpo em 15 segundos, cuidado pode haver freeze!".
+> Broadcasted message: "[SEGURANÇA] Cadastre um E-Mail verdadeiro em sua conta do site e gere sua Recovery Key - Não seja hackeado! Site oficial: www.RealBaiak.com/".
+[Thread 0x7ffff211e700 (LWP 8148) exited]
+[Thread 0x7ffff170b700 (LWP 8149) exited]
+[Inferior 1 (process 8144) exited normally]

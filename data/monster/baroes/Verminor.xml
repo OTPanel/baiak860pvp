@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Verminor" nameDescription="a Verminor" race="blood" experience="250000" speed="1000" manacost="0">
+  <health now="10000000" max="10000000"/>
+  <look type="12" head="94" body="82" legs="94" feet="0" corpse="6068"/>
+  <targetchange interval="500" chance="8"/>
+  <strategy attack="500" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="2500"/>
+  </flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="180" attack="180"/>
+		<attack name="physical" interval="3000" chance="15" radius="5" target="0" min="-2400" max="-3000">
+			<attribute key="areaEffect" value="blackspark"/>
+		</attack>
+		<attack name="poison" interval="2000" chance="16" range="7" radius="7" target="1" min="-2710" max="-3040">
+			<attribute key="shootEffect" value="poison"/>
+			<attribute key="areaEffect" value="plantattack"/>
+		</attack>
+		<attack name="poisonfield" interval="1000" chance="10" range="7" radius="4" target="1">
+			<attribute key="shootEffect" value="poison"/>
+		</attack>
+		<attack name="lifedrain" interval="4000" chance="19" length="8" spread="0" min="-2032" max="-3000">
+			<attribute key="areaEffect" value="purpleenergy"/>
+		</attack>
+		<attack name="manadrain" interval="200" chance="19" length="8" spread="0" min="-1000" max="-2000">
+			<attribute key="areaEffect" value="purpleenergy"/>
+		</attack>
+	</attacks>
+	<defenses armor="50" defense="48">
+		<defense name="healing" interval="1000" chance="9" min="800" max="2000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="healing" interval="1000" chance="12" min="4000" max="6000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="1000" chance="5" speedchange="400" duration="7000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element icePercent="-15"/>
+		<element deathPercent="35"/>
+		<element holyPercent="-25"/>
+	</elements>
+	<immunities>
+		<immunity earth="1"/>
+		<immunity fire="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<summons maxSummons="30">
+		<summon name="Primal Shaman" interval="2000" chance="250"/>
+		<summon name="Venon Verminor" interval="1000" chance="500"/>
+		<summon name="Unholy Soul" interval="2500" chance="250"/>
+		<summon name="Swamp Trollz" interval="1500" chance="500"/>
+	</summons>
+	<voices interval="5000" chance="o">
+		<voice sentence="Your Noob!" yell="1"/>
+	</voices>
+	<loot>
+		<item id="2152" countmax="100" chance1="12000" chancemax="0"/>
+		<item id="2300" countmax="20" chance1="12000" chancemax="0"/>
+		<item id="12638" chance="100000"/>
+	</loot>
+	<script> <event name="bossNumber"/> </script> 
+</monster>

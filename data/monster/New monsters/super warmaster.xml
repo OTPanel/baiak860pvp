@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Super Warmaster" nameDescription="a super warmaster" race="blood" experience="1000" speed="220" manacost="0">
+<health now="10000" max="10000"/>
+<look type="334" corpse="6068"/>
+<targetchange interval="5000" chance="8"/>
+<strategy attack="80" defense="20"/>
+<flags>
+<flag summonable="0"/>
+<flag attackable="1"/>
+<flag hostile="1"/>
+<flag illusionable="1"/>
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="1"/>
+<flag canpushcreatures="0"/>
+<flag targetdistance="1"/>
+<flag staticattack="90"/>
+<flag runonhealth="0"/>
+</flags>
+ <attacks>
+<attack name="melee" interval="899" min="-500" max="-850"/>
+<attack name="speed" interval="800" chance="12" radius="6" target="0" speedchange="-500" duration="10000">
+<attribute key="areaEffect" value="poison"/>
+</attack>
+<attack name="physical" interval="900" chance="17" range="7" min="-500" max="-900">
+<attribute key="shootEffect" value="poison"/>
+</attack>
+<attack name="melee" interval="1000" chance="20" range="7" radius="4" target="0" min="-500" max="-750">
+<attribute key="areaEffect" value="poison"/>
+</attack>
+<attack name="poison" interval="1000" chance="17" length="4" spread="3" min="-600" max="-850">
+<attribute key="areaEffect" value="yellowbubble"/>
+</attack>
+<attack name="speed" interval="1000" chance="20" range="1" target="0" speedchange="-800" duration="831">
+<attribute key="areaEffect" value="poison"/>
+</attack>
+</attacks>
+<defenses armor="16" defense="19"/>
+<elements>
+<element physicalPercent="1"/>
+<element holyPercent="20"/>
+<element deathPercent="20"/>
+<element energyPercent="30"/>
+<element icePercent="15"/>
+<element earthPercent="20"/>
+</elements>
+<immunities>
+<immunity fire="1"/>
+<immunity invisibility="1"/>
+</immunities>
+<loot>
+<item id="2152" countmax="2" chance="25000"/><!-- platinum coins -->
+<item id="2666" chancemax="22500"/><!-- meat -->
+<item id="1987" chance="100000"><!-- bag -->
+<inside>
+<item id="11299" chance="550"/><!-- drakinata-->
+<item id="11317" chance="5500"/><!-- zaoan halberd -->
+<item id="11295" chance="250"/><!-- zaoan armor -->
+<item id="11298" chance="250"/><!-- zaoan legs -->
+</inside>
+</item>
+</loot>
+</monster>

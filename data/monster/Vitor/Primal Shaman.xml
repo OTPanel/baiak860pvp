@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Primal Shaman" nameDescription="a primal shaman" race="blood" experience="24380" speed="320" manacost="0">
+	<health now="18400" max="18400"/>
+		<look type="264" head="114" body="114" legs="114" feet="114" corpse="6081"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-300" max="-600"/>
+		<attack name="fire" interval="1000" chance="30" range="9" min="-200" max="-640">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="fire"/>
+		</attack>
+			<attack name="fire" interval="2500" chance="17" length="4" spread="3" min="-480" max="-620">
+			<attribute key="areaEffect" value="blackspark"/>
+		</attack>
+				<attack name="manadrain" interval="3000" chance="10" radius="6" target="0" min="-450" max="-550">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+		<attack name="lifedrain" interval="2000" chance="21" radius="6" target="0" min="-120" max="-380">
+			<attribute key="areaEffect" value="poff"/>
+		</attack>
+	</attacks>
+	<defenses armor="5" defense="35"/>
+	<elements>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<loot>
+		<item id="2152" countmax="6" chance="80000"/><!-- platinum coin -->
+		<item id="2470" chance="8000"/> <!-- golden legs-->
+		<item id="2195" chance="8000"/> <!-- boh -->
+		<item id="2656" chance="8000"/> <!-- blue robe -->
+	</loot>
+	
+</monster>

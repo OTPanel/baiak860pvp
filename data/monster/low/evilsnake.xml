@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Evil Snake" nameDescription="an evil snake" race="venom" experience="13400" speed="350" manacost="390">
+	<health now="12600" max="12600"/>
+	<look type="364" head="0" body="0" legs="0" feet="0" corpse="5527"/>
+	<targetchange interval="2000" chance="50"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="85"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="0"/>
+		<flag runonhealth="100"/>
+	</flags>
+	<attacks>
+	<attack name="melee" interval="2000" min="-200" max="-600"/>
+	<attack name="earth" interval="1000" chance="5" length="9" spread="3" min="-1570" max="-1850">
+		<attribute key="areaEffect" value="bigplants"/>
+	</attack>
+	<attack name="ice" interval="1000" chance="7" length="9" spread="3" min="-1570" max="-1700">
+		<attribute key="areaEffect" value="icearea"/>
+	</attack>
+	</attacks>
+  <defenses armor="16" defense="20">
+    <defense name="healing" interval="2000" chance="50" min="50" max="600">
+      <attribute key="areaEffect" value="blueshimmer"/>
+	</defense>
+	</defenses>
+	<immunities>
+		<immunity drown="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="3000" chance="20">
+		<voice sentence="FFFSSHHH..."/>
+		<voice sentence="HISSSS"/>
+	</voices>
+	<elements>
+		<element firePercent="40"/>
+		<element energyPercent="-15"/>
+		<element physicalPercent="-18"/>
+		<element deathPercent="-12"/>
+	</elements>
+  <loot>
+    <item id="2148" countmax="100" chance="70000"/>	-- gold coin
+	    <item id="2148" countmax="100" chance="100000"/>	-- gold coin
+    <item id="2146" countmax="1" chance="3000"/>	-- small saphire
+    <item id="2666" countmax="4" chance="40000"/>	-- meat
+    <item id="2214" chance="10000"/>			-- ring of healing
+</loot>
+</monster>
+

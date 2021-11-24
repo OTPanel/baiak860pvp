@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<groups>
+
+<group id="1" name="Player" flags="4194304" customFlags="0" depotLimit="1500" maxVips="150"/>
+<group id="2" name="Tutor" flags="68748869632" customFlags="8914950" access="1" violationReasons="0" nameViolationFlags="0"/>
+<group id="3" name="Senior Tutor" flags="17660922298368" customFlags="14" access="2" violationReasons="10" nameViolationFlags="2" statementViolationFlags="63" maxVips="200"/>	
+<group id="4" name="Gamemaster" flags="313432738455559" customFlags="25681940" access="3" violationReasons="5" nameViolationFlags="20" statementViolationFlags="30" depotLimit="1000" maxVips="300" outfit="75"/>
+<group id="5" name="Community Manager" flags="309223671537671" customFlags="126873918" access="4" violationReasons="5" nameViolationFlags="20" statementViolationFlags="30" depotLimit="1000" maxVips="400" outfit="266"/>
+<group id="6" name="Administrador" flags="321055247802362" customFlags="134217727" access="5" violationReasons="23" nameViolationFlags="170" statementViolationFlags="213" depotLimit="5000" maxVips="500" outfit="332"/>
+
+</groups>

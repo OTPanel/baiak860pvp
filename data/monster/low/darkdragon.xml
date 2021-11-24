@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Dark Dragon" nameDescription="a Dark Dragon" race="blood" experience="22095" speed="405" manacost="590">
+  <health now="20005" max="20005"/>
+  <look type="351"corpse="11356"/>
+  <targetchange interval="2000" chance="5"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="80"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <<attacks>
+    <attack name="melee" interval="2000" skill="100" attack="610"/>
+    <attack name="manadrain" interval="2000" chance="13" range="7" min="0" max="-620"/>
+    <attack name="fire" interval="2000" chance="30" range="7" radius="7" target="1" min="-150" max="-750">
+		<attribute key="shootEffect" value="fire"/>
+		<attribute key="areaEffect" value="firearea"/>
+	</attack>
+    <attack name="firefield" interval="2000" chance="12" range="7" radius="1" target="1">
+		<attribute key="shootEffect" value="fire"/>
+	</attack>
+    <attack name="lifedrain" interval="1000" chance="12" length="8" spread="0" min="-300" max="-767">
+		<attribute key="areaEffect" value="purpleenergy"/>
+	</attack>
+	<attack name="speed" interval="2000" chance="15" target="1" speedchange="-750" duration="30000">
+		<attribute key="shootEffect" value="suddendeath"/>
+	</attack>
+	<attack name="energy" interval="3000" chance="10" range="1" target="1" min="-210" max="-900">
+		<attribute key="areaEffect" value="purpleenergy"/>
+	</attack>
+  </attacks>
+  <defenses armor="105" defense="105">
+    <defense name="speed" interval="1000" chance="12" speedchange="260" duration="40000">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </defense>
+  </defenses>
+  <elements>
+  <element physicalPercent="5"/>
+  <element icePercent="30"/>
+  <element holyPerent="10"/>
+  <element energyPercent="20"/>
+  <element earthPercent="-90"/>
+  <element deathPercent="-150"/>
+  </elements>
+  <immunities>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <voices interval="2000" chance="20">
+    <voice sentence="YAAAHEEE!"/>
+    <voice sentence="SLAUGHTER!"/>
+    <voice sentence="CARNAGE!"/>
+  </voices>
+  <loot>
+    <item id="2152" countmax="3" chance1="100000" chancemax="0"/> --Gold Coins
+    <item id="2671" countmax="1" chance1="33000" chancemax="0"/> --Ham
+    <item id="2472" chance="2777"/> --MPA
+    <item id="2195" chance="2888"/> --BOH
+        <inside>
+           <item id="2458" chance="7999"/> --Chain Helmet
+           <item id="2050" chance="11111"/> --Torch
+           <item id="2464" chance="4444"/> --Chain Armor
+           <item id="7457" chance="1222"/> --Fur Boots
+           <item id="5911" countmax="1" chance1="4555" chancemax="0"/> --Red Piece of Cloth
+           <item id="7290" countmax="1" chance1="3222" chancemax="0"/> --Shard
+           <item id="3962" chance="1688"/> --Beastslayer Axe
+        </inside>
+     </item>
+  </loot>
+</monster>

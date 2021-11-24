@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Terror do Deserto" nameDescription="a terror do deserto" race="venom" experience="18200" speed="235" manacost="0">
+	<health now="15000" max="15000"/>
+	<look type="346" corpse="8593"/>
+	<targetchange interval="5000" chance="12"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-200" max="-600"/>
+		<attack name="poison" interval="2000" chance="25" range="7" min="-450" max="-570">
+			<attribute key="shootEffect" value="poison"/>
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+		<attack name="poisonfield" interval="1000" chance="30" range="7" radius="4" target="1">
+			<attribute key="shootEffect" value="poison"/>
+		</attack>
+	</attacks>
+	<defenses armor="16" defense="19"/>
+	<elements>
+		<element physicalPercent="-15"/>
+		<element holyPercent="1"/>
+		<element deathPercent="10"/>
+		<element firePercent="-20"/>
+		<element energyPercent="-1"/>
+		<element icePercent="15"/>
+		<element earthPercent="1"/>
+	</elements>
+	<immunities>
+		<immunity physical="0"/>
+		<immunity energy="0"/>
+		<immunity fire="1"/>
+		<immunity poison="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="0"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Zrp zrp!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="25" chance="36500"/><!-- gold coin -->
+		<item id="2472" chance="1590"/><!-- magic plate armor -->
+		<item id="2514" chance="5000"/><!-- mastermind shield -->
+		<item id="2393" chance="5000"/><!-- giant sword -->
+	</loot>
+	 
+</monster>

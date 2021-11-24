@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Irahsae" nameDescription="a irahsae" race="blood" experience="20100" speed="460" manacost="0">
+<health now="16800" max="16800"/>
+<look type="359" corpse="6081"/>
+<targetchange interval="5000" chance="25"/>
+<strategy attack="100" defense="0"/>
+<flags>
+<flag attackable="1"/>
+<flag hostile="1"/>
+<flag illusionable="1"/>
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="1"/>
+<flag canpushcreatures="1"/>
+<flag targetdistance="1"/>
+<flag staticattack="95"/>
+<flag runonhealth="0"/>
+</flags>
+<attacks>
+<attack name="melee" interval="800" skill="180" attack="213"/>
+<attack name="physical" interval="2000" chance="12" range="7" target="1" min="-500" max="-990">
+<attribute key="areaEffect" value="poff"/>
+</attack>
+<attack name="death strike" interval="2000" chance="13" min="-700" max="-800">
+<attribute key="shootEffect" value="death"/>
+</attack>
+<attack name="lifedrain" interval="1000" chance="11" radius="4" target="0" min="-0" max="-100">
+   <attribute key="areaEffect" value="rednote"/>
+        </attack>
+</attacks>
+<defenses armor="22" defense="35">
+<defense name="healing" interval="1000" chance="70" min="106" max="191">
+<attribute key="areaEffect" value="blueshimmer"/>
+</defense>
+</defenses>
+<elements>
+<element firePercent="0"/>
+<element icePercent="0"/>
+<element holyPercent="0"/>
+<element deathPercent="-15"/>
+<element energyPercent="100"/>
+<element earthPercent="0"/>
+<element physicalPercent="0"/>
+</elements>
+<immunities>
+<immunity paralyze="1"/>
+<immunity invisible="1"/>
+</immunities>
+<voices interval="3000" chance="30">
+<voice sentence="How furious would YOU be after having been trapped for ages?"/>
+<voice sentence="My anger is unmatched!"/>
+<voice sentence="Feel my wrath! Feel my rage!"/>
+<voice sentence="In ira et studio!"/>
+</voices>
+<loot>
+    <item id="2152" countmax="10" chance="100000"/><!-- gold coin -->
+ <item id="1987" chance="100000"><!-- bag -->
+<inside>
+<item id="2796" countmax="1" chance="22500"/><!-- green mushroom -->
+<item id="2195" chance="66006"/><!-- boots of haste -->
+<item id="2514" chance="4000"/><!-- mastermind shield -->
+<item id="2432" chance="400000"/><!-- fire axe -->
+ </inside>
+</item>
+</loot>
+</monster>

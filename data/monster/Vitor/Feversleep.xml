@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Feversleep" nameDescription="a feversleep" race="undead" experience="17300" speed="350" manacost="0">
+  <health now="12500" max="12500"/>
+  <look type="351" corpse="7349"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+	<flag summonable="0"/>
+	<flag attackable="1"/>
+	<flag hostile="1"/>
+	<flag illusionable="1"/>
+	<flag convinceable="0"/>	
+	<flag pushable="0"/>
+	<flag canpushitems="1"/>
+	<flag canpushcreatures="1"/>
+	<flag targetdistance="1"/>
+	<flag staticattack="90"/>	
+	<flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="125" attack="80"/>
+    <attack name="energy" interval="1000" chance="15" range="7" min="-250" max="-350">
+      <attribute key="shootEffect" value="energy"/>
+    </attack>
+	<attack name="fire" interval="1000" chance="15" range="7" min="-250" max="-450">
+      <attribute key="shootEffect" value="fire"/>
+    </attack>
+	 <attack name="melee" interval="1000" chance="15" range="7" min="-250" max="-450">
+      <attribute key="shootEffect" value="smallstone"/>
+    </attack>
+	<attack name="outfit" interval="2000" chance="15" range="7" target="1" radius="3" item="2551" duration="6000">
+      <attribute key="areaEffect" value="greenshimmer"/>
+    </attack>
+  </attacks>
+  <defenses armor="40" defense="59">
+    <defense name="healing" interval="1000" chance="53" min="350" max="850">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+  <elements>
+  <element deathPercent="5"/>
+  </elements>
+  <immunities>
+    <immunity invisible="1"/>
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="Ergueei as maaos, e dai gloria a Zeus!"/>
+    <voice sentence="Ja leu o Agape?"/>
+    <voice sentence="Sem vera verao pra vcs."/>
+    <voice sentence="Cantai com os filhos do Senhor!"/>
+  </voices>
+  <loot>
+	<item id="7620" chance="2000"/>
+	<item id="2195" chance="1200"/> <!-- boh -->		
+	<item id="2472" chance="1850"/> <!-- magic plate armor -->
+	<item id="2514" chance="5000"/><!-- mastermind shield -->
+	<item id="2393" chance="5000"/><!-- giant sword -->
+  </loot>
+   
+</monster>
+

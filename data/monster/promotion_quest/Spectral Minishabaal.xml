@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Spectral Minishabaal" nameDescription="a spectral minishabaal" race="blood" experience="4000" speed="700" manacost="0">
+  <health now="44500" max="44500"/>
+  <look type="237" corpse="6364"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="4"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1300" skill="110" attack="110"/>
+    <attack name="fire" interval="1300" chance="10" range="7" radius="4" target="1" min="-400" max="-950">
+      <attribute key="shootEffect" value="fire"/>
+      <attribute key="areaEffect" value="firearea"/>
+    </attack>
+    <attack name="fire" interval="1300" chance="34" range="7" radius="2" target="1" min="-620" max="-1000">
+      <attribute key="shootEffect" value="fire"/>
+      <attribute key="areaEffect" value="firearea"/>
+    </attack>
+  </attacks>
+  <defenses armor="25" defense="25">
+    <defense name="healing" interval="1300" chance="50" min="255" max="755">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="speed" interval="1300" chance="12" speedchange="320" duration="4000">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </defense>
+    <defense name="invisible" interval="4000" chance="50" duration="4000">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </defense>
+  </defenses>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="1"/>
+    <immunity fire="1"/>
+    <immunity poison="1"/>
+    <immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <summons maxSummons="4">
+    <summon name="Divine Diabolic Imp" interval="2000" chance="80" max="2"/>
+  </summons>
+  <voices interval="5000" chance="10">
+    <voice sentence="I had Princess Lumelia as breakfast!"/>
+    <voice sentence="Naaa-Nana-Naaa-Naaa!"/>
+    <voice sentence="My brother will come and get you for this!"/>
+    <voice sentence="Get them Fluffy!"/>
+    <voice sentence="He He He!"/>
+    <voice sentence="Pftt, Ferumbras such an upstart!"/>
+    <voice sentence="My dragon is not that old, it's just second hand!"/>
+    <voice sentence="My other dragon is a red one!"/>
+    <voice sentence="When I am big I want to become the ruthless eighth!"/>
+    <voice sentence="WHERE'S FLUFFY?"/>
+    <voice sentence="Muahaha!"/>
+  </voices>
+  <loot>
+
+ </loot>
+</monster>

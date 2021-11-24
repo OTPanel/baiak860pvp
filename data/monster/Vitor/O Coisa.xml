@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="O Coisa" nameDescription="O Coisa, melhor correr" race="fire" experience="1000000" speed="530" manacost="0">
+<health now="10000000" max="10000000"/>
+<look type="110" corpse="6038"/>
+<targetchange interval="6000" chance="0"/>
+<strategy attack="60000" defense="20"/>
+<flags>
+<flag summonable="0"/>
+<flag attackable="1"/>
+<flag hostile="1"/>
+<flag illusionable="0"/>
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="1"/>
+<flag canpushcreatures="1"/>
+<flag targetdistance="1"/>
+<flag runonhealth="3000"/>
+</flags>
+<attacks>
+<attack name="melee" interval="2000" skill="150" attack="500"/>
+		<attack name="ice" interval="2000" chance="76" range="8" radius="8" target="0" min="-2600" max="-3500">
+			<attribute key="shootEffect" value="ice"/>
+			<attribute key="areaEffect" value="iceattack"/>
+		</attack>
+			<attack name="avalanche" interval="1000" chance="100" min="-2520" max="-4030"/>
+</attacks>
+<defenses armor="160" defense="160">
+<defense name="healing" interval="1000" chance="15" min="1000" max="9000">
+<attribute key="areaEffect" value="blueshimmer"/>
+</defense>
+<defense name="healing" interval="1000" chance="25" min="1000" max="6000">
+<attribute key="areaEffect" value="blueshimmer"/>
+</defense>
+<defense name="speed" interval="1000" chance="8" speedchange="901" duration="500">
+<attribute key="areaEffect" value="redshimmer"/>
+</defense>
+<defense name="healing" interval="3000" chance="20" min="1000" max="2500">
+<attribute key="areaEffect" value="blueshimmer"/>
+</defense>
+</defenses>
+<immunities>
+<immunity physical="0"/>
+<immunity poison="1"/>
+<immunity lifedrain="1"/>
+<immunity paralyze="1"/>
+<immunity outfit="1"/>
+<immunity drunk="1"/>
+<immunity invisible="1"/>
+</immunities>
+<voices interval="5000" chance="10">
+<voice sentence="Ninguem vai sair vivo!" yell="1"/>
+<voice sentence="hehehehehehehe!"/>
+<voice sentence="Estou colecionando corpos no chao!" yell="1"/>
+</voices>
+<loot capacity="5000">
+</loot>
+</monster> 

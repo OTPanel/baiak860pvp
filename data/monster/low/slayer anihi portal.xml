@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Slayer Anihi Portal" nameDescription="a Slayer Anihi Portal" race="blood" experience="79990" speed="350" manacost="0">
+    <health now="650000" max="650000"/>
+    <look type="312" corpse="9660"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag staticattack="50"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="1"/>
+      <flag runonhealth="0"/>
+      <flag skull="5"/>
+    </flags>
+    <attacks>
+      <attack name="melee" interval="2000" attack="100" skill="600"/>
+        <attack name="outfit" interval="2000" radius="77" chance="6" monster="bat" duration="6000">
+            <attribute key="areaEffect" value="yellowspark"/>
+        </attack>
+        <attack name="outfit" interval="2000" radius="7" chance="5" monster="Protestante Catolico" duration="6000">
+            <attribute key="areaEffect" value="yellowspark"/>
+        </attack>
+	<attack name="earth" interval="1000" chance="12" radius="7" target="0" min="-400" max="-600">
+		<attribute key="areaEffect" value="smallplants"/>
+	</attack>
+	<attack name="manadrain" interval="2000" chance="25" range="7" min="-550" max="-969">
+		<attribute key="areaEffect" value="blueshimmer"/>
+	</attack>
+	<attack name="fire" interval="3000" chance="35" range="7" radius="7" target="1" min="-300" max="-500">
+		<attribute key="shootEffect" value="fire"/>
+		<attribute key="areaEffect" value="firearea"/>
+	</attack>
+        <attack name="outfit" interval="2000" radius="7" chance="6" monster="orc" duration="6000">
+            <attribute key="areaEffect" value="yellowspark"/>
+        </attack>
+        <attack name="outfit" interval="2000" radius="7" chance="5" monster="Sefirox" duration="6000">
+            <attribute key="areaEffect" value="yellowspark"/>
+        </attack>
+        <attack name="outfit" interval="2000" radius="7" chance="6" monster="warlock" duration="6000">
+            <attribute key="areaEffect" value="yellowspark"/>
+        </attack>
+	<attack name="energy" interval="1000" chance="9" length="8" spread="0" min="300" max="900">
+		<attribute key="areaEffect" value="redshimmer"/>
+	</attack>
+        <attack name="outfit" interval="2000" radius="7" chance="5" monster="Kongra" duration="6000">
+            <attribute key="areaEffect" value="yellowspark"/>
+        </attack>
+        <attack name="outfit" interval="2000" radius="7" chance="5" monster="necromancer" duration="6000">
+            <attribute key="areaEffect" value="yellowspark"/>
+        </attack>
+        <attack name="outfit" interval="2000" radius="7" chance="5" monster="dwarf geomancer" duration="6000">
+            <attribute key="areaEffect" value="yellowspark"/>
+        </attack>
+        <attack name="outfit" interval="2000" radius="7" chance="5" monster="monk" duration="6000">
+            <attribute key="areaEffect" value="yellowspark"/>
+        </attack>
+        <attack name="outfit" interval="2000" radius="7" chance="5" monster="crab" duration="6000">
+            <attribute key="areaEffect" value="yellowspark"/>
+        </attack>
+        <attack name="outfit" interval="2000" radius="7" chance="5" monster="ghost" duration="6000">
+            <attribute key="areaEffect" value="yellowspark"/>
+        </attack>
+        <attack name="outfit" interval="2000" radius="7" chance="5" monster="minotaur mage" duration="6000">
+            <attribute key="areaEffect" value="yellowspark"/>
+        </attack>
+        <attack name="outfit" interval="2000" radius="7" chance="5" monster="green frog" duration="6000">
+            <attribute key="areaEffect" value="yellowspark"/>
+        </attack>
+        <attack name="outfit" interval="2000" radius="7" chance="5" monster="latrivan" duration="6000">
+            <attribute key="areaEffect" value="yellowspark"/>
+        </attack>
+        <attack name="outfit" interval="2000" radius="7" chance="15" item="2096" duration="6000">
+            <attribute key="areaEffect" value="yellowspark"/>
+        </attack>
+    </attacks>
+    <defenses armor="15" defense="15">
+      <defense name="healing" interval="1000" chance="100" min="100" max="300"/>
+    </defenses>
+    <immunities>
+      <immunity invisible="1"/>
+    </immunities>
+<script>
+<event name="removeall"/>
+</script>
+  </monster>

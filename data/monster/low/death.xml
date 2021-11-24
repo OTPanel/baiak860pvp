@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Death" nameDescription="a death" race="UNDEAD" experience="29000" speed="920" manacost="0">
+	<health now="40000" max="40000"/>
+	<look type="12" head="0" body="114" legs="0" feet="0" corpse="6068"/>
+	<targetchange interval="5500" chance="9"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="85"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-150" max="-250"/>
+		<attack name="speed" interval="2260" chance="19" target="0" radius="5" speedchange="-420" duration="10000">
+			<attribute key="areaEffect" value="stones"/>
+		</attack>
+		<attack name="physical" interval="2200" chance="21" radius="3" target="0" min="-864" max="-1200">
+			<attribute key="areaEffect" value="blackspark"/>
+			</attack>
+			<attack name="lifedrain" interval="2000" chance="18" radius="5" target="1" min="-1127" max="-1185">
+			<attribute key="areaEffect" value="redshimmer"/>
+			<attribute key="shootEffect" value="energy"/>
+			</attack>
+			<attack name="lifedrain" interval="2150" chance="21" radius="7" target="0" min="-500" max="-560">
+			<attribute key="areaEffect" value="purplenote"/>
+			</attack>
+			<attack name="cursecondition" interval="1900" chance="26" length="5" spread="0" min="-850" max="-900">
+			<attribute key="areaEffect" value="mortarea"/>
+			</attack>
+	</attacks>
+	<defenses armor="90" defense="115">
+			<defense name="speed" interval="2000" chance="19" speedchange="400" duration="3000">
+			<attribute key="areaEffect" value="groundshaker"/>
+		</defense>
+		<defense name="healing" interval="1600" chance="26" min="18000" max="20000">
+			<attribute key="areaEffect" value="mortarea"/>
+		</defense>
+		<defense name="healing" interval="2500" chance="33" min="15000" max="20000">
+			<attribute key="areaEffect" value="mortarea"/>
+		</defense>
+		</defenses>
+		<elements>
+<element holyPercent="-5"/>
+<element icePercent="-10"/>
+</elements>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity death="1"/>
+		<immunity energy="1"/>
+		<immunity fire="1"/>
+		<immunity earth="1"/>
+		<immunity paralyze="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<summons maxSummons="3">
+    <summon name="fury" interval="2000" chance="33" max="3"/>
+  </summons>
+<loot>
+  </loot>
+</monster>

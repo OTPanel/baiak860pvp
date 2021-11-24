@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Legion Frost Atronach" nameDescription="a legion frost atronach" race="blood" experience="150" speed="195" manacost="490">
+	<health now="30000" max="30000"/>
+	<look type="257" corpse="7330"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1325" min="-120" max="-240"/>
+		<attack name="melee" interval="1000" chance="73" range="7" radius="3" target="0" min="-300" max="-600">
+  			<attribute key="areaEffect" value="blackspark"/>
+		</attack>
+	</attacks>
+	<defenses armor="5" defense="35"/>
+	<elements>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Haaaaaaauuuu" yell="1"/>
+	</voices>
+	<loot>
+		<item id="2152" countmax="22" chance="80000"/><!-- platinum coin -->
+	</loot>
+	
+</monster>

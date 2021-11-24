@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Easy Black Knight" nameDescription="a easy black knight" race="blood" experience="1600" speed="340" manacost="0">
+  <health now="81000" max="81000"/>
+  <look type="131" head="95" body="95" legs="95" feet="95" addons="3" corpse="6080"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1300" skill="110" attack="110"/>
+    <attack name="physical" interval="1300" chance="20" range="7" min="-300" max="-1000">
+      <attribute key="shootEffect" value="spear"/>
+    </attack>
+<attack name="melee" interval="1300" chance="15" range="7" radius="3" target="0" min="-500" max="-1050">
+  <attribute key="areaEffect" value="blackspark"/>
+</attack>
+  </attacks>
+  <defenses armor="25" defense="30"/>
+    <elements>
+  <element firePercent="95"/>
+	  <element energyPercent="80"/>
+	    <element deathPercent="20"/>
+		  <element physicalPercent="25"/>
+		    <element holyPercent="-10"/>
+	</elements>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="1"/>
+    <immunity fire="1"/>
+    <immunity poison="1"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="MINE!" yell="1"/>
+    <voice sentence="NO PRISONERS!" yell="1"/>
+    <voice sentence="NO MERCY!" yell="1"/>
+    <voice sentence="By Bolg's Blood!"/>
+    <voice sentence="You're no match for me!"/>
+  </voices>
+  <loot>
+
+  </loot>
+</monster>

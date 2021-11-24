@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Raiden" nameDescription="the god of energy" race="fire" experience="25000" speed="540" manacost="0">
+	<health now="80000" max="80000"/>
+  <look type="133" head="57" body="87" legs="19" feet="0" corpse="3128" addons="3"/>
+	<targetchange interval="2000" chance="10"/>
+	<strategy attack="65" defense="5"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="3000"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="100" attack="100" poison="500"/>
+		<attack name="lifedrain" interval="1000" chance="13" radius="8" target="0" min="-10" max="-600">
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+		<attack name="speed" interval="1000" chance="12" radius="6" target="0" speedchange="-1000" duration="60000">
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+		<attack name="strength" interval="1000" chance="12" radius="3" target="0">
+			<attribute key="areaEffect" value="blackspark"/>
+		</attack>
+		<attack name="fire" interval="1000" chance="34" range="7" radius="7" target="1" min="-100" max="-600">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="manadrain" interval="1000" chance="7" length="0" spread="3" min="-256" max="-600">
+			<attribute key="areaEffect" value="energyarea"/>
+		</attack>
+		<attack name="physical" interval="1000" chance="7" length="8" spread="3" min="-100" max="-200"/>
+		<attack name="energy" interval="1000" chance="9" length="8" spread="0" min="-300" max="-430">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+		<attack name="poisoncondition" interval="1000" chance="10" length="0" spread="0" min="-100" max="-550">
+			<attribute key="areaEffect" value="greenspark"/>
+		</attack>
+		<attack name="lifedrain" interval="1000" chance="15" length="8" spread="0" min="-100" max="-687">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+	</attacks>
+	<defenses armor="188" defense="145">
+		<defense name="healing" interval="1000" chance="15" min="6000" max="10000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="healing" interval="1000" chance="25" min="2000" max="3000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="1000" chance="8" speedchange="1901" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity physical="0"/>
+		<immunity energy="1"/>
+		<immunity fire="1"/>
+		<immunity poison="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+     	<voice sentence="VOLTAGE!!"/>
+     	<voice sentence="The keeper of ENERGY"/>
+     	<voice sentence="BRrZzzZzZZZ"/>
+	</voices>
+	<loot>
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/>
+    <item id="2152" countmax="5" chance1="20000" chancemax="0"/>
+    <item id="1976" chance="3333"/>
+    <item id="2413" chance="5000"/>
+    <item id="2148" chance="4100"/> --addon doll
+	<item id="7290" chance="1400"/>
+    <item id="7378" countmax="2" chance1="2000" chancemax="0"/>
+    <item id="2546" countmax="5" chance1="2500" chancemax="0"/>
+    <item id="2547" countmax="10" chance1="2222" chancemax="0"/>
+    <item id="2796" countmax="1" chance1="6666" chancemax="0"/>
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2148" countmax="100" chance1="100000" chancemax="0"/>
+        <item id="2146" countmax="2" chance1="2222" chancemax="0"/>
+        <item id="2528" chance="1333"/>
+		<item id="7441" chance="2222"/>
+        <item id="7402" chance="1666"/>
+		<item id="2498" chance="3300"/>
+		<item id="2492" chance="3300"/>
+      </inside>
+    </item>
+  </loot>
+ </monster>

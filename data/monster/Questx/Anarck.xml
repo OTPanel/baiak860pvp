@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- By Cosa Nostra -->
+<monster name="Anarck" nameDescription="He Is Anarck Level(100)" race="blood" experience="10000" speed="176" manacost="350">
+<health now="120000" max="120000"/>
+<look type="152" head="114" body="114" legs="114" feet="114" addons="3" corpse="6080"/>
+<targetchange interval="2000" chance="5"/>
+<strategy attack="100" defense="0"/>
+<flags>
+   <flag summonable="0"/>
+   <flag attackable="1"/>
+   <flag hostile="1"/>
+   <flag illusionable="0"/>
+   <flag convinceable="1"/>
+   <flag pushable="0"/>
+   <flag canpushitems="0"/>
+   <flag canpushcreatures="0"/>
+   <flag targetdistance="4"/>
+   <flag staticattack="90"/>
+   <flag runonhealth="0"/>
+</flags>
+<attacks>
+   <attack name="physical" interval="100" range="4" target="8" min="-20" max="-310">
+      <attribute key="shootEffect" value="shiverarrow"/>
+      <attribute key="areaEffect" value="explosionarea"/>
+   </attack>
+   <attack name="melee" interval="2000" skill="25" attack="18"/>
+</attacks>
+<defenses armor="7" defense="18">
+   <defense name="invisible" interval="1000" chance="4" duration="10000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+   </defense>
+</defenses>
+<elements>
+   <element holyPercent="30"/>
+   <element deathPercent="-10"/>
+</elements>
+<immunities>
+   <immunity invisible="1"/>
+</immunities>
+<voices interval="5000" chance="10">
+   <voice sentence="Essa sera sua morte!"/>
+   <voice sentence="Sua existencia acaba hoje!!"/>
+</voices>
+<loot>
+</loot>
+</monster>

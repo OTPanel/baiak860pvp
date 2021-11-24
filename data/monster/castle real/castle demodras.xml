@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Castle Demodras" nameDescription="a castle demodras" race="fire" experience="14780" speed="300" manacost="0">
+  <health now="15590" max="15590"/>
+  <look type="204" head="20" body="30" legs="40" feet="50" corpse="5984"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="300"/>
+</flags>
+<attacks>
+    <attack name="melee" interval="1325" skill="110" attack="110"/>
+    <attack name="fire" interval="1000" chance="14" range="7" radius="4" target="1" min="-750" max="-950">
+      <attribute key="shootEffect" value="fire"/>
+      <attribute key="areaEffect" value="firearea"/>
+    </attack>
+    <attack name="firefield" interval="1000" chance="10" range="7" radius="6" target="1">
+      <attribute key="shootEffect" value="fire"/>
+    </attack>
+    <attack name="fire" interval="1000" chance="11" length="8" spread="3" min="-950" max="-1280">
+      <attribute key="areaEffect" value="firearea"/>
+    </attack>
+  </attacks>
+  <defenses armor="35" defense="25">
+    <defense name="healing" interval="1000" chance="20" min="400" max="700">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="1"/>
+    <immunity poison="1"/>
+    <immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <summons maxSummons="2">
+    <summon name="Dragon Lord Hatchling" interval="1000" chance="17" max="2"/>
+  </summons>
+  <voices interval="5000" chance="10">
+    <voice sentence="ZCHHHHH" yell="1"/>
+    <voice sentence="I WILL SET THE WORLD IN FIRE!" yell="1"/>
+    <voice sentence="I WILL PROTECT MY BROOD!" yell="1"/>
+  </voices>
+  <loot>
+    <item id="2414" chance="8000"/><!-- d lance -->
+    <item id="2498" chance="8000"/><!-- rh -->
+    <item id="2492" chance="8000"/><!-- dsm -->
+  </loot>
+</monster>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Cursed Elemental" nameDescription="a cursed elemental" race="fire" experience="1200" speed="380" manacost="10000">
+  <health now="45350" max="45350"/>
+  <look type="49" corpse="1492"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="40"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" min="-1460" max="-1600"/>
+
+    <attack name="manadrain" interval="2700" chance="2700" range="7" min="-1040" max="-1600"/>
+
+    <attack name="fire" interval="3100" chance="3100" range="7" radius="7" target="1" min="-1060" max="-1750">
+      <attribute key="shootEffect" value="fire"/>
+      <attribute key="areaEffect" value="firearea"/>
+    </attack>
+
+    <attack name="firefield" interval="2900" chance="2900" range="7" radius="1" target="1">
+      <attribute key="shootEffect" value="fire"/>
+    </attack>
+
+    <attack name="energy" interval="3800" chance="3800" length="8" spread="0" min="-1220" max="-1780">
+      <attribute key="areaEffect" value="energy"/>
+    </attack>
+
+  </attacks>
+  <defenses armor="50" defense="55">
+    <defense name="healing" interval="1000" chance="15" min="190" max="250">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="0"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="0"/>
+    <immunity drunk="0"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <summons maxSummons="2">
+    <summon name="fire elemental" interval="2500" chance="10" max="2"/>
+  </summons>
+  <voices interval="5000" chance="10">
+    <voice sentence="MUHAHAHAHA!" yell="1"/>
+    <voice sentence="I SMELL FEEEEEAAAR!" yell="1"/>
+    <voice sentence="CHAMEK ATH UTHUL ARAK!" yell="1"/>
+    <voice sentence="Your resistance is futile!"/>
+    <voice sentence="Your soul will be mine!" yell="0"/>
+    </voices> 
+</monster>

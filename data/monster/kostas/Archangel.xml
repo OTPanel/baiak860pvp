@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Archangel" nameDescription="Archangel" race="undead" experience="1000000" speed="1050" manacost="0">
+	<health now="500000" max="500000"/>
+	<look type="12" head="114" body="114" legs="94" feet="114" corpse="6068"/>
+	<targetchange interval="4000" chance="33"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag staticattack="95"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-4000" max="-7000"/>
+		<attack name="death" interval="1000" chance="20" length="8" spread="0" min="-2400" max="-3100">
+			<attribute key="areaEffect" value="smallclouds"/>
+		</attack>
+		<attack name="death" interval="1000" chance="27" range="7" target="1" min="-1500" max="-3250">
+			<attribute key="areaEffect" value="mortarea"/>
+			<attribute key="shootEffect" value="suddendeath"/>
+		</attack>
+		<attack name="speed" interval="1000" chance="19" range="7" target="1" speedchange="-750">
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+		<attack name="death" interval="1000" chance="30" radius="7" target="0" min="-1500" max="-3000">
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>		
+	</attacks>
+	<defenses armor="55" defense="65">
+		<defense name="healing" interval="2000" chance="15" min="750" max="1500">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="2000" chance="16" speedchange="1380" duration="3000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="10"/>
+		<element holyPercent="-5"/>
+		<element deathPercent="20"/>
+		<element healingPercent="0"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+		<immunity ice="1"/>		
+		<immunity earth="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<summons maxSummons="2">
+		<summon name="Ghazbaran" interval="3000" chance="50" max="2"/>
+	</summons>
+	<loot>
+		<item id="9931" chance="100000" /><!-- coconut shoes -->
+		<item id="6569" countmax="4" chance="100000" /><!-- candy -->
+		<item id="2688" countmax="4" chance="100000" /><!-- candy cane -->
+		<item id="5911" countmax="40" chance="100000" /><!-- red piece of cloth -->
+		<item id="5879" countmax="20" chance="100000" /><!-- spider silk -->
+		<item id="10531" chance="100000" /><!-- midnight shard -->
+		<!--item id="2264" chance="100000" /--><!-- sorc cod -->
+		<item id="2420" chance="100000" /><!-- machete -->
+		<item id="7438" chance="100000" /><!-- midnight bow -->
+	</loot>
+</monster>

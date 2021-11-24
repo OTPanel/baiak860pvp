@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Brook" nameDescription="a brook" race="undead" experience="7000" speed="250" manacost="350">
+  <health now="9850" max="9850"/>
+  <look type="298" corpse="2843"/>
+  <targetchange interval="2000" chance="0"/>
+  <strategy attack="80" defense="0"/>
+  <flags>
+    <flag summonable="1"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+      <attack name="melee" interval="2000" min="-200" max="-160"/>
+      <attack name="lifedrain" interval="2000" min="-250" max="-270">
+             <attribute key="areaEffect" value="redshimmer"/>
+			 </attack>
+  </attacks>
+  <defenses armor="2" defense="9"/>
+	<elements>
+		<element holyPercent="10"/>
+	</elements>
+  <immunities>
+    <immunity fire="1"/>
+    <immunity drown="1"/>
+    <immunity paralyze="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <loot>
+    <item id="2514" chance="1900"/> <!-- mastermind shield -->
+	<item id="7591" chance="4500"/> <!-- great health potion -->
+	<item id="2387" chance="32000"/> <!-- double axe -->
+	<item id="2148" countmax="100" chance1="100000" chancemax="0"/> <!-- gold coin -->
+    <item id="2229" countmax="2" chance1="40000" chancemax="108"/>
+  </loot>
+</monster>
+ 

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Bill Gates" nameDescription="a bill gates" race="blood" experience="7000" speed="540" manacost="200">
+  <health now="26950" max="26950"/>
+  <look type="127" head="114" body="114" legs="0" feet="0" corpse="5527"/>
+  <targetchange interval="2000" chance="0"/>
+  <strategy attack="600" defense="100"/>
+  <flags>
+    <flag summonable="1"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="1"/>
+    <flag canpushitems="0"/>
+    <flag canpushcreatures="0"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="5"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="700" skill="200" attack="150"/>
+  </attacks>
+  <defenses armor="7" defense="5"/>
+    <immunities>
+    <immunity fire="1"/>
+    <immunity drown="1"/>
+    <immunity paralyze="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <loot>
+    <item id="2152" countmax="6" chance1="500000" chancemax="0"/>
+    <item id="2152" countmax="48" chance1="500000" chancemax="0"/>
+  </loot>
+</monster>

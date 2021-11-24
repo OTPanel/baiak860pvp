@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Hani" nameDescription="a random fjortis girl from Norrland" race="blood" experience="31000" speed="1280" manacost="0">
+	<health now="32000" max="32000"/>
+	<look type="274" corpse="7628"/>
+	<targetchange interval="2000" chance="50"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="0"/>
+		<flag runonhealth="8000"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="500" min="-400" max="-900"/>
+		<attack name="fire" interval="2000" chance="60" range="7" radius="5" target="1" min="-600" max="-1050">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="hearts"/>
+		</attack>
+	</attacks>
+	<defenses armor="90" defense="111">
+		<defense name="healing" interval="1000" chance="100" min="375" max="550">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<summons maxSummons="1">
+		<summon name="webster" interval="3000" chance="100" max="1"/>
+	</summons>
+	<voices interval="2000" chance="10">
+		<voice sentence="tja kompis !!"/>
+		<voice sentence="waotednn o.o"/>
+	</voices>
+	<immunities>
+		<immunity invisible="1"/>
+		<immunity paralyze="1"/>
+	</immunities>
+	<loot>
+    <item id="2152" countmax="37" chance="45700" /><!-- cc -->
+    <item id="7909" chance="1275" /><!-- walnut -->
+    <item id="2683" chance="2275" /><!-- pumpkin --> 
+   <item id="1987" chance="100000"><!-- bag -->
+        <inside>
+            <item id="7910" chance="1650" /><!-- peanut -->
+        </inside>
+    </item>
+	</loot>
+</monster>

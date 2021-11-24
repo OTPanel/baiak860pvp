@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- By Cosa Nostra -->
+<monster name="Shrek Warrior" nameDescription="Shrek Warrior" race="blood" experience="16290" speed="275" manacost="0">
+<health now="14100" max="14100"/>
+<look type="2" corpse="6008"/>
+<targetchange interval="2050" chance="10"/>
+<strategy attack="100" defense="30"/>
+<flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="1"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="0"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="15"/>
+</flags>
+<attacks>
+    <attack name="physical" interval="1200" chance="17" length="8" spread="3" min="-350" max="-450">
+        <attribute key="areaEffect" value="poison"/>
+    </attack>
+    <attack name="melee" interval="1500" chance="15" range="7" radius="3" target="0" min="-350" max="-550">
+        <attribute key="areaEffect" value="blackspark"/>
+    </attack>
+</attacks>
+<defenses armor="85" defense="15"/>
+<elements>
+    <element earthPercent="100"/>
+    <element icePercent="100"/>
+    <element firePercent="95"/>
+    <element energyPercent="80"/>
+    <element physicalPercent="22"/>
+    <element deathPercent="20"/>
+</elements>
+<immunities>
+    <immunity holy="1"/> 
+    <immunity physical="0"/>
+    <immunity energy="1"/>
+    <immunity fire="0"/>
+    <immunity poison="1"/>
+    <immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+</immunities>
+<voices interval="1000" chance="10">
+    <voice sentence="Largo de mi pantano!"/>
+    <voice sentence="Oh, has venido a hacerme una mamada!?"/>
+    <voice sentence="Moriras como lo que eres, una Basura!!"/>
+    <voice sentence="Prestame a tu hermana para cocharla!!"/>
+</voices>
+<loot>
+    <item id="2152" countmax="4" chance="50000"/><!-- Crystal Coin -->
+    <item id="2408" countmax="1" chance="20000"/><!-- Warlord Sword -->
+</loot>
+</monster>

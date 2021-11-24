@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Fire Drah" nameDescription="a fire drah" race="fire" experience="12000" speed="400" manacost="690">
+  <health now="10000" max="10000"/>
+  <look type="49" corpse="1492"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="0"/>
+      <flag staticattack="80"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="1"/>
+      <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+  <attack name="melee" interval="500" min="-600" max="-700"/>
+    <attack name="fire" interval="400" chance="16" range="9" radius="2" target="1" min="-700" max="-900">
+      <attribute key="shootEffect" value="fire"/>
+      <attribute key="areaEffect" value="firearea"/>
+    </attack>
+    <attack name="firefield" interval="1000" chance="14" range="7" radius="1" target="1">
+      <attribute key="shootEffect" value="fire"/>
+    </attack>
+  </attacks>
+  <defenses armor="0" defense="0"/>
+  <elements>
+  <element icePercent="-25"/>
+  </elements>
+  <immunities>
+    <immunity fire="1"/>
+    <immunity lifedrain="1"/>
+	<immunity death="1"/>
+	<immunity invisible="1"/>
+	<immunity paralyze="1"/>
+  </immunities>
+</monster>

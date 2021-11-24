@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Naz'Gul" nameDescription="a naz'gul" race="undead" experience="27945" speed="440" manacost="0">
+	<health now="16800" max="16800"/>
+  <look type="231" corpse="6306"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	 <attacks>
+      <attack name="melee" interval="2000" min="-400" max="-670"/>
+      <attack name="lifedrain" interval="3000" chance="40" min="-200" max="-500"/>
+      <attack name="lifedrain" interval="3250" chance="40" radius="6" target="0" min="-300" max="-600">
+        <attribute key="areaEffect" value="poff"/>
+      </attack>
+      <attack name="lifedrain" interval="3000" chance="25" range="7" min="-250" max="-600">
+        <attribute key="areaEffect" value="redshimmer"/>
+    </attack>
+    </attacks>
+	<defenses armor="30" defense="20">
+		<defense name="healing" interval="1000" chance="10" min="700" max="1500">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element energyPercent="25"/>
+		<element icePercent="20"/>
+		<element firePercent="20"/>
+		<element holyPercent="20"/>
+		<element earthPercent="20"/>
+		<element physicalPercent="15"/>
+		<element deathPercent="-37"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="2000" chance="50">
+		<voice sentence="Come fly with me Mwahahahaha." yell="1"/>
+	</voices>
+	<loot>
+		<item id="2152" countmax="100" chance1="100000" chancemax="0"/>
+		<item id="2152" countmax="100" chance1="100000" chancemax="0"/>
+		<item id="2498" chance="11323"/> 
+		<item id="2492" chance="10200"/> 
+		<item id="2466" chance="10000"/> 
+	</loot>
+	
+
+</monster>

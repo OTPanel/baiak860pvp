@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Radagast" nameDescription="Radagast" race="blood" experience="90000" speed="280" manacost="0">
+	<health now="125000" max="125000"/>
+	<look type="130" head="19" body="71" legs="128" feet="128" addons="1" corpse="0"/>
+	<targetchange interval="5000" chance="60"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="30" attack="800"/>
+		<attack name="fire" interval="2000" chance="15" range="7" radius="3" target="1" min="-0" max="-820">
+			<attribute key="shootEffect" value="burstarrow"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>	
+		<attack name="firefield" interval="2000" chance="10" range="7" radius="2" target="1">
+			<attribute key="shootEffect" value="fire"/>
+		</attack>
+		<attack name="energy" interval="2000" chance="12" range="7" target="1" min="-480" max="-770">
+			<attribute key="shootEffect" value="energyball"/>
+			<attribute key="areaEffect" value="energy"/>
+		</attack>		
+		<attack name="energy" interval="2000" chance="11" length="8" spread="0" min="-750" max="-1210">
+			<attribute key="areaEffect" value="bigclouds"/>
+		</attack>	
+		<attack name="manadrain" interval="2000" chance="13" range="7" min="-180" max="-410">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</attack>	
+		<attack name="speed" interval="2000" chance="10" range="7" speedchange="-600">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>	
+	</attacks>
+	<defenses armor="25" defense="30">
+		<defense name="healing" interval="2000" chance="55" min="500" max="1000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="invisible" interval="2000" chance="20">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element firePercent="99"/>
+		<element energyPercent="99"/>
+		<element icePercent="99"/>
+		<element earthPercent="99"/>
+		<element holyPercent="15"/>
+		<element physicalPercent="5"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<summons maxSummons="4">
+		<summon name="hellspawn" interval="2000" chance="10" max="4"/>
+	</summons>
+	<voices interval="5000" chance="10">
+		<voice sentence="Learn the secrets!"/>
+		<voice sentence="Disappear from time and space!"/>
+		<voice sentence="You shall not proceed from my realm!"/>
+	</voices>
+	<loot>
+</loot>
+</monster>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Burning Hunter" species="undead" nameDescription="a burning hunter" race="blood" experience="42000" speed="500" manacost="0">
+     <health now="100000" max="100000"/>
+    <look type="134" head="94" body="114" legs="94" feet="114" addons="2" corpse="6080"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="0"/>
+      <flag staticattack="80"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="1"/>
+      <flag runonhealth="0"/>
+    </flags>
+    <attacks>
+      <attack name="fire" interval="2000" chance="100" min="-1094" max="-1116"/>
+      <attack name="melee" interval="2000" min="-560" max="-700"/>
+      <attack name="sudden death" interval="2000" chance="100" min="-800" max="-1670"/>
+    </attacks>
+    <defenses armor="54" defense="52">
+      <defense name="Ultimate Healing" interval="4000" chance="30" min="5000" max="5200"/>
+    </defenses>
+    <immunities>
+      <immunity physical="0"/>
+      <immunity energy="1"/>
+      <immunity fire="1"/>
+      <immunity poison="1"/>
+      <immunity lifedrain="0"/>
+      <immunity paralyze="1"/>
+      <immunity outfit="0"/>
+      <immunity drunk="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+    <voices interval="2000" chance="9995">
+      <voice sentence="Dalej nie przejdziesz!"/>
+      <voice sentence="Zginiesz!"/>
+     </voices>
+    <loot>
+      <item id="2152" countmax="3" chance1="100000" chancemax="0"/>
+      <item id="2542" chance="2000"/>
+      <item id="2470" chance="2500"/>
+      <item id="2003" chance="100000">
+        <inside>
+          <item id="2680" countmax="100" chance1="10000" chancemax="0"/>
+          <item id="2148" countmax="100" chance1="100000" chancemax="0"/>
+          <item id="2273" chance="8000"/>
+          <item id="2275" chance="93500"/>
+          <item id="12674" chance="75"/>
+          <item id="2154" chance="5000"/>
+     	  <item id="2152" countmax="3" chance1="100000" chancemax="0"/>
+          <item id="2158" countmax="15" chance1="100000" chancemax="0"/>
+          <item id="7368" countmax="10" chance1="100000" chancemax="0"/>
+        </inside>
+      </item>
+    </loot>
+  </monster>

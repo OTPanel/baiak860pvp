@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Protestante Catolico" nameDescription="Protestante Catolico" race="fire" experience="80000" speed="460" manacost="0">
+	<health now="590000" max="590000"/>
+	<look type="152" head="95" body="95" legs="95" feet="0" corpse="6080"/>
+	<targetchange interval="2000" chance="100"/>
+	<strategy attack="75" defense="20"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="3"/>
+		<flag runonhealth="3000"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="200" attack="250"/>
+		<attack name="manadrain" interval="1000" chance="8" range="7" min="-100" max="-1500">
+			<attribute key="shootEffect" value="energy"/>
+			<attribute key="areaEffect" value="poff"/>
+		</attack>
+		<attack name="drunk" interval="1000" chance="7" range="8">
+			<attribute key="shootEffect" value="energy"/>
+			<attribute key="areaEffect" value="energyarea"/>
+		</attack>
+		<attack name="strength" interval="1000" chance="9" range="8">
+			<attribute key="shootEffect" value="largerock"/>
+			<attribute key="areaEffect" value="energyarea"/>
+		</attack>
+		<attack name="lifedrain" interval="1000" chance="13" radius="8" target="0" min="-400" max="-2000">
+			<attribute key="areaEffect" value="bluebubble"/>
+		</attack>
+		<attack name="manadrain" interval="1000" chance="10" radius="8" target="0" min="-400" max="-2000">
+			<attribute key="areaEffect" value="greenshimmer"/>
+		</attack>
+		<attack name="speed" interval="1000" chance="12" radius="6" target="0" speedchange="-1900" duration="10000">
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+		<attack name="strength" interval="1000" chance="8" radius="8" target="0">
+			<attribute key="areaEffect" value="blackspark"/>
+		</attack>
+		<attack name="fire" interval="1000" chance="34" range="8" radius="7" target="8" min="-100" max="-750">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="lifedrain" interval="1000" chance="15" length="8" spread="0" min="-500" max="-2150">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+	</attacks>
+	<defenses armor="160" defense="160">
+		<defense name="healing" interval="1000" chance="15" min="5000" max="10000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="healing" interval="1000" chance="25" min="2000" max="3000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="1000" chance="8" speedchange="1901" duration="1000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+		<defense name="invisible" interval="1000" chance="4" duration="10000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="invisible" interval="1000" chance="5" duration="10">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity physical="0"/>
+		<immunity energy="0"/>
+		<immunity fire="0"/>
+		<immunity poison="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<summons maxSummons="3">
+		<summon name="demon" interval="1000" chance="15" max="1"/>
+	</summons>
+	<voices interval="5000" chance="2000">
+		<voice sentence="COM FE EM DEUS NAO VOU MORRER!" yell="1"/>
+		<voice sentence="ALELUIA IRMAO!"/>
+                <voice sentence="MORRE DIABO !!"/>
+
+	</voices>
+	<loot capacity="5000">
+                <item id="2152" chance="100000" countmax="10" /> -- crystal coin
+                <item id="12609" chance="100000" /> -- staff of baiak
+                <item id="12610" chance="100000" /> -- imperium sword
+                 <item id="12607" chance="100000" /> -- boots of baiak
+                 <item id="2152" chance="100000" countmax="5" /> -- crystal coin	
+
+
+	</loot>
+</monster>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Nether Spawn" nameDescription="a nether spawn" race="UNDEAD" experience="4090" speed="750" manacost="0">
+	<health now="2000000" max="2000000"/>
+	<look type="344" corpse="6364"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="80" defense="20"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="85"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-2500" max="-3200"/>
+		<attack name="speed" interval="2260" chance="19" target="0" radius="5" speedchange="-620" duration="10000">
+			<attribute key="areaEffect" value="stones"/>
+		</attack>
+		<attack name="cursecondition" interval="1500" chance="63" radius="6" min="-2750" max="-3180">
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+	</attacks>
+	<defenses armor="45" defense="55">
+		<defense name="healing" interval="2000" chance="15" min="40000" max="60000">
+			<attribute key="areaEffect" value="greenshimmer"/>
+		</defense>
+
+	</defenses>
+	<elements>
+		<element icePercent="-15"/>
+		<element energyPercent="-5"/>
+		<element earthPercent="-8"/>
+		<element firePercent="-3"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="You will run out of resources soon enough!!" yell="1"/>
+		<voice sentence="One little mistake and your all are mine!"/>
+		<voice sentence="I sense your strength fading!"/>
+	</voices>
+	<loot>
+		<item id="2152" countmax="10" chance="100000"/><!-- gold coin -->
+		<item id="2152" countmax="30" chance="100000"/><!-- gold coin -->
+		<item id="1987" chance="100000"><!-- bag -->
+			<inside>
+				<item id="2158" countmax="11" chance="6000"/><!-- talon -->
+				<item id="2462" chance="9700"/><!-- devil helmet -->
+				<item id="2149" countmax="3" chance="1428"/><!-- small emerald -->
+				<item id="2171" chance="2333"/><!-- platinum amulet -->
+				<item id="2158" chance="4444"/><!-- blue gem -->
+				<item id="2470" chance="6500"/><!-- golden legs -->
+				<item id="2520" chance="9999"/><!-- demon shield -->
+			</inside>
+		</item>
+	</loot>
+	<script> <event name="teleportVitor"/> </script> 
+</monster>

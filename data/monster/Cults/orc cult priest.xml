@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Orc Cult Priest" nameDescription="a orc cult priest" race="blood" experience="1000" speed="200" manacost="0">
+	<health now="1300" max="1300"/>
+	<look type="6" corpse="5978"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="0" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-200" />	
+		<attack name="energy" interval="1000" chance="20" range="7" min="-200" max="-310">
+			<attribute key="shootEffect" value="energy"/>
+			<attribute key="areaEffect" value="energy"/>
+		</attack>
+		<attack name="fire" interval="1000" chance="15" range="7" radius="1" target="1" min="-200" max="-250">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="outfit" interval="1000" chance="10" range="7" monster="larva" duration="3000">
+			<attribute key="areaeffect" value="blueshimmer"/>
+		</attack>
+		<attack name="outfit" interval="1000" chance="10" range="7" monster="orc" duration="3000">
+			<attribute key="areaeffect" value="blueshimmer"/>
+		</attack>
+		<attack name="outfit" interval="1000" chance="10" range="7" monster="orc warlord" duration="3000">
+			<attribute key="areaeffect" value="blueshimmer"/>
+		</attack>
+		<attack name="outfit" interval="1000" chance="10" range="7" monster="orc shaman" duration="3000">
+			<attribute key="areaeffect" value="blueshimmer"/>
+		</attack>
+	</attacks>
+	<defenses armor="8" defense="10">
+		<defense name="healing" interval="2000" chance="30" min="200" max="300">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity invisible="1"/>
+		<immunity paralize="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="We will crush all oposition!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="100" chance="100000"/><!-- gold coin -->
+		<item id="2148" countmax="76" chance="100000"/><!-- gold coin -->
+		<item id="7588" chance="16000"/><!-- strong health potion -->
+		<item id="12434" chance="14000"/><!-- shamanic hood -->
+		<item id="10556" chance="12000"/><!-- cultish robe -->
+		<item id="2147" countmax="6" chance="12000"/><!-- small ruby -->
+		<item id="5910" chance="12000"/><!-- green piece of cloth -->
+		<item id="2194" chance="8000"/><!-- mysterious fetish -->
+		<item id="12435" chance="8000"/><!-- orc leather -->
+		<item id="11113" chance="6000"/><!-- orc tooth -->
+		<item id="12408"  chance="5000"/><!-- broken shamanic staff -->
+		<item id="2144" countmax="2" chance="1900"/><!-- black pearl -->
+		<item id="7439" chance="400"/><!-- berserk potion -->
+	</loot>
+</monster>

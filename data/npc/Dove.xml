@@ -1,0 +1,18 @@
+<npc name="[MAIL] Dove" script="data/npc/scripts/Dove.lua" walkinterval="0" floorchange="0" access="5" level="1" maglevel="1">
+<health now="100" max="100"/>
+<look type="139" head="20" body="39" legs="45" feet="7" addons="3"/>
+<voices>
+<voice text="Se você precisar de ajuda com cartas ou encomendas, basta me perguntar. Eu posso explicar tudo." interval2="100" margin="1" yell="no"/>
+<voice text="Ei, mande uma carta para o seu amigo de vez em quando. Mantenha contato, você sabe." interval2="120" margin="1" yell="no"/>
+<voice text="Bem vindo ao correio!" interval2="90" margin="1" yell="no"/>
+</voices>
+<parameters>
+<parameter key="module_shop" value="1" />
+		<parameter key="shop_buyable" value="label,2599,1;parcel,2595,15;letter,2597,8;" />
+        <parameter key="message_greet" value="Be greeted, noble |PLAYERNAME| and welcome to the post office."/>
+        <parameter key="message_farewell" value="Come back soon, noble |PLAYERNAME|."/>
+		<parameter key="message_walkaway" value="Come back soon, noble." />
+		<parameter key="message_sendtrade" value="Aqui. Não se esqueça de que também precisa de comprar uma etiqueta se quiser enviar uma encomenda. Escreva sempre o nome do {receptor} na primeira linha e o nome da {Capital} na segunda linha." />
+</parameters>
+
+</npc>

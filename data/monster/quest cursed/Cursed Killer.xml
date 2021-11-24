@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Cursed Killer" nameDescription="a cursed killer" race="fire" experience="2500" speed="390" manacost="0">
+	<health now="30750" max="30750"/>
+	<look type="130" head="21" body="113" legs="57" feet="116" corpse="3128" addons="1"/>
+	<targetchange interval="2000" chance="5"/>
+	<strategy attack="80" defense="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="150" attack="170"/>
+		<attack name="death" interval="2000" chance="100" range="7" min="-650" max="-820">
+			<attribute key="shootEffect" value="suddendeath"/>
+		</attack>
+		<attack name="fire" interval="5000" chance="80" range="7" radius="2" target="1" min="-900" max="-1050">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+	</attacks>
+	<defenses armor="45" defense="50">
+		<defense name="healing" interval="4000" chance="100" min="700" max="1100">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="5000" chance="30" speedchange="700" duration="20000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+	<element energyPercent="50"/>
+		<element earthPercent="50"/>
+			<element firePercent="50"/>
+				<element icePercent="50"/>
+					<element deathPercent="50"/>
+						<element physicalPercent="50"/>
+	</elements>
+	<immunities>
+		<immunity physical="0"/>
+		<immunity energy="0"/>
+		<immunity fire="100"/>
+		<immunity poison="0"/>
+		<immunity lifedrain="0"/>
+		<immunity paralyze="0"/>
+		<immunity outfit="0"/>
+		<immunity drunk="0"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="100">
+    <voice sentence="Noob!!" yell="1"/>
+	</voices>
+	<loot capacity="800">
+		<item id="2544" countmax="13" chance="27000"/>
+	</loot>
+</monster>

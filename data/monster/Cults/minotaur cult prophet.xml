@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Minotaur Cult Prophet" nameDescription="a minotaur cult prophet" race="blood" experience="9350" speed="250" manacost="0">
+	<health now="6500" max="6500"/>
+	<look type="23" corpse="5981"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="0" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-250" max="-350" />	
+		<attack name="energy" interval="1000" chance="17" range="7" min="-250" max="-350">
+			<attribute key="shootEffect" value="energy"/>
+			<attribute key="areaEffect" value="energy"/>
+		</attack>
+		<attack name="fire" interval="1000" chance="10" range="7" radius="1" target="1" min="-100" max="-250">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="energyfield" interval="1000" chance="12" range="7" radius="1" target="1">
+			<attribute key="shootEffect" value="energy"/>
+		</attack>
+	</attacks>
+	<defenses armor="32" defense="32">
+		<defense name="healing" interval="3000" chance="15" min="100" max="250">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity invisible="1"/>
+		<immunity paralyze="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Bow to the power of the iron bull!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="100" chance="100000"/><!-- gold coin -->
+		<item id="2148" countmax="50" chance="100000"/><!-- gold coin -->
+		<item id="2152" countmax="3" chance="67000"/><!-- platinum coin -->
+		<item id="2671" countmax="2" chance="59000"/><!-- ham -->
+		<item id="7590" chance="16000"/><!-- great mana potion -->
+		<item id="5878" chance="14000"/><!-- minotaur leather -->
+		<item id="2149" chance="11000"/><!-- small emerald -->
+		<item id="2186" chance="8000"/><!-- moonlight rod -->
+		<item id="2666" countmax="2" chance="8000"/><!-- meat -->
+		<item id="9970" chance="7000"/><!-- small topaz -->
+		<item id="2147" chance="7000"/><!-- small ruby -->
+		<item id="7591" chance="7000"/><!-- great health potion -->
+		<item id="2214" chance="6900"/><!-- 2148 of healing -->
+		<item id="2150" countmax="2" chance="6800"/><!-- small amethyst -->
+		<item id="2152" chance="1000"/><!-- gold ingot -->
+		<item id="5911" chance="590"/><!-- red piece of cloth -->
+		<item id="7401" chance="500"/><!-- minotaur trophy -->
+		<item id="2154" chance="500"/><!-- yellow gem -->
+		<item id="2156" chance="360"/><!-- red gem -->
+	</loot>
+</monster>

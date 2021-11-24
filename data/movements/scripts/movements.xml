@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<movements>
+
+<movevent type="StepIn" actionid="4724" event="script" value="castle event.lua"/>
+
+</movements>

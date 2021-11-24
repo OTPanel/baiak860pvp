@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Uruk-Hai" nameDescription="a Uruk-Hai" race="blood" experience="15320" speed="360" manacost="0">
+	<health now="16500" max="16500"/>
+	<look type="2" corpse="6008"/>
+	<targetchange interval="10000" chance="8"/>
+	<strategy attack="100" defense="20"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="85"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1400" min="-970" max="-1290"/>
+			<attack name="melee" interval="2000" chance="20" range="7" radius="3" target="0" min="-900" max="-1200">
+			<attribute key="areaEffect" value="bigclouds"/>
+		</attack>
+	</attacks>
+		<defenses armor="90" defense="111">
+	</defenses>
+	<elements>
+		<element icePercent="1"/>
+		<element energyPercent="1"/>
+		<element deathPercent="1"/>
+		<element holyPercent="-5"/>
+		<element firePercent="1"/>
+	</elements>
+		<immunities>
+		<immunity invisible="1"/>
+		<immunity paralyze="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Taruk magul!!!" yell="1"/>
+	</voices>
+	<loot>
+		<item id="2152" countmax="3" chance="80000"/><!-- crystal coin -->
+        <item id="2472" chance="200"/><!-- magic plate armor -->
+	</loot>
+
+</monster>

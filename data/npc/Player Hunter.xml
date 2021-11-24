@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Player Hunter" script="data/npc/scripts/assguild.lua" floorchange="0" emblem="red">
+	<health now="100" max="100"/>
+	<look type="152" head="0" body="94" legs="113" feet="114" addons="3"/>
+	<parameters>
+		<parameter key="message_greet" value="Eu sou o líder da {assassin guild}."/>
+		<parameter key="message_alreadyfocused" value="..."/>
+	</parameters>
+</npc>

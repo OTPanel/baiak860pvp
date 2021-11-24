@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Minotaur Cult Zealot" nameDescription="a minotaur cult zealot" race="blood" experience="10250" speed="250" manacost="550">
+	<health now="9999" max="9999"/>
+	<look type="29" corpse="5983"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="0" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-300" max="-370" />	
+	<attack name="physical" interval="1000" chance="20" target="1" radius="4" min="-300" max="-370">
+			<attribute key="shootEffect" value="whirlwindsword" />
+			<attribute key="areaEffect" value="redspark" />
+	</attack>
+	</attacks>
+	<defenses armor="35" defense="35"/>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="The world is ours!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="100" chance="100000"/><!-- gold coin -->
+		<item id="2148" countmax="48" chance="100000"/><!-- gold coin -->
+		<item id="2148" countmax="3" chance="39000"/><!-- platinum coin -->
+		<item id="2182" chance="11000"/><!-- snakebite rod -->
+		<item id="7589" countmax="3" chance="11000"/><!-- strong mana potion -->
+		<item id="7425" chance="5000"/><!-- taurus mace -->
+		<item id="5878" chance="4000"/><!-- minotaur leather -->
+		<item id="2145" ountmax="2" chance="2700"/><!-- small diamond -->
+		<item id="2150" ountmax="2" chance="2600"/><!-- small amethyst -->
+		<item id="9970" ountmax="2" chance="2600"/><!-- small topaz -->
+		<item id="2149" ountmax="2" chance="2400"/><!-- small emerald -->
+		<item id="5911" chance="2400"/><!-- red piece of cloth -->
+		<item id="2147" ountmax="2" chance="2200"/><!-- small ruby -->
+		<item id="2146" ountmax="2" chance="2000"/><!-- small sapphire -->
+		<item id="2154" chance="270"/><!-- yellow gem -->
+		<item id="7401" chance="70"/><!-- minotaur trophy -->
+		<item id="2156" chance="70"/><!-- red gem -->
+	</loot>
+</monster>

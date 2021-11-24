@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Dark Cleric" nameDescription="a dark cleric" race="blood" experience="130200" speed="320" manacost="0">
+	<health now="21000" max="21000"/>
+	<look type="148" head="97" body="76" legs="76" feet="97" addons="3" corpse="6080"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-400" max="-600"/>
+		<attack name="death" interval="1900" chance="78" range="7" min="-500" max="-1000">
+			<attribute key="shootEffect" value="suddendeath"/>
+		</attack>
+	</attacks>
+	<defenses armor="5" defense="35"/>
+	<elements>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="20">
+		<voice sentence="Lamart inos avus!" yell="0"/>
+		<voice sentence="Death to humanity" yell="0"/>
+	</voices>
+	<loot>
+		<item id="2152" countmax="80" chance="80000"/><!-- platinum coin -->
+		<item id="2789" countmax="30" chance="8000"/><!-- brown mushroom -->
+	</loot>
+	
+</monster>

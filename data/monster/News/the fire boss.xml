@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="The Fire Boss" nameDescription="a the fire boss" race="UNDEAD" experience="35300" speed="920" manacost="0">
+	<health now="2200000" max="2200000"/>
+	<look type="12" head="38" body="94" legs="114" feet="82" corpse="7349"/>
+	<targetchange interval="5500" chance="9"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="85"/>
+		<flag runonhealth="500"/>
+	</flags>
+	<attacks>
+
+		<attack name="melee" interval="2000" min="-2477" max="-2821"/>
+		<attack name="physical" interval="2000" chance="35" radius="5" target="0" min="-2500" max="-3200">
+			<attribute key="areaEffect" value="blackspark"/>
+		</attack>
+		<attack name="fire" interval="2000" chance="60" range="7" radius="7" target="1" min="-2800" max="-3200">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="firefield" interval="1000" chance="10" range="7" radius="4" target="1">
+			<attribute key="shootEffect" value="fire"/>
+		</attack>
+		<attack name="lifedrain" interval="4000" chance="19" length="8" spread="0" min="-2500" max="-3000">
+			<attribute key="areaEffect" value="purpleenergy"/>
+		</attack>
+	</attacks>
+	<defenses armor="90" defense="115">
+			<defense name="speed" interval="2000" speedchange="390" duration="4000">
+			<attribute key="areaEffect" value="teleport"/>
+		</defense>
+		<defense name="healing" interval="2500" chance="33" min="900" max="300">
+			<attribute key="areaEffect" value="bigclouds"/>
+		</defense>
+		<defense name="healing" interval="1600" chance="26" min="900" max="400">
+			<attribute key="areaEffect" value="bigclouds"/>
+		</defense>
+		</defenses>
+		<elements>
+<element holyPercent="25"/>
+<element earthPercent="-5"/>
+<element deathPercent="20"/>
+<element physicalPercent="70"/>
+</elements>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity energy="1"/>
+		<immunity fire="1"/>
+		<immunity ice="1"/>
+		<immunity paralyze="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<summons maxSummons="1">
+    <summon name="massive energy elemental" interval="2000" chance="33" max="1"/>
+  </summons>
+<loot>
+	
+  </loot>
+  <script><event name="teleportVitor"/> </script> 
+</monster>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Spectral Hellfire Fighter" nameDescription="a spectral hellfire fighter" race="fire" experience="10000" speed="260" manacost="0">
+	<health now="38155" max="38155"/>
+	<look type="243" corpse="6324"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-1000" max="-1220"/>
+		<attack name="firefield" interval="3000" chance="30" range="7" radius="4" target="0">
+			<attribute key="shootEffect" value="fire"/>
+		</attack>
+		<attack name="fire" interval="2000" chance="40" range="5" length="8" spread="3" min="-1400" max="-1899">
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="melee" interval="1000" chance="25" range="7" radius="3" target="0" min="-1658" max="-1100">
+			<attribute key="areaEffect" value="explosionarea"/>
+		</attack>
+	</attacks>
+	<defenses armor="25" defense="25"/>
+	<elements>
+		<element firePercent="15"/>
+		<element energyPercent="15"/>
+		<element physicalPercent="15"/>
+		<element deathPercent="15"/>
+		<element icePercent="-15"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+		<immunity fire="1"/>
+	</immunities>
+	<loot>
+	</loot>
+</monster>

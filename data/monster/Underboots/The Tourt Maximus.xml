@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="The Tourt Maximus" nameDescription="a the tourt maximus" race="undead" experience="3900" speed="900" manacost="0">
+	<health now="239500" max="239500"/>
+	<look type="352" corpse="6078"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="200" defense="70"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="2500"/>
+	</flags>
+	<attacks>
+    <attack name="melee" interval="1000" skill="120" attack="405"/>
+    <attack name="ice" interval="1000" chance="1000" length="7" spread="0" min="-1450" max="-1750">
+        <attribute key="areaEffect" value="explosion"/>
+    </attack>
+<attack name="ice" interval="1000" chance="1000" range="7" target="1" min="-1650" max="-1950">
+		<attribute key="shootEffect" value="smallice"/>
+		<attribute key="areaEffect" value="iceattack"/>
+	</attack>
+</attacks>
+
+<defenses armor="35" defense="45"/>
+
+<elements>
+    <element icePercent="-10"/>
+    <element energyPercent="35"/>
+    <element deathPercent="-12"/>
+</elements>
+
+<immunities>
+	  <immunity earth="1"/>
+    <immunity invisible="1"/>
+    <immunity paralyze="1"/>
+    <immunity paralyze="1"/>
+    <immunity invisible="1"/>
+</immunities>
+	<voices interval="5000" chance="20">
+		<voice sentence="FEEEED MY ETERNAL HUNGER!" yell="1"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="100" chance="100000"/><!-- gold coin -->
+		<item id="2148" countmax="25" chance="100000"/><!-- gold coin -->
+		<item id="2393" chance="44000"/><!-- giant sword -->
+		<item id="2514" chance="18500"/><!-- mastermind shield -->
+		<item id="2472" chance="17000"/><!-- magic plate armor -->
+		<item id="1987" chance="100000"><!-- bag -->
+			<inside>
+				<item id="2678" countmax="3" chance="20000"/><!-- coconut -->
+				<item id="2148" countmax="100" chance="100000"/><!-- gold coin -->
+				<item id="2151" countmax="4" chance="12000"/><!-- talon -->
+				<item id="2149" countmax="3" chance="15000"/><!-- small emerald -->
+				<item id="2171" chance="30000"/><!-- platinum amulet -->
+				<item id="2415" chance="700"/><!-- great axe -->
+			</inside>
+		</item>
+	</loot>
+</monster>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Under Focalor" nameDescription="an under focalor" race="blood" experience="10000" speed="1370" manacost="0">
+  <health now="35000" max="35000"/>
+  <look type="104" head="20" body="30" legs="40" feet="50" corpse="6033"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="0"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1325" skill="159" attack="170"/>
+    <attack name="energy" interval="1000" chance="8" range="7" min="-1155" max="-1300">
+      <attribute key="shootEffect" value="energy"/>
+    </attack>
+    <attack name="physical" interval="1500" chance="20" range="7" radius="5" target="0" min="-1100" max="-1330">
+      <attribute key="areaEffect" value="greenshimmer"/>
+    </attack>
+    <attack name="death" interval="1450" chance="15" target="0" radius="4" min="-800" max="-1200">
+      <attribute key="areaEffect" value="smallclouds"/>
+		</attack>
+  </attacks>
+  <defenses armor="13" defense="23"/>
+  <elements>
+  <element energy="20"/>
+  <element icePercent="10"/>
+  <element firePercent="-10"/>
+  </elements>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="100"/>
+    <immunity poison="1"/>
+    <immunity lifedrain="1"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="Let me go back to my Dungeon!"/>
+  </voices>
+  <loot>
+  </loot>
+  
+</monster>

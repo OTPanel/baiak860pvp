@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Easy Defiler" nameDescription="a easy defiler" race="venom" experience="2500" speed="260" manacost="0">
+	<health now="81000" max="81000"/>
+	<look type="238" corpse="6532"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1300" min="-700" max="-900"/>
+		<attack name="speed" interval="1300" chance="12" radius="6" target="0" speedchange="-400" duration="10000">
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+		<attack name="physical" interval="1300" chance="17" range="7" min="-500" max="-1000">
+			<attribute key="shootEffect" value="poison"/>
+		</attack>
+		</attacks>
+	<defenses armor="15" defense="15">
+		<defense name="healing" interval="1300" chance="50" min="1750" max="2225">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="100"/>
+		<element energyPercent="50"/>
+		<element icePercent="40"/>
+		<element firePercent="-20"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Blubb"/>
+	</voices>
+	<loot>
+
+	</loot>
+</monster>

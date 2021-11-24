@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Dark Morfose" nameDescription="a dark morfose" race="blood" experience="132700" speed="320" manacost="0">
+	<health now="23000" max="23000"/>
+	<look type="144" head="1" body="76" legs="76" feet="97" addons="1" corpse="6080"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1700" min="-600" max="-1000">
+			<attribute key="areaEffect" value="yellowbubble"/>
+		</attack>
+	</attacks>
+	<defenses armor="5" defense="35">
+	
+	<defense name="outfit" interval="5000" chance="20" monster="werewolf" duration="5000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+	
+	</defenses>
+	<elements>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Die huamn" yell="0"/>
+		<voice sentence="Has'bin las" yell="0"/>
+	</voices>
+	<loot>
+		<item id="2152" countmax="80" chance="80000"/><!-- platinum coin -->
+		<item id="2789" countmax="30" chance="8000"/><!-- brown mushroom -->
+	</loot>
+	
+</monster>

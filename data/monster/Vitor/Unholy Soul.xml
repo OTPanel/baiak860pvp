@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Unholy Soul" nameDescription="an uholy soul" race="undead" experience="17870" speed="370" manacost="0">
+	<health now="13250" max="13250"/>
+	<look type="355" corpse="6068"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="3"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+		<attacks>
+		<attack name="poison" interval="1700" chance="100" range="7" min="-500" max="-740">
+			<attribute key="shootEffect" value="death"/>
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+		<attack name="death" interval="2000" chance="10" range="7" target="1" max="-600">
+			<attribute key="shootEffect" value="death"/>
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+		<attack name="death" interval="2000" chance="9" length="8" spread="0" min="-350" max="-890">
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+		<attack name="physical" interval="2000" chance="12" length="8" spread="3" max="-0">
+			<attribute key="areaEffect" value="rednote"/>
+		</attack>
+		<attack name="manadrain" interval="2000" chance="13" range="7" target="1" max="-1000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+	</attacks>
+	<defenses armor="5" defense="35"/>
+	<elements>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<loot>
+		<item id="2152" countmax="34" chance="80000"/><!-- platinum coin -->
+		<item id="2656" chance="2000"/><!-- blue robe -->
+		<item id="2492" chance="5000"/><!-- dsm -->
+		<item id="2520" chance="6000"/><!-- knight armor -->
+	</loot>
+</monster>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Herald" nameDescription="Herald" race="blood" experience="28000" speed="500" manacost="0">
+	<health now="9350" max="9350"/>
+	<look type="234" corpse="6328"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-0" max="-900"/>
+		<attack name="physical" interval="3000" chance="17" range="7" min="-60" max="-700">
+			<attribute key="shootEffect" value="throwingknife"/>
+		</attack>
+		<attack name="physical" interval="3000" chance="17" length="4" spread="3" min="-120" max="-250">
+			<attribute key="areaEffect" value="purplenote"/>
+		</attack>
+	</attacks>
+	<defenses armor="25" defense="35">
+		<defense name="healing" interval="3000" chance="50" min="375" max="525">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element firePercent="100"/>
+		<element earthPercent="50"/>
+		<element energyPercent="40"/>
+		<element deathPercent="35"/>
+		<element icePercent="-20"/>
+		<element holyPercent="-17"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="3000" chance="30">
+		<voice sentence="You like it, don't you?"/>
+		<voice sentence="IahaEhheAie!"/>
+	</voices>
+	<loot>
+		<item id="2152" countmax="2" chance="50000"/><!-- Crystal coin -->
+		<item id="2671" countmax="5" chance="33333"/><!-- ham -->
+		<item id="2470" chance="2000"/><!-- golden legs -->
+		<item id="1987" chance="100000"><!-- bag -->
+			<inside>
+				<item id="2513" chance="9999"/><!-- battle shield -->
+				<item id="6500" countmax="3" chance="4555"/><!-- demonic essence -->
+				<item id="2557" chance="12000"/><!-- carpenter hammer -->
+				<item id="2558" chance="11000"/><!-- saw -->
+				<item id="2148" chance="5555"/><!-- soul orb -->
+				<item id="5801" chance="1800"/><!-- key 2148 -->
+				<item id="5480" chance="1666"/><!-- cat's paw -->
+				<item id="7412" chance="250"/><!-- butcher's axe -->
+				<item id="7388" chance="200"/><!-- vile axe -->
+			</inside>
+		</item>
+	</loot>
+</monster>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="The Bossing Ice Brutus" nameDescription="a the bossing ice brutus" race="fire" experience="100000" speed="975" manacost="10000">
+  <health now="2350000" max="2350000"/>
+  <look type="12" head="9" body="86" legs="9" feet="94" corpse="6068"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="90" defense="10"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1000" skill="145" attack="205"/>
+    <attack name="ice" interval="1000" chance="1000" length="7" spread="0" min="-1650" max="-1950">
+    <attribute key="areaEffect" value="explosion"/>
+	</attack>
+    <attack name="ice" interval="1000" chance="1000" range="7" target="1" min="-1550" max="-1700">
+		<attribute key="shootEffect" value="smallice"/>
+		<attribute key="areaEffect" value="iceattack"/>
+	</attack>
+  </attacks>
+  <defenses armor="55" defense="55">
+    <defense name="healing" interval="4000" chance="15" min="500" max="1000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+	<defense name="speed" interval="1000" chance="8" speedchange="290" duration="5000">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </defense>
+  </defenses>
+	<elements>
+		<element physicalPercent="3"/>
+		<element energyPercent="5"/>
+		<element earthPercent="2"/>
+		<element icePercent="-15"/>
+		<element holyPercent="-5"/>
+		<element deathPercent="2"/>
+	</elements>
+  <immunities>
+    <immunity fire="1"/>
+    <immunity drown="1"/>
+    <immunity paralyze="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <summons maxSummons="1">
+    <summon name="fire elemental" interval="1000" chance="12"/>
+  </summons>
+  <voices interval="5000" chance="10">
+    <voice sentence="MUHAHAHAHA!" yell="1"/>
+    <voice sentence="I SMELL FEEEEEAAAR!" yell="1"/>
+    <voice sentence="CHAMEK ATH UTHUL ARAK!" yell="1"/>
+    <voice sentence="Your resistance is futile!"/>
+    <voice sentence="Your soul will be mine!" yell="0"/>
+  </voices>
+  <loot>
+	</loot> <script>  <event name="teleportVitor"/> </script> 
+</monster>

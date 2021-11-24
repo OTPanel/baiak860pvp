@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="[AURA] Mystic Seller" script="data/npc/scripts/auraSeller.lua" walkinterval="5000" floorchange="0">
+    <health now="100" max="100"/>
+    <look type="325" head="114" body="94" legs="114" feet="0" addons="2"/>
+    <parameters>
+		<parameter key="message_greet_pt" value="Olá |PLAYERNAME|, eu posso te vender a {aura} mística se você for merecedor." />
+		<parameter key="message_greet_en" value="Hello |PLAYERNAME|, I can sell you the mystic {aura} if you are worthy." />
+        </parameters>
+</npc>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Gumaray" nameDescription="a Gumaray" race="blood" experience="20000" speed="240" manacost="0">
+  <health now="21000" max="21000"/>
+  <look type="133" head="0" body="0" legs="0" feet="0" addons="3" corpse="6080"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="200" defense="300"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="500" skill="300" attack="300" earth="1000"/>
+    <attack name="earth" interval="1000" chance="50" length="8" spread="3" min="-200" max="-500">
+      <attribute key="areaEffect" value="CARNIPHILA"/>
+
+    </attack>
+    <attack name="lifedrain" interval="1585" chance="80" range="7" min="-100" max="-1500"> 
+      <attribute key="shootEffect" value="earth"/>
+     <attribute key="areaeffect" value="CARNIPHILA"/>
+    </attack>
+    <attack name="speed" interval="1000" chance="7" radius="5" target="0" speedchange="-700">
+        <attribute key="areaEffect" value="poff"/>
+    </attack>
+<attack name="outfit" interval="1000" chance="10" range="7" monster="Paralysis" duration="8000">
+<attribute key="areaEffect" value="blueshimmer"/>
+</attack> 
+    <attack name="speed" interval="1000" chance="10" range="7" monster="rat" duration="12000" speedchange="-700">
+      <attribute key="areaEffect" value="blueshimmer"/>
+</attack>
+  </attacks>
+  <defenses armor="25" defense="25">
+    <defense name="healing" interval="1000" chance="17" min="300" max="500">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+<elements>
+    <element icePercent="20"/>
+    <element firePercent="-5"/>
+    <element energyPercent="-10"/>
+</elements>
+  <immunities>
+    <immunity earth="1"/>
+    <immunity paralyze="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="Gumaraaaaaay!!"/>
+    <voice sentence="EARTH POWAAH"/>
+    <voice sentence="I will survive"/>
+  </voices>
+  <loot>
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/>
+    <item id="2152" countmax="10" chance1="100000" chancemax="0"/> 
+    <item id="2152" countmax="2" chance1="100000" chancemax="0"/>
+    <item id="2149" countmax="3" chance1="6500" chancemax="0"/>
+    <item id="2476" chance1="4600" chancemax="0"/>
+
+    <item id="1987" chance="100000">
+      <inside>
+    <item id="2472" chance1="5300" chancemax="0"/>
+    <item id="2471" chance1="4800" chancemax="0"/>
+    <item id="2158" chance1="5100" chancemax="0"/>
+    <item id="10219" chance1="4000" chancemax="0"/>
+      </inside>
+    </item>
+  </loot>
+</monster>

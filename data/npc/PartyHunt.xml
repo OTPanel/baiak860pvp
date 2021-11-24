@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="PartyHunt" script="data/npc/scripts/default.lua" walkinterval="0" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="150" head="57" body="59" legs="40" feet="76" corpse="2212"/>
+	<parameters>
+		<parameter key="module_shop" value="1"/>
+		<parameter key="message_greet" value="Ola |PLAYERNAME|. Diga {trade} para comprar os items par entrada da cave de Experiencie Party."/>
+		<parameter key="shop_buyable" value="Kina Party,8601,15000000;Pally Party,5803,15000000;Druid Party,2349,15000000;Sorc Party,2112,15000000;" />
+	</parameters>
+</npc>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Tree" nameDescription="a tree" race="blood" experience="17500" speed="600" manacost="0">
+<health now="13900" max="13900"/>
+<look type="310" corpse="6080"/>
+<targetchange interval="60000" chance="100"/>
+<strategy attack="100" defense="0"/>
+<flags>
+<flag attackable="1"/>
+<flag hostile="1"/>
+<flag illusionable="1"/>
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="1"/>
+<flag canpushcreatures="1"/>
+<flag targetdistance="1"/>
+<flag staticattack="90"/>
+</flags>
+<attacks>
+<attack name="melee" interval="2000" skill="70" attack="130"/>
+<attack name="earth" interval="1250" chance="100" range="1" target="1" min="-600" max="-800">
+<attribute key="shootEffect" value="earth"/>
+<attribute key="areaEffect" value="smallplants"/>
+</attack>
+<attack name="energy" interval="1100" chance="100" range="1" target="1" min="-600" max="-900">
+<attribute key="shootEffect" value="energy"/>
+<attribute key="areaEffect" value="energyarea"/>
+</attack>
+<attack name="holy" interval="5000" chance="50" target="1" min="-500" max="-700">
+<attribute key="areaEffect" value="holydamage"/>
+<attribute key="shootEffect" value="energy"/>
+</attack>
+<attack name="death" interval="5000" chance="50" target="1" min="-500" max="-800">
+<attribute key="areaEffect" value="mortarea"/>
+<attribute key="shootEffect" value="death"/>
+</attack>
+</attacks>
+<defenses armor="60" defense="60">
+<defense name="invisible" interval="60000" chance="100" duration="5000">
+</defense>
+</defenses>
+<elements>
+</elements>
+<immunities>
+<immunity paralyze="1"/>
+<immunity invisible="1"/>
+</immunities>
+<voices interval="5000" chance="10">
+<voice sentence="Us"/>
+<voice sentence="Hahahaha"/>
+</voices>
+<loot>
+<item id="2514" chance="4000"/><!-- mms -->
+<item id="2472" chance="4000"/><!-- mpa -->
+</loot>
+</monster>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Primal Guard" nameDescription="a primal guard" race="blood" experience="20200" speed="320" manacost="0">
+	<health now="15000" max="15000"/>
+	<look type="254" head="114" body="114" legs="114" feet="114" corpse="6080"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-400" max="-600"/>
+		<attack name="melee" interval="2000" chance="73" range="7" radius="3" target="0" min="-300" max="-600">
+  			<attribute key="areaEffect" value="energyarea"/>
+		</attack>
+	</attacks>
+	<defenses armor="5" defense="35"/>
+	<elements>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<loot>
+		<item id="2152" countmax="27" chance="80000"/><!-- platinum coin -->
+		<item id="2514" chance="8000"/><!-- mastermind shield -->
+		<item id="2476" chance="8000"/><!-- knight armor -->
+		<item id="2477" chance="8000"/><!-- knight legs -->
+	</loot>
+	
+</monster>

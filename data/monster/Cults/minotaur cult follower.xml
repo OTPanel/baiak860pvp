@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Minotaur Cult Follower" nameDescription="a minotaur cult follower" race="blood" experience="8150" speed="250" manacost="330">
+	<health now="5500" max="5500"/>
+	<look type="25" corpse="5969"/>
+	<targetchange interval="2000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="0" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-250" max="-350" />	
+		<attack name="physical" interval="1000" chance="10" radius="2" target="0" min="-240" max="-380">
+      <attribute key="areaEffect" value="blackspark"/>
+	</attack>
+	</attacks>
+	<defenses armor="32" defense="32"/>
+	<elements>
+		<element firePercent="20"/>
+		<element holyPercent="10"/>
+		<element icePercent="-10"/>
+		<element deathPercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+		<immunity paralyze="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="We will rule!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="100" chance="100000"/><!-- gold coin -->
+		<item id="2148" countmax="55" chance="100000"/><!-- gold coin -->
+		<item id="2152" countmax="3" chance="65000"/><!-- gold coin -->
+		<item id="2671" countmax="2" chance="59000"/><!-- ham -->
+		<item id="2510" chance="20000"/><!-- plate shield -->
+		<item id="2172" chance="14000"/><!-- bronze amulet -->
+		<item id="7591" chance="11000"/><!-- great health potion -->
+		<item id="5878" chance="11000"/><!-- minotaur leather -->
+		<item id="2666" countmax="2" chance="8000"/><!-- meat -->
+		<item id="2147" chance="3500"/><!-- small ruby -->
+		<item id="2149" chance="3500"/><!-- small emerald -->
+		<item id="2214" chance="3200"/><!-- 2148 of healing -->
+		<item id="9970" chance="3100"/><!-- small topaz -->
+		<item id="2149" chance="2900"/><!-- small amethyst -->
+		<item id="2152" chance="890"/><!-- gold ingot -->
+		<item id="5911" chance="870"/><!-- red piece of cloth -->
+		<item id="2475" chance="13000"/><!-- warrior helmet - Rate aumentada por conta da falta dos outros itens na versão 8.60 -->
+		<item id="2154" chance="280"/><!-- yellow gem -->
+		<item id="7401" chance="200"/><!-- minotaur trophy -->
+		<item id="2156" chance="180"/><!-- red gem -->
+	</loot>
+</monster>

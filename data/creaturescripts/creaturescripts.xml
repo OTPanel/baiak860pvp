@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<creaturescripts>
+
+	<!--News-->
+	<event type="death" name="teleportVitor" event="script" value="teleportMonsterVitor.lua"/>
+	<event type="login" name="GonkaKillLogin" event="script" value="GonkaKill.lua"/>
+	<event type="death" name="GonkaKill2" event="script" value="GonkaKill.lua"/>
+	<event type="kill" name="GonkaKill" event="script" value="GonkaKill.lua"/>
+	<event type="outfit" name="GonkaKillOutfit" event="script" value="GonkaKill.lua"/>
+	<event type="death" name="teleportmonster" script="tpmonster.lua"/>
+	<event type="kill" name="bountykill" event="script" value="bountykill.lua"/>
+	<event type="look" name="bountyboard" event="script" value="bountyboard.lua"/>
+	<event type="kill" name="monsterBoostKill" event="script" value="monsterBoost.lua"/>
+	<event type="login" name="monsterBoostLogin" event="script" value="monsterBoost.lua"/>
+	<event type="push" name="pushPzHenrique" event="script" value="pushPzHenrique.lua"/>
+	<event type="kill" name="spreadLoot" event="script" value="events/spreadLoot.lua"/>
+	
+	<!-- CityWar -->
+	<event type="login" name="War_Cytis_Login" event="script" value="events/citys_war.lua"/>
+	<event type="logout" name="War_Cytis_Logout" event="script" value="events/citys_war.lua"/>
+	<event type="death" name="War_Cytis_Death" event="script" value="events/citys_war.lua"/>
+	
+	<!-- Watch System-->
+	<event type="channelrequest" name="castChannel" event="script" value="castChannel.lua"/>
+	<!-- Henrique -->
+	<event type="channeljoin" name="lootChannelJoin" event="script" value="lootChannel.lua"/>
+    <event type="channelleave" name="lootChannelLeave" event="script" value="lootChannel.lua"/>
+	
+	<!-- Importants -->
+    <event type="look" name="showKD" event="script" value="KillsandDeath.lua"/>
+    <event type="kill" name="Autoloot" event="script" value="Autoloot.lua"/>
+	<event type="death" name="DeathSystem" event="script" value="DeathSystem.lua"/>
+    <event type="think" name="Thinks" event="script" value="think.lua"/>
+	<event type="login" name="PlayerLogin" event="script" value="login.lua"/>
+	<event type="login" name="FirstItems" event="script" value="firstitems.lua"/>
+	<event type="advance" name="recompensa" event="script" value="recompensa_level.lua"/>
+	<event type="channeljoin" name="GuildEvents" event="script" value="guild.lua"/>
+	<event type="mailreceive" name="Mail" event="script" value="mail.lua"/>
+	<event type="reportbug" name="SaveReportBug" event="script" value="reportbug.lua"/>
+	<event type="death" name="incendio" event="script" value="incendioMonster.lua"/>
+    <event type="statschange" name="CombatDodge" event="script" value="dodgecombat.lua"/>
+	<event type="statschange" name="critical" event="script" value="critical.lua"/>
+	<!-- Task System -->
+	<event type="kill" name="Task System" event="script" value="TaskSystem.lua"/>
+	<event type="attack" name="staminafiller" script="staminafiller.lua"/>
+
+	<!-- Defend the Towers -->
+	<event type="death" name="dttDeath" event="script" value="events/DTT.lua"/> 
+	<event type="PrepareDeath" name="dttPrepare" event="script" value="events/DTT.lua"/>
+	<event type="statschange" name="dttStats" event="script" value="events/DTT.lua"/>
+	<event type="outfit" name="dttOutfit" event="script" value="events/DTT.lua"/>
+	<event type="login" name="dttLogin" event="script" value="events/DTT.lua"/>
+	<event type="kill" name="dttKill" event="script" value="events/DTT.lua"/>	
+	<event type="combat" name="dttCombat" event="script" value="events/DTT.lua"/>
+	
+	<!-- Events -->
+	<event type="statschange" name="FireStorm" event="script" value="events/FireStorm.lua"/>
+	<event type="PrepareDeath" name="DesertDeath" event="script" value="events/DesertWAR.lua"/>
+	<event type="combat" name="DesertCombat" event="script" value="events/DesertWAR.lua"/>	
+	<event type="PrepareDeath" name="Ctf" event="script" value="events/CTF.lua"/>
+	 <event type="login" name="BattleLogin" event="script" value="events/Battlefield.lua"/>
+	<event type="PrepareDeath" name="BattleDeath" event="script" value="events/Battlefield.lua"/>﻿
+	<event type="combat" name="BattleTeam" event="script" value="events/Battlefield.lua"/>
+</creaturescripts>

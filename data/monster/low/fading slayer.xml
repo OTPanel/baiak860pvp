@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Fading Slayer" nameDescription="Fading Slayer" race="fire" experience="90000" speed="540" manacost="0">
+	<health now="790000" max="790000"/>
+  <look type="290" head="145" body="127" legs="143" feet="11" corpse="3128" addons="3"/>
+	<targetchange interval="2000" chance="10"/>
+	<strategy attack="65" defense="5"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="3000"/>
+	</flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="50" attack="50"/>
+	<attack name="fire" interval="1000" chance="15" range="7" target="1" min="-260" max="-850">
+		<attribute key="areaEffect" value="fireattack"/>
+		<attribute key="shootEffect" value="fire"/>
+	</attack>
+    <attack name="manadrain" interval="1000" chance="15" target="1" range="7" radius="3" min="-150" max="-925">
+		<attribute key="areaEffect" value="teleport"/>		
+		<attribute key="shootEffect" value="energyball"/>
+	</attack>
+    <attack name="firefield" interval="1000" chance="15" range="7" radius="3" target="1">
+		<attribute key="shootEffect" value="fire"/>
+    </attack>
+    <attack name="fire" interval="2000" chance="15" length="8" spread="0" min="-350" max="-1050">
+		<attribute key="areaEffect" value="fireattack"/>
+    </attack>
+
+  </attacks>
+	<defenses armor="188" defense="145">
+		<defense name="healing" interval="1000" chance="15" min="6000" max="10000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="healing" interval="1000" chance="25" min="2000" max="3000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="1000" chance="8" speedchange="1901" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity physical="0"/>
+		<immunity energy="1"/>
+		<immunity fire="1"/>
+		<immunity poison="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+     	<voice sentence="VOLTAGE!!"/>
+     	<voice sentence="The keeper of ENERGY"/>
+     	<voice sentence="BRrZzzZzZZZ"/>
+	</voices>
+	<loot>
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/>
+    <item id="2152" countmax="5" chance1="20000" chancemax="0"/>
+    <item id="2148" chance="1818"/>
+    <item id="1976" chance="3333"/>
+    <item id="2148" chance="4100"/> --addon doll
+	<item id="7290" chance="1400"/>
+    <item id="7378" countmax="2" chance1="2000" chancemax="0"/>
+    <item id="2546" countmax="5" chance1="2500" chancemax="0"/>
+    <item id="2547" countmax="10" chance1="2222" chancemax="0"/>
+    <item id="2796" countmax="1" chance1="6666" chancemax="0"/>
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2148" countmax="100" chance1="100000" chancemax="0"/>
+        <item id="2146" countmax="2" chance1="2222" chancemax="0"/>
+        <item id="2528" chance="1333"/>
+		<item id="7441" chance="2222"/>
+        <item id="7402" chance="1666"/>
+		<item id="2498" chance="3300"/>
+		<item id="2492" chance="3300"/>
+      </inside>
+    </item>
+  </loot>
+ </monster>

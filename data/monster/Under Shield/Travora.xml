@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Travora" nameDescription="a travora" race="blood" experience="250000" speed="0" manacost="0">
+  <health now="6000000" max="6000000"/>
+  <look typeex="7825"/>
+  <targetchange interval="500" chance="8"/>
+  <strategy attack="500" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="2500"/>
+  </flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="180" attack="180"/>
+		<attack name="physical" interval="3000" chance="15" radius="5" target="0" min="-2800" max="-3200">
+			<attribute key="areaEffect" value="blackspark"/>
+		</attack>
+		<attack name="poison" interval="2000" chance="16" range="7" radius="7" target="1" min="-2710" max="-3540">
+			<attribute key="shootEffect" value="poison"/>
+			<attribute key="areaEffect" value="plantattack"/>
+		</attack>
+		<attack name="poisonfield" interval="1000" chance="10" range="7" radius="4" target="1">
+			<attribute key="shootEffect" value="poison"/>
+		</attack>
+		<attack name="lifedrain" interval="4000" chance="19" length="8" spread="0" min="-2832" max="-3600">
+			<attribute key="areaEffect" value="purpleenergy"/>
+		</attack>
+		<attack name="manadrain" interval="200" chance="19" length="8" spread="0" min="-1000" max="-2000">
+			<attribute key="areaEffect" value="purpleenergy"/>
+		</attack>
+	</attacks>
+	<defenses armor="50" defense="48">
+		<defense name="healing" interval="1000" chance="9" min="6500" max="9000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="healing" interval="1000" chance="12" min="4000" max="6000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element icePercent="-15"/>
+		<element deathPercent="35"/>
+		<element holyPercent="-25"/>
+	</elements>
+	<immunities>
+		<immunity earth="1"/>
+		<immunity fire="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<summons maxSummons="30">
+		<summon name="Under Ghost" interval="2000" chance="250"/>
+		<summon name="Under Terror" interval="1000" chance="500"/>
+		<summon name="Unholy Soul" interval="2500" chance="250"/>
+	</summons>
+	<voices interval="5000" chance="o">
+		<voice sentence="Leave our shield alone!!!" yell="1"/>
+	</voices>
+
+</monster>

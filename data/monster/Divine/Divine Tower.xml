@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Divine Tower" nameDescription="a divine tower" race="undead" experience="12000" speed="0" manacost="0">
+  <health now="2000000" max="2000000"/>
+  <look typeex="6973"/>
+  <targetchange interval="5000" chance="0"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+	<flag summonable="0"/>
+	<flag attackable="1"/>
+	<flag hostile="1"/>
+	<flag illusionable="0"/>
+	<flag convinceable="0"/>
+	<flag pushable="0"/>
+	<flag canpushitems="0"/>
+	<flag canpushcreatures="1"/>
+	<flag targetdistance="1"/>
+	<flag staticattack="90"/>
+	<flag runonhealth="100"/>
+  </flags>
+  <attacks>
+<attack name="death" interval="2000" chance="40" radius="9" target="0" min="-1200" max="-1800">
+ <attribute key="areaEffect" value="mortarea"/>
+    </attack>
+	<attack name="fire" interval="1800" chance="70" range="7" radius="9" target="1" min="-900" max="-1200">
+      <attribute key="shootEffect" value="fire"/>
+      <attribute key="areaEffect" value="firearea"/>
+    </attack>
+			<attack name="earth" interval="3000" chance="10" length="8" spread="3" min="-1250" max="-1550">
+			<attribute key="areaEffect" value="carniphila"/>
+			</attack>
+				<attack name="ice" interval="2000" chance="20" length="9" spread="3" min="-880" max="-1300">
+		<attribute key="areaEffect" value="iceattack"/>
+		</attack>
+		    <attack name="manadrain" interval="1000" chance="8" radius="10" target="0" min="-900" max="-1200">
+      <attribute key="areaEffect" value="energyarea"/>
+    </attack>
+  </attacks>
+  <immunities>
+	<immunity lifedrain="1"/>
+	<immunity paralyze="1"/>
+	<immunity outfit="1"/>
+	<immunity drunk="1"/>
+	<immunity invisible="1"/>
+  </immunities>
+</monster>

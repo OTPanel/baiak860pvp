@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Cursed Hellhound" nameDescription="a cursed hellhound" race="venom" experience="15000" speed="440" manacost="420">
+  <health now="129950" max="129950"/>
+  <look type="240" corpse="7349"/>
+  <targetchange interval="50" chance="0"/>
+  <strategy attack="80" defense="20"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="1"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="8"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="100" attack="350"/>
+    <attack name="energy" interval="2500" chance="2500" range="7" min="-1100" max="-1550">
+      <attribute key="shootEffect" value="energy"/>
+    </attack>
+    <attack name="fire" interval="3000" chance="3000" range="7" min="-1190" max="-1350">
+      <attribute key="shootEffect" value="fire"/>
+    </attack>
+    <attack name="physical" interval="7000" chance="7000" range="7" min="-1270" max="-1690">
+      <attribute key="shootEffect" value="suddendeath"/>
+      <attribute key="areaEffect" value="mortarea"/>
+    </attack>
+    <attack name="poison" interval="2500" chance="2500" range="7" min="-1950" max="-2090">
+      <attribute key="shootEffect" value="poison"/>
+    </attack>
+    <attack name="lifedrain" interval="9700" chance="9700" range="7" min="-900" max="-1400">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </attack>
+    <attack name="manadrain" interval="9700" chance="9700" range="7" min="-900" max="-1600">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </attack>
+  </attacks>
+  <defenses armor="1" defense="4"/>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="0"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="0"/>
+    <immunity drunk="0"/>
+    <immunity invisible="1"/>
+  </immunities>
+    <voices interval="20" chance="5">
+      <voice sentence="IM AN ARCHER AND DRUID!!!"/>
+      <voice sentence="KISS MY ASS!"/>
+      <voice sentence="You follow ARCHDRUID then you die TOO!"/>
+    </voices> 
+</monster>

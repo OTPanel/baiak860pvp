@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mod name="events mods" version="1.0" author="Absolute" contact="lu.lukinha" enabled="yes">
+
+<!-- Smiles event -->
+    <config name="animated-smiles-config"><![CDATA[
+        exhaust = 1 -- in seconds
+        storage = 3000 -- storage value used to save exhaustion
+    ]]></config>
+
+<talkaction words="xd, :d, ;d, =d, xp, :p, ;p, =p, :o, ;o, ;s, :s, :/, ;/, :*, ;*, =*, :>, ;>, :), ;), =), :(, ;(, =(, :[, ;[, :], ;], :@, ;@, ^^, ^.^, -.-" separator="," logged="no" hidden="yes" case-sensitive="no" event="script"><![CDATA[
+        domodlib('animated-smiles-config')
+
+        local config = {
+            exhaust = exhaust,
+            storage = storage
+        }
+
+        function onSay(cid, words, param, channel)
+            if(channel ~= CHANNEL_DEFAULT) then
+                return false
+            end
+
+            if(exhaustion.check(cid, config.storage)) then -- prevent spam
+                return true
+            end
+
+            if(isInArray({":*", ";*", "=*"}, words)) then
+                doSendMagicEffect(getCreaturePosition(cid), CONST_ME_HEARTS)
+            end
+
+            exhaustion.set(cid, config.storage, config.exhaust)
+            doCreatureSay(cid, words, TALKTYPE_ORANGE_1)
+            return true
+        end
+    ]]></talkaction>
+
+</mod>
+ 

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Curse" nameDescription="curse" race="blood" experience="139000" speed="220" manacost="0">
+<health now="60000" max="60000"/>
+<look type="364" corpse="5527"/>
+<targetchange interval="2000" chance="30"/>
+<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1400" min="-970" max="-1090"/>
+		<attack name="energy" interval="2000" chance="30" length="4" spread="3" min="-1500" max="-1880">
+			<attribute key="shootEffect" value="energy"/>
+			<attribute key="areaEffect" value="energyarea"/>
+		</attack>
+		<attack name="holy" interval="2000" chance="5" radius="5" target="0" min="-1430" max="-1625">
+			<attribute key="areaEffect" value="yellowenergy"/>
+		</attack>
+		<attack name="melee" interval="2000" chance="73" range="7" radius="3" target="0" min="-1600" max="-1800">
+  			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+	</attacks>
+	<defenses armor="16" defense="19">
+		<defense name="healing" interval="2000" chance="15" min="1650" max="3100">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="20"/>
+		<element holyPercent="-5"/>
+		<element energyPercent="-5"/>
+		<element icePercent="5"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+		<immunity paralyze="1"/>
+	</immunities>
+	<summons maxSummons="2">
+		<summon name="Death Blob" interval="2000" chance="10" max="2"/>
+	</summons>
+	<voices interval="5000" chance="10">
+		<voice sentence="Tanoris vai acabar com vocês"/>
+		<voice sentence="MALDIÇÃÃÃÃO" yell="1"/>
+	</voices>
+	<loot>
+		<item id="2152" chance="5000" countmax="30"/><!-- crystal coin -->
+		<item id="12637" chance="800" countmax="3"/>
+		<item id="2472" chance="5000"/><!-- magic plate armor -->
+		<item id="11295" chance="1600"/><!-- zaoan armor -->
+		<item id="11297" chance="1600"/><!-- zaoan shoes -->
+		<item id="2477" chance="4000"/><!-- knight legs -->
+        <item id="2470" chance="5000"/><!-- golden legs -->
+	</loot>
+</monster>

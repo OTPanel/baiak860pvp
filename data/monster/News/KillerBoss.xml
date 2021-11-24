@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<monster name="Killer Boss" nameDescription="a Killer Boss" race="blood" experience="7500000" speed="65" manacost="0">
+	
+	<health now="15600000" max="15600000"/>
+	
+	<look type="12" corpse="6324"/>
+	
+	<targetchange interval="5000" chance="79"/>
+	
+	<strategy attack="90" defense="0"/>
+	
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag staticattack="90"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	
+	<attacks>
+		<attack name="melee" interval="2000" min="-1700" max="-2850"/>
+		<attack name="physical" interval="1200" chance="50" range="12" radius="4" target="4" min="-2900" max="-3500">
+		<attribute key="shootEffect" value="energy"/>
+                <attribute key="areaEffect" value="blackspark"/>
+		</attack>
+		<attack name="energycondition" interval="1000" chance="66" radius="3" target="0" min="-2900" max="-4200">
+			<attribute key="areaEffect" value="energy"/>
+		</attack>
+		<attack name="physical" interval="3000" chance="90" length="7" spread="3" min="-2700" max="-3440">
+			<attribute key="areaEffect" value="poff"/>
+		</attack>
+	</attacks>
+	
+	<defenses armor="60" defense="55">
+		<defense name="speed" interval="10000" chance="90" speedchange="1010" duration="20000">
+			<attribute key="areaEffect" value="greenshimmer"/>
+		</defense>
+		<defense name="healing" interval="1000" chance="40" min="1830" max="2187">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>		
+	</immunities>
+
+	<voices interval="5000" chance="10">
+		<voice sentence="BaiakWars Wars you are dead fast!"/>
+	</voices>
+ <loot>
+    <item id="10310" countmax="1" chance1="100000" chancemax="0"/> --vip 3 dias
+    <item id="7488" chance="100000"/>--Stamina free
+    <item id="9775" chance="100000"> --Bag
+      <inside>
+        <item id="12396" countmax="2" chance1="100000" chancemax="0"/>
+        <item id="12575" countmax="2" chance1="100000" chancemax="0"/>
+        <item id="9693" chance="100000"/> --addon doll
+        <item id="2152" countmax="20" chance1="100000" chancemax="0"/>		
+		<item id="2522" chance="100000"/><!-- Great Shield -->	
+		<item id="2495" chance="100000"/><!-- Demon legs -->	
+          </inside>
+    </item>
+  </loot>
+</monster>

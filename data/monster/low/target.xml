@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Terramite" nameDescription="a terramite" race="venom" experience="20000" speed="220" manacost="0">
+<health now="10000" max="10000"/>
+<look type="264" head="94" body="76" legs="76" feet="76" addons="2"/>
+<targetchange interval="5000" chance="12"/>
+<strategy attack="100" defense="0"/>
+<flags>
+<flag summonable="1"/>
+<flag attackable="1"/>
+<flag hostile="1"/>
+<flag illusionable="1"/>
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="1"/>
+<flag canpushcreatures="0"/>
+<flag targetdistance="1"/>
+<flag staticattack="90"/>
+<flag runonhealth="0"/>
+</flags>
+<attacks>
+	<attack name="melee" interval="1000" skill="40" attack="45"/>
+	<attack name="energy" interval="1000" chance="30" range="6" radius="5" min="-100" max="-750">
+		<attribute key="areaEffect" value="energy"/>
+		<attribute key="shootEffect" value="energyball"/>
+	</attack>
+	<attack name="lifedrain" interval="1000" chance="17" range="7" radius="5" min="200" max="-650">
+		<attribute key="areaEffect" value="redshimmer"/>
+		<attribute key="shootEffect" value="explosion"/>
+	</attack>
+</attacks>
+<defenses armor="16" defense="19"/>
+<elements>
+<element physicalPercent="1"/>
+<element holyPercent="1"/>
+<element deathPercent="10"/>
+<element firePercent="-1"/>
+<element energyPercent="-1"/>
+<element icePercent="15"/>
+<element earthPercent="1"/>
+</elements>
+<immunities>
+<immunity invisible="1"/>
+</immunities>
+<voices interval="5000" chance="10">
+<voice sentence="Zrp zrp!"/>
+</voices>
+<loot>
+<item id="2148" countmax="25" chance="36500"/><!-- gold coin -->
+<item id="11365" chance="5000"/><!-- terramite legs -->
+<item id="11364" chance="5000"/><!-- terramite eggs -->
+<item id="11363" chance="1000"/><!-- terramite shell -->
+</loot>
+</monster>

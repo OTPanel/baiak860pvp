@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Crystal" nameDescription="a crystal" race="fire" experience="0" speed="0" manacost="0">
+  <health now="350000" max="350000"/>
+	<look typeex="8635"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="0"/>
+    <flag canpushcreatures="0"/>
+    <flag targetdistance="7"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="10"/>
+	<flag hidename="1"/>
+  </flags>
+  <attacks>
+  <attack name="fire" interval="1000" chance="100" range="8" min="-100" max="-200">
+		<attribute key="shootEffect" value="fire"/>
+  </attack>
+  </attacks>
+  	<defenses armor="50" defense="50">
+	    <defense name="outfit" interval="700" chance="90" typeex="8635" head="94" body="5" legs="7" feet="2" duration="1000"> 
+        <attribute key="areaEffect" value="greenshimmer"/>        
+        </defense>
+		 <defense name="outfit" interval="650" chance="80" typeex="8636" head="94" body="5" legs="7" feet="2" duration="1000"> 
+        <attribute key="areaEffect" value="greenshimmer"/>        
+        </defense>		 
+		<defense name="outfit" interval="600" chance="70" typeex="8636" head="114" body="114" legs="7" feet="2" duration="1000"> 
+        <attribute key="areaEffect" value="greenshimmer"/>        
+        </defense>
+		<defense name="outfit" interval="550" chance="60" typeex="8634" head="97" body="122" legs="7" feet="2" duration="1000"> 
+        <attribute key="areaEffect" value="greenshimmer"/>        
+        </defense>
+		<defense name="outfit" interval="500" chance="50" typeex="8635" head="114" body="114" legs="114" feet="2" duration="1000"> 
+        <attribute key="areaEffect" value="greenshimmer"/>        
+        </defense>
+		<defense name="invisible" interval="3500000" chance="0" duration="8000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+  <elements>
+	<element icePercent="+10"/>
+	<element firePercent="+10"/>
+	<element holyPercent="+10"/>
+	<element deathPercent="+10"/>
+	<element physicalPercent="+10"/>
+	<element earthpercent="+10"/>
+	<element energyPercent="+10"/>
+  </elements>
+  <immunities>
+    <immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <voices interval="5000" chance="10">
+  </voices>
+  <loot>
+  </loot>
+</monster>

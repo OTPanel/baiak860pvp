@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ice Wizard" nameDescription="an ice wizard" race="undead" experience="5000" speed="188" manacost="0">
+  <health now="43850" max="43850"/>
+  <look type="130" head="0" body="86" legs="87" feet="114" addons="3" corpse="7349"/>
+  <targetchange interval="2000" chance="5"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="50"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="4"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1000" skill="85" attack="135"/>
+	<attack name="ice" interval="1000" chance="20" length="6" spread="3" min="-580" max="-900">
+      <attribute key="areaEffect" value="iceattack"/>
+    </attack>
+    <attack name="ice" interval="2000" chance="20" length="4" spread="2" min="-450" max="-860">
+      <attribute key="areaEffect" value="icearea"/>
+    </attack>
+    <attack name="ice" interval="1000" chance="60" range="7" target="1" min="-860" max="-1060">
+      <attribute key="shootEffect" value="snowball"/>
+	  <attribute key="areaEffect" value="iceattack"/>
+    </attack>
+  </attacks>
+  <defenses armor="75" defense="70">
+    <defense name="healing" interval="1000" chance="25" min="100" max="250">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+  <immunities>
+    <immunity ice="1"/>
+    <immunity paralyze="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <voices interval="2000" chance="5">
+    <voice sentence="You think you are cooler than me?"/>
+    <voice sentence="Shh."/>
+    <voice sentence="Freeze!"/>
+  </voices>
+	<loot capacity="500">
+		<item id="2152" countmax="1" chance="20000"/>
+	</loot>
+  
+</monster>

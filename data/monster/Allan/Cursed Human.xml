@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Cursed Human" nameDescription="a cursed human" race="blood" experience="23600" speed="520" manacost="0">
+    <health now="16000" max="16000"/>
+    <look type="132" head="76" body="38" legs="0" feet="95" corpse="6080"/>
+    <targetchange interval="5000" chance="50"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+        <flag summonable="0"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="0"/>
+        <flag convinceable="0"/>
+        <flag pushable="1"/>
+        <flag canpushitems="1"/>
+        <flag canpushcreatures="1"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="70"/>
+        <flag runonhealth="100"/>
+    </flags>
+    <attacks>
+             <attack name="melee" interval="800" skill="200" attack="200"/>
+     <attack name="outfit" interval="1500" chance="90" range="1" type="308" duration="10000">
+     <attribute key="areaeffect" value="bigclouds"/>
+   </attack>
+</attacks>
+    <defenses armor="25" defense="25">
+             <defense name="healing" interval="500" chance="23" min="20" max="40">
+             <attribute key="areaEffect" value="mortarea"/>
+    </defense>
+             <defense name="outfit" interval="6000" chance="90" type="308" duration="3000">
+             <attribute key="areaEffect" value="bigclouds"/>
+    </defense>
+    </defenses>
+    <elements>
+              <element holyPercent="-30"/>
+    </elements>
+    <immunities>
+              <immunity invisible="1"/>
+              <immunity paralyze="1"/>
+    </immunities>
+    <voices interval="5000" chance="30">
+              <voice sentence="AWWWWWWWWWWWWW" yell="1"/>
+    </voices>
+    <loot>
+     <item id="5897" countmax="4" chance="100000"/><!-- wolf paws -->
+    </loot>
+</monster>

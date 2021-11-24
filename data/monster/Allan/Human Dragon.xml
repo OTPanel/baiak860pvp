@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Human Dragon" nameDescription="a human dragon" race="blood" experience="20400" speed="240" manacost="0">
+  <health now="23900" max="23900"/>
+  <look type="335" head="80" body="81" legs="81" feet="81" addons="3" corpse="6080"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="275"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="110" attack="93" poison="920"/>
+    <attack name="earth" interval="1000" chance="6" length="8" spread="3" min="-800" max="-1020">
+      <attribute key="areaEffect" value="CARNIPHILA"/>
+
+    </attack>
+    <attack name="lifedrain" interval="1000" chance="9" range="7" min="-700" max="-950"> 
+      <attribute key="shootEffect" value="earth"/>
+     <attribute key="areaeffect" value="CARNIPHILA"/>
+    </attack>
+    <attack name="speed" interval="1000" chance="7" radius="5" target="0" speedchange="-700">
+        <attribute key="areaEffect" value="poff"/>
+    </attack>
+<attack name="outfit" interval="1000" chance="10" range="7" monster="Paralysis" duration="8000">
+<attribute key="areaEffect" value="blueshimmer"/>
+</attack> 
+    <attack name="speed" interval="1000" chance="10" range="7" monster="rat" duration="12000" speedchange="-700">
+      <attribute key="areaEffect" value="blueshimmer"/>
+</attack>
+  </attacks>
+  <defenses armor="25" defense="25">
+    <defense name="healing" interval="1000" chance="17" min="500" max="1000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+<elements>
+    <element icePercent="20"/>
+    <element firePercent="-5"/>
+    <element energyPercent="-10"/>
+</elements>
+  <immunities>
+    <immunity earth="1"/>
+    <immunity paralyze="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="you're dead!!"/>
+    <voice sentence="There isss no chhhanccce of esscape"/>
+    <voice sentence="Are you tired  or why are you moving thhat sslow"/>
+  </voices>
+  <loot>
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/>
+    <item id="2152" countmax="5" chance1="100000" chancemax="0"/> 
+    <item id="2152" countmax="2" chance1="100000" chancemax="0"/>
+    <item id="2149" countmax="3" chance1="6500" chancemax="0"/>
+    <item id="2476" chance1="4600" chancemax="0"/>
+
+    <item id="1987" chance="100000">
+      <inside>
+    <item id="8473" chance1="5000" chancemax="0"/>
+    <item id="8473" chance1="4980" chancemax="0"/>
+    <item id="7589" chance1="5300" chancemax="0"/>
+    <item id="7589" chance1="5320" chancemax="0"/>
+    <item id="7887" chance1="4800" chancemax="0"/>
+    <item id="2158" chance1="5100" chancemax="0"/>
+    <item id="2536" chance1="4400" chancemax="0"/>
+    <item id="10219" chance1="4000" chancemax="0"/>
+      </inside>
+    </item>
+  </loot>
+</monster>

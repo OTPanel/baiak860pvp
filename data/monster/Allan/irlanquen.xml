@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Irlanquen" nameDescription="An Irlanquen" race="fire" experience="22300" speed="815" manacost="0">
+  <health now="20000" max="20000"/>
+  <look type="12" head="114" body="1" legs="95" feet="94" corpse="6068"/>
+  <targetchange interval="10000" chance="15"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag staticattack="90"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="0"/>
+  </flags>
+<attacks>
+   <attack name="melee" interval="900" skill="320" attack="135"/>
+   <attack name="manadrain" interval="4000" chance="38" radius="8" target="0" min="-700" max="-900">
+      <attribute key="areaEffect" value="bluebubble"/>
+   </attack>
+   <attack name="physical" interval="5000" chance="55" range="2" target="1" min="-400" max="-600">
+      <attribute key="shootEffect" value="whirlwindsword"/>
+   </attack>
+   <attack name="death" interval="3000" chance="52" length="8" spread="0" min="-500" max="-700">
+      <attribute key="areaEffect" value="mortarea"/>
+   </attack>
+   <attack name="ice" interval="3000" chance="42" radius="6" target="0" min="-700" max="-990">
+      <attribute key="areaEffect" value="bigplants"/>
+   </attack>
+</attacks>
+  <defenses armor="70" defense="65">
+    <defense name="healing" interval="3000" chance="20" min="2000" max="2500">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+
+    <defense name="speed" interval="4000" chance="80" speedchange="440" duration="6000">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </defense>
+
+  </defenses>
+<elements>
+      <element icePercent="15"/>
+      <element holyPercent="-10"/>
+      <element deathPercent="20"/>
+</elements>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="1"/>
+   <immunity earth="1"/>
+    <immunity fire="1"/>
+    <immunity paralyze="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+
+    <summons max="5">
+      <summon name="Demon" interval="1000000" chance="0"/>
+    </summons>
+
+  <voices interval="5000" chance="30">
+    <voice sentence="I Am The Boss!" yell="1"/>
+    <voice sentence="I Wanna Kill You!" yell="1"/>
+    <voice sentence="I Am Irlanquen Demon The Destructor Of Your LIFE!" yell="1"/>
+    <voice sentence="U Are A Baby MUAHAHAHA!"/>
+  </voices>
+
+<loot>
+   <item id="2152" chance="100000" countmax="4" />
+   <item id="2514" chance="18000" />
+   <item id="2004" chance="100000" > 
+      <inside>
+         <item id="7431" chance="14000" />
+         <item id="2195" chance="14033" /> 
+      </inside>
+   </item>
+</loot>
+
+</monster>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Sound of Dead" nameDescription="a Sound of Dead" race="blood" experience="1000" speed="650" manacost="0">
+  <health now="400000" max="400000"/>
+  <look typeex="2077" corpse="3058"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+	  <flag attackable="1"/>
+	  <flag hostile="1"/>
+	  <flag illusionable="0"/>
+	  <flag convinceable="0"/>
+	  <flag pushable="0"/>
+	  <flag canpushitems="1"/>
+	  <flag canpushcreatures="1"/>
+	  <flag targetdistance="3"/>
+	  <flag staticattack="40"/>
+	  <flag runonhealth="0"/>
+	  <flag targetdistance="1"/>
+	  <flag skull="5"/>
+  </flags>
+	<attacks>
+		<attack name="melee" interval="800" skill="70" attack="130"/>
+		<attack name="manadrain" interval="10000" chance="13" range="7" min="-0" max="-0"/>
+	<attack name="fire" interval="800" chance="1100" range="4" radius="7" target="1" min="-1100" max="-1300">
+			<attribute key="shootEffect" value="ice"/>
+		</attack>
+	<attack name="holy" interval="1000" chance="1100" range="4" target="1" min="-1000" max="-1500">
+		<attribute key="shootEffect" value="fire"/>
+	</attack>
+	<attack name="ice" interval="1000" chance="1100" range="4" target="1" min="-1000" max="-1250">
+		<attribute key="shootEffect" value="holy"/>
+	    </attack>
+	</attacks>	
+  <defenses armor="20" defense="20">
+    <defense name="healing" interval="1000" chance="25" min="42" max="3000">
+      <attribute key="areaEffect" value="greennote"/>
+    </defense>
+    <defense name="outfit" interval="1" chance="50" item="4330" duration="7000">
+			<attribute key="areaEffect" value="rednote"/>
+		</defense>
+    <defense name="outfit" interval="1" chance="50" item="4330" duration="7000">
+			<attribute key="areaEffect" value="yellownote"/>
+		</defense>
+    <defense name="outfit" interval="1" chance="50" item="4330" duration="7000">
+			<attribute key="areaEffect" value="purplenote"/>
+		</defense>
+    <defense name="outfit" interval="1" chance="50" item="4330" duration="7000">
+			<attribute key="areaEffect" value="bluenote"/>
+		</defense>
+    <defense name="outfit" interval="1" chance="50" item="4330" duration="7000">
+			<attribute key="areaEffect" value="whitenote"/>
+		</defense>
+  </defenses>
+	<elements>
+		<element firePercent="100"/>
+		<element physicalPercent="25"/>
+		<element earthpercent="25"/>
+		<element energyPercent="25"/>
+		<element deathPercent="25"/>
+		<element icePercent="25"/>
+		<element holyPercent="25"/>
+	</elements>
+  <immunities>
+    <immunity invisible="1"/>
+  </immunities>
+	<loot>
+
+	</loot>
+</monster>
+
+

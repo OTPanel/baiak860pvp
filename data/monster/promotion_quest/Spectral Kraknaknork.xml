@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Spectral Kraknaknork" nameDescription="a Spectral Kraknaknork" race="blood" experience="3000" speed="640" manacost="0">
+	<health now="139950" max="139950"/>
+	<look type="12" head="117" body="58" legs="117" feet="0" corpse="7349"/> 
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="80" defense="20"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="85"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1325" skill="100" attack="350"/>
+		<attack name="fire" interval="1400" chance="1400" target="1" radius="4" min="-950" max="-1200">
+			<attribute key="areaEffect" value="explosion"/>
+		</attack>
+	</attacks>
+	<elements>
+		<element icePercent="-15"/>
+		<element energyPercent="-5"/>
+		<element earthPercent="-8"/>
+		<element firePercent="25"/>
+	</elements>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="0"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="0"/>
+    <immunity drunk="0"/>
+    <immunity invisible="1"/>
+  </immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="STEP A BIT CLOSER, RIGHT THERE, HAHAHA!" yell="1"/>
+		<voice sentence="COME AND DIE!" yell="1"/>
+		<voice sentence="ROOKIE FOR BREAKFAST" yell="1"/>
+    </voices> 
+</monster>

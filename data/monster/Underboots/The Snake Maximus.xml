@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="The Snake Maximus" nameDescription="a the snake maximus" race="undead" experience="3900" speed="900" manacost="0">
+	<health now="389500" max="389500"/>
+	<look type="356" corpse="6078"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="200" defense="70"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="2500"/>
+	</flags>
+	<attacks>
+    <attack name="melee" interval="1000" min="-1095" max="-1590" poison="100"/>
+    <attack name="poison" interval="1000" chance="12" range="7" min="-2015" max="-2350">
+      <attribute key="shootEffect" value="poison"/>
+      <attribute key="areaEffect" value="poison"/>
+    </attack>
+    <attack name="speed" interval="1000" chance="13" range="7" speedchange="-700" duration="25000">
+      <attribute key="shootEffect" value="poison"/>
+      <attribute key="areaEffect" value="poison"/>
+    </attack>
+    <attack name="poisoncondition" interval="1000" chance="1000" radius="5" target="0" min="-1100" max="-1800">
+      <attribute key="areaEffect" value="poison"/>
+    </attack>
+  </attacks>
+  <defenses armor="25" defense="20">
+    <defense name="speed" interval="1000" chance="8" speedchange="350" duration="9000">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </defense>
+  </defenses>
+  	<elements>
+	    <element physicalPercent="30"/>
+		<element energyPercent="20"/>
+		<element icePercent="-5"/>
+		<element firePercent="-20"/>
+	</elements>
+  <immunities>
+    <immunity earth="1"/>
+    <immunity paralyze="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+	<voices interval="5000" chance="20">
+		<voice sentence="FEEEED MY ETERNAL HUNGER!" yell="1"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="100" chance="100000"/><!-- gold coin -->
+		<item id="2148" countmax="25" chance="100000"/><!-- gold coin -->
+		<item id="2393" chance="44000"/><!-- giant sword -->
+		<item id="2514" chance="18500"/><!-- mastermind shield -->
+		<item id="2472" chance="17000"/><!-- magic plate armor -->
+		<item id="1987" chance="100000"><!-- bag -->
+			<inside>
+				<item id="2678" countmax="3" chance="20000"/><!-- coconut -->
+				<item id="2148" countmax="100" chance="100000"/><!-- gold coin -->
+				<item id="2151" countmax="4" chance="12000"/><!-- talon -->
+				<item id="2149" countmax="3" chance="15000"/><!-- small emerald -->
+				<item id="2171" chance="30000"/><!-- platinum amulet -->
+				<item id="2415" chance="700"/><!-- great axe -->
+			</inside>
+		</item>
+	</loot>
+</monster>

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Donate Amazon" nameDescription="a donate amazon" race="blood" experience="10745" speed="310" manacost="390">
+  <health now="15990" max="15990"/>
+  <look type="137" head="113" body="120" legs="114" feet="132" corpse="6081"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="80" defense="20"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="93" attack="115"/>
+<attack name="fire" interval="1000" chance="15" range="7" target="1" min="-200" max="-250">
+		<attribute key="areaEffect" value="fireattack"/>
+		<attribute key="shootEffect" value="fire"/>
+	</attack>
+    <attack name="manadrain" interval="1000" chance="15" target="1" range="7" radius="3" min="-100" max="-350">
+		<attribute key="areaEffect" value="teleport"/>		
+		<attribute key="shootEffect" value="energyball"/>
+	</attack>
+    <attack name="death" interval="1000" chance="15" range="7" radius="3" target="1">
+		<attribute key="shootEffect" value="death"/>
+    </attack>
+    <attack name="fire" interval="2000" chance="15" length="8" spread="0" min="-300" max="-350">
+		<attribute key="areaEffect" value="fireattack"/>
+    </attack>
+  </attacks>
+  <defenses armor="190" defense="160"/>
+  <elements>
+	<element physicalPercent="-8"/>
+	<element deathPercent="-7"/>
+  </elements>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="0"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="0"/>
+    <immunity drunk="0"/>
+    <immunity invisible="0"/>
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="Yeeee ha!"/>
+    <voice sentence="Your head shall be mine!"/>
+  </voices>
+  <loot>
+    <item id="2148" countmax="20" chance1="100000" chancemax="0"/> --Gold Coins
+    <item id="2467" chance="20000"/> --Leather Armor
+    <item id="2385" chance="20000"/> --Sabre
+    <item id="2229" countmax="2" chance1="10000" chancemax="0"/> -- Skull
+    <item id="1987" chance="100000"> --Bag 
+      <inside>
+        <item id="2691" countmax="2" chance1="20000" chancemax="0"/> --Brown Bread
+        <item id="2050" chance="20000"/> --Torch
+      </inside>
+    </item>
+  </loot>
+</monster>

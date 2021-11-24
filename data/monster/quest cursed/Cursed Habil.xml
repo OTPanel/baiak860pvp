@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Cursed Habil" nameDescription="a cursed habil" race="fire" experience="1300" speed="400" manacost="0">
+  <health now="20350" max="20350"/>
+  <look type="100" head="95" body="116" legs="119" feet="115" corpse="7349"/> 
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" min="-200" max="-350"/>
+    <attack name="lifedrain" interval="2500" chance="2500" range="1" min="-500" max="-650">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </attack>
+    <attack name="speed" interval="9500" chance="9500" range="7" speedchange="-600" duration="30000">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </attack>
+    <attack name="lifedrain" interval="3500" chance="3500" radius="3" target="0" min="-740" max="-890">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </attack>
+    <attack name="lifedrain" interval="4500" chance="4500" length="8" spread="0" min="-700" max="-851">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </attack>
+    <attack name="poisoncondition" interval="3950" chance="3950" length="8" spread="0" min="-700" max="-950">
+      <attribute key="areaEffect" value="greenspark"/>
+    </attack>
+  </attacks>
+  <defenses armor="20" defense="20">
+    <defense name="healing" interval="1" chance="17" min="50" max="150">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </defense>
+  </defenses>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="100"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="0"/>
+    <immunity drunk="0"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <summons maxSummons="4">
+    <summon name="bonebeast" interval="1000" chance="17" max="4"/>
+  </summons>
+  <voices interval="5000" chance="10">
+    <voice sentence="PaLiX PoIsON fROM YOUR BODY!!"/>
+    <voice sentence="SnakeBite Rod Rox!!"/>
+    <voice sentence="Death awaits all!"/>
+    <voice sentence="Thy living flesh offends me!"/>
+    <voice sentence="Death and Decay!"/>
+    </voices> 
+</monster>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="[TASK] Maria" script="data/npc/scripts/Task Man.lua" floorchange="0" emblem="red">
+	<health now="150" max="150"/>
+<look type="137" head="114" body="114" legs="114" feet="114" addons="3"/>
+	<!--<parameters>
+<parameter key="message_greet" value="Olá |PLAYERNAME|! Eu posso recompensa-lo por terminar tasks, basta dizer o nome de alguma! Para saber o nome das tasks e seu progresso em cada uma, diga !task. Para ver quais monstros contam para cada task e os prêmios delas, consulte nosso site na página Task System."/>
+</parameters>-->
+</npc>

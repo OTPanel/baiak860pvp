@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Birdsson" nameDescription="A Birdsson" race="energy" experience="5000" speed="440" manacost="420">
+  <health now="23350" max="23350"/>
+  <look type="237" corpse="7349"/>
+  <targetchange interval="50" chance="0"/>
+  <strategy attack="80" defense="20"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="1"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="8"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="100" attack="150"/>
+    <attack name="energy" interval="2500" chance="2500" range="7" min="-100" max="-150">
+      <attribute key="shootEffect" value="energy"/>
+    </attack>
+    <attack name="fire" interval="3000" chance="3000" range="7" min="-500" max="-550">
+      <attribute key="shootEffect" value="fire"/>
+    </attack>
+    <attack name="physical" interval="7000" chance="7000" range="7" min="-600" max="-650">
+      <attribute key="shootEffect" value="suddendeath"/>
+      <attribute key="areaEffect" value="mortarea"/>
+    </attack>
+    <attack name="poison" interval="2500" chance="2500" range="7" min="-650" max="-700">
+      <attribute key="shootEffect" value="poison"/>
+    </attack>
+    <attack name="lifedrain" interval="9700" chance="9700" range="7" min="-700" max="-750">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </attack>
+    <attack name="manadrain" interval="9700" chance="9700" range="7" min="-750" max="-800">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </attack>
+  </attacks>
+  <defenses armor="1" defense="4"/>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="0"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="0"/>
+    <immunity drunk="0"/>
+    <immunity invisible="1"/>
+  </immunities>
+    <voices interval="20" chance="5">
+      <voice sentence="IM AN ARCHER AND DRUID!!!"/>
+      <voice sentence="KISS MY ASS!"/>
+      <voice sentence="You follow ARCHDRUID then you die TOO!"/>
+    </voices> 
+</monster>

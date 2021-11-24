@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="[LOOT] Mad Vip" script="data/npc/scripts/default.lua" walkinterval="2000" floorchange="0">
+	<health now="150" max="150"/>
+	<look type="129" head="75" body="115" legs="125" feet="85" addons="3"/>
+	<parameters>
+		<parameter key="module_shop" value="1"/>
+		<parameter key="message_greet" value="Hello |PLAYERNAME|. I buy swords, clubs, axes, helmets, boots, legs, shields and armors."/>
+		<parameter key="shop_sellable" value="skull helmet,5741,35700;dreaded cleaver,7419,30600;dragonslayer,7402,20400;royal helmet,2498,40800;warrior helmet,2475,6120;crusader helmet,2497,9180;crown helmet,2491,5100;devil helmet,2462,4080;mystic turban,2663,510;chain helmet,2458,36;iron helmet,2459,31;steel boots,2645,40800;boots of haste,2195,40800;golden boots,2646,204000;magic plate armor,2472,204000;dragon scale mail,2492,61200;demon armor,2494,91800;golden armor,2466,30600;crown armor,2487,20400;knight armor,2476,5100;blue robe,2656,15300;lady armor,2500,2550;plate armor,2463,408;brass armor,2465,204;chain armor,2464,102;golden legs,2470,81600;crown legs,2488,15300;knight legs,2477,6120;plate legs,2647,510;mastermind shield,2514,153000;demon shield,2520,40800;blessed shield,2523,153000;great shield,2522,102000;vampire shield,2534,25500;medusa shield,2536,8160;amazon shield,2537,4080;crown shield,2519,5100;tower shield,2528,4080;guardian shield,2515,204;beholder shield,2518,1530;dwarven shield,2525,102;magic longsword,2390,153000;warlord sword,2408,102000;magic sword,2400,122400;giant sword,2393,10200;bright sword,2407,6120;ice rapier,2396,4080;fire sword,2392,3060;serpent sword,2409,1530;spike sword,2383,816;two handed sword,2377,408;broad sword,2413,72;short sword,2406,31;sword,2376,26;dragon lance,2414,10200;stonecutter axe,2431,91800;guardian halberd,2427,7650;fire axe,2432,10200;knight axe,2430,2040;double axe,2387,204;halberd,2381,204;paladin armor,8891,30600;skullcracker armor,8889,61200;battle axe,2378,102;hatchet,2388,21;war hammer,2391,6120;thunder hammer,2421,91800;skull staff,2436,1020;dragon hammer,2434,2040;clerical mace,2423,204;battle hammer,2417,62;mace,2398,31;nightmare blade,7418,21343;skull helmet,5741,23456;"/>
+		<parameter key="shop_buyable" value="helmet of the deep,5461,10000;"/>
+	</parameters>
+</npc>

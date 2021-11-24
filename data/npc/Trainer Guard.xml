@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Trainer Guard" script="data/npc/scripts/Trainer Guard.lua" walkinterval="0" floorchange="0">
+    <health now="100" max="100"/>
+    <look type="131" head="114" body="114" legs="38" feet="97" addons="3"/>
+    <parameters>
+		<parameter key="message_greet" value="Olá |PLAYERNAME|, bem vindo à área especial de trainers do Baiak Online. Você quer saber {como funciona} ou quer {entrar} na área?" />
+		<parameter key="message_farewell" value="Adeus |PLAYERNAME|." />
+        </parameters>
+</npc>

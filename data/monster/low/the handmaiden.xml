@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="The Handmaiden" nameDescription="The Handmaiden" race="undead" experience="30000" speed="450" manacost="0">
+  <health now="25000" max="25000"/>
+  <look type="230" corpse="6312"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+</flags>
+  <attacks>
+		<attack name="melee" interval="2000" min="-100" max="-350"/>
+		<attack name="manadrain" interval="2000" chance="20" range="7" min="-300" max="-700">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+		<attack name="poison" interval="3000" chance="20" radius="6" target="0" min="-250" max="-550">
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+		<attack name="energy" interval="2000" chance="18" radius="6" target="0" min="-200" max="-600">
+			<attribute key="areaEffect" value="energy"/>
+		</attack>
+		<attack name="manadrain" interval="2000" chance="16" radius="6" target="0" min="-225" max="-775">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+		<attack name="lifedrain" interval="2000" chance="21" radius="6" target="0" min="-200" max="-850">
+			<attribute key="areaEffect" value="poff"/>
+		</attack>
+		<attack name="effect" interval="3000" chance="20" radius="5" target="0" min="-200" max="-690">
+			<attribute key="areaEffect" value="blackspark"/>
+		</attack>
+		<attack name="firecondition" interval="3000" chance="20" range="7" radius="7" target="1" min="-200" max="-800">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="lifedrain" interval="2000" chance="25" length="8" spread="0" min="-50" max="-950">
+			<attribute key="areaEffect" value="greenspark"/>
+		</attack>
+	</attacks>
+  <defenses armor="25" defense="35">
+    <defense name="healing" interval="2000" chance="50" min="150" max="255">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="speed" interval="2000" chance="12" speedchange="520" duration="8000">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </defense>
+    <defense name="invisible" interval="3000" chance="15" duration="6000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+  <immunities>
+    <immunity energy="1"/>
+    <immunity fire="1"/>
+	<immunity earth="1"/>
+    <immunity poison="1"/>
+    <immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <summons maxSummons="2">
+    <summon name="Hand of cursed fate" interval="3000" chance="30" max="2"/>
+  </summons>
+  <voices interval="5000" chance="10">
+
+  </voices>
+  <loot>
+   <item id="2152" countmax="30" chance1="10000" chancemax="0"/> --Crystal Coin
+   <item id="6539" chance="100000" /> -- Handmaiden's Protector
+   <item id="1987" chance="100000"> --Bag
+            <inside>
+              <item id="10223" chance="2500"/> --Mechanical Fishing Rod
+              <item id="6546" chance="2500"/> --Dracola's Eye
+              <item id="10515" chance="1666"/> --Whacking Driller of Fate
+            </inside>
+        </item>
+   </loot>
+</monster>

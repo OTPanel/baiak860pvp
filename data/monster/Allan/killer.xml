@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Killer" nameDescription="a Killer" race="blood" experience="1000" speed="520" manacost="0">
+
+*******************************************************************************************
+*                       CURSED HUMAN: This monster Was made by Amy Azzkaban               *
+*                                Tibia 8.60 con cuerpo antiguo                            *
+*******************************************************************************************
+
+    <health now="600000" max="600000"/>
+    <look type="152" head="94" body="94" legs="0" feet="0" addons="3" corpse="6080"/>
+    <targetchange interval="5000" chance="50"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="0"/>
+        <flag convinceable="0"/>
+        <flag pushable="1"/>
+        <flag canpushitems="1"/>
+        <flag canpushcreatures="1"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="70"/>
+        <flag runonhealth="100"/>
+    </flags>
+    <attacks>
+             <attack name="melee" interval="800" skill="130" attack="300" curse="400"/>
+     <attack name="outfit" interval="1500" chance="0" range="7" type="308" duration="10000">
+     <attribute key="areaeffect" value="bigclouds"/>
+    </attack>
+             <attack name="speed" interval="2000" chance="90" radius="4" range="7" target="7" speedchange="-950" duration="3000">
+             <attribute key="shootEffect" value="death"/>
+    </attack>
+	<attack name="earth" interval="1200" chance="100" range="7" min="-900" max="-1550">
+			<attribute key="shootEffect" value="earth"/>
+		</attack>
+	<attack name="Terra Strike" interval="1200" chance="100" min="-1189" max="-1680"/>
+    </attacks>
+    <defenses armor="25" defense="25">
+             <defense name="healing" interval="500" chance="23" min="20" max="40">
+             <attribute key="areaEffect" value="mortarea"/>
+    </defense>
+             <defense name="outfit" interval="6000" chance="0" type="308" duration="3000">
+             <attribute key="areaEffect" value="bigclouds"/>
+    </defense>
+    </defenses>
+    <elements>
+              <element holyPercent="-30"/>
+    </elements>
+    <immunities>
+              <immunity invisible="1"/>
+              <immunity paralyze="1"/>
+    </immunities>
+    <voices interval="5000" chance="30">
+              <voice sentence="AWWWWWWWWWWWWW" yell="1"/>
+    </voices>
+    <loot>
+    </loot>
+</monster>

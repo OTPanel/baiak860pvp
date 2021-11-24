@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+  <monster name="Cheap Stinger" nameDescription="a cheap stinger" race="blood" species="fire" experience="13950" speed="430" manacost="0"> 
+    <health now="13025" max="13025"/> 
+    <look type="346" corpse="5527"/> 
+    <targetchange interval="60000" chance="0"/> 
+    <strategy attack="100" defense="0"/> 
+    <flags> 
+      <flag summonable="0"/> 
+      <flag attackable="1"/> 
+      <flag hostile="1"/> 
+      <flag illusionable="0"/> 
+      <flag convinceable="0"/> 
+      <flag pushable="0"/> 
+      <flag canpushitems="1"/> 
+      <flag staticattack="85"/> 
+      <flag lightlevel="0"/> 
+      <flag lightcolor="0"/> 
+      <flag targetdistance="1"/> 
+      <flag runonhealth="1"/> 
+    </flags> 
+ <attacks> 
+    <attack name="melee" interval="2000" skill="70" attack="70"/> 
+ 
+    <attack name="energy" interval="1000" chance="11" radius="3" target="0" min="-310" max="-520"> 
+      <attribute key="areaEffect" value="yellowenergy"/> 
+    </attack> 
+	
+	<attack name="energy" interval="1000" chance="10" range="7" target="1" min="-201" max="-423">
+	<attribute key="areaEffect" value="purpleenergy"/>
+	<attribute key="shootEffect" value="energy"/>
+	</attack>
+ 
+    <attack name="physical" interval="1000" chance="11" length="5" spread="0" min="-295" max="-444"> 
+        <attribute key="areaEffect" value="poff"/> 
+    </attack> 
+ 
+    <attack name="energy" interval="1000" chance="10" length="4" spread="4" min="-310" max="-570"> 
+        <attribute key="areaEffect" value="purpleenergy"/> 
+    </attack> 
+ 
+ </attacks> 
+    <defenses armor="30" defense="30"> 
+      <defense name="healing" interval="6000" chance="65" min="25" max="75"/> 
+      <attribute key="areaEffect" value="blueshimmer"/> 
+    </defenses>
+	<elements>
+		<element firePercent="1"/>
+		<element earthPercent="1"/>
+		<element icePercent="-5"/>
+		<element deathPercent="-5"/>
+    </elements>
+    <immunities> 
+      <immunity energy="1"/> 
+      <immunity paralyze="1"/> 
+      <immunity invisible="1"/> 
+    </immunities> 
+    <voices interval="3000" chance="5"> 
+      <voice sentence="GRRR!"/> 
+      <voice sentence="GRROARR!"/> 
+    </voices> 
+    <loot> 
+      <item id="2672" countmax="3" chance1="9000" chancemax="0"/> -- dragon hams
+      <item id="2148" countmax="100" chance1="30000" chancemax="0"/> -- gold coins
+      <item id="2647" chance="2222"/> -- Plate legs
+	  <item id="7411" chance="1444"/> -- ornamented axe
+      <item id="2546" countmax="10" chance1="6000" chancemax="0"/> -- Burst Arrow
+      <item id="1987" chance="100000">  -- bag
+        <inside> 
+          <item id="2148" countmax="100" chance1="100000" chancemax="0"/> -- gold coin
+          <item id="7430" chance="1654"/> -- Dragonbone staff
+          <item id="7588" chance="5332"/>  -- SHP
+		  <item id="2494" chance="6000"/> -- RH
+        </inside> 
+      </item> 
+    </loot> 
+  </monster>
+  
+  
+  

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Gonka" nameDescription="Gonka" race="blood" experience="150000" speed="1200" manacost="0">
+	<health now="600000" max="600000"/>
+	<look type="306" corpse="9823"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+<attack name="fire" interval="1000" chance="14" range="7" radius="7" target="1" min="-1970" max="-2730">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="firefield" interval="1000" chance="15" range="7" radius="1" target="1">
+			<attribute key="shootEffect" value="fire"/>
+		</attack>
+		<attack name="melee" interval="1300" skill="200" attack="320"/>
+		<attack name="physical" interval="2000" chance="50" range="7" min="-2000" max="-2890">
+			<attribute key="shootEffect" value="largerock"/>
+		</attack>
+	</attacks>
+	<defenses armor="50" defense="55">
+		<defense name="speed" interval="1000" chance="7" speedchange="290" duration="4000">
+			<attribute key="areaEffect" value="redshimmer"/>
+	</defense>
+		</defenses>
+	<elements>
+		<element earthPercent="80"/>
+		<element holyPercent="30"/>
+		<element firePercent="30"/>
+		<element energyPercent="10"/>
+		<element physicalPercent="10"/>
+		<element icePercent="-10"/>
+		<element deathPercent="5"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="20">
+		<voice sentence="Acha que consegue me derrotar?!"/>
+	</voices>
+	<loot>
+		<item id="2152" countmax="5" chance="29500"/><!-- gold coin -->
+		<item id="2494" chance="1260"/>
+		<item id="2493" chance="6000"/>
+		<item id="2520" chance="17650"/>
+	</loot>
+	
+	<script> 
+<event name="GonkaKill2"/> 
+</script>
+	<script> 
+<event name="GonkaKill"/> 
+</script>
+</monster>
+

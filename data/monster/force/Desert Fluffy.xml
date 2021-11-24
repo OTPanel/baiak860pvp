@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Desert Fluffy" nameDescription="a desert fluffy" race="venom" experience="2500" speed="490" manacost="0">
+	<health now="61500" max="61500"/>
+ 	<look type="348" corpse="6324"/>
+	<targetchange interval="2000" chance="5"/>
+	<strategy attack="80" defense="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="physical" interval="1100" chance="90" range="7" min="800" max="-1150">
+			<attribute key="shootEffect" value="redstar"/>
+		</attack>
+		<attack name="holy" interval="1230" chance="100" range="7" min="-1075" max="-1275">
+			<attribute key="shootEffect" value="holy"/>
+		</attack>
+	</attacks>
+	<defenses armor="35" defense="50">
+		<defense name="healing" interval="7000" chance="100" min="500" max="700">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="10000" chance="100" speedchange="500" duration="20000">
+			<attribute key="areaEffect" value="greenshimmer"/>
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity physical="0"/>
+		<immunity energy="1"/>
+		<immunity fire="1"/>
+		<immunity poison="1"/>
+		<immunity lifedrain="0"/>
+		<immunity paralyze="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="1230" chance="100">
+    <voice sentence="Exori San"/>
+	</voices>
+	<loot capacity="800">
+		<item id="2544" countmax="13" chance="27000"/>
+	</loot>
+</monster>

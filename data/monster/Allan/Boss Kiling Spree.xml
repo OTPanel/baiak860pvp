@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Boss Kiling Spree" nameDescription="Boss Kiling Spree's" race="blood" experience="30000" speed="420" manacost="0">
+<health now="2500000" max="2500000"/>
+<look type="12" head="0" body="0" legs="0" feet="0" corpse="6068"/>
+<targetchange interval="5000" chance="12"/>
+<strategy attack="100" defense="0"/>
+<flags>
+<flag summonable="1"/>
+<flag attackable="1"/>
+<flag hostile="1"/>
+<flag illusionable="1"/>
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="1"/>
+<flag canpushcreatures="0"/>
+<flag targetdistance="1"/>
+<flag staticattack="90"/>
+<flag runonhealth="0"/>
+</flags>
+<script>
+    <event name="teleportVitor"/>
+</script>
+<attacks>
+<attack name="melee" interval="1350" min="-1700" max="-2750"/>
+<attack name="physical" interval="1200" chance="50" range="12" radius="4" target="4" min="-2750" max="-3350">
+<attribute key="shootEffect" value="energy"/>
+<attribute key="areaEffect" value="blackspark"/>
+</attack>
+<attack name="energycondition" interval="1000" chance="66" radius="3" target="0" min="-2850" max="-3250">
+<attribute key="areaEffect" value="energy"/>
+</attack>
+<attack name="physical" interval="1425" chance="90" length="7" spread="3" min="-2690" max="-3150">
+<attribute key="areaEffect" value="poff"/>
+</attack>
+</attacks>
+<defenses armor="16" defense="19"/>
+<elements>
+<element physicalPercent="1"/>
+<element holyPercent="1"/>
+<element deathPercent="10"/>
+<element firePercent="-1"/>
+<element energyPercent="-1"/>
+<element icePercent="15"/>
+<element earthPercent="1"/>
+</elements>
+<immunities>
+<immunity invisible="1"/>
+</immunities>
+<voices interval="5000" chance="10">
+<voice sentence="You are Dead!"/>
+</voices>
+</monster>

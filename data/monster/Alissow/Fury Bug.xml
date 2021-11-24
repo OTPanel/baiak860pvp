@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Fury Bug" nameDescription="a Fury Bug" race="venom" experience="420000" speed="90" manacost="0">
+<health now="300" max="300"/>
+<look type="359" corpse="6068"/>
+<targetchange interval="5000" chance="12"/>
+<strategy attack="10" defense="0"/>
+<flags>
+<flag summonable="1"/>
+<flag attackable="1"/>
+<flag hostile="1"/>
+<flag illusionable="1"/>
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="1"/>
+<flag canpushcreatures="0"/>
+<flag targetdistance="1"/>
+<flag staticattack="90"/>
+<flag runonhealth="0"/>
+</flags>
+<attacks>
+<attack name="melee" interval="2000" skill="100" attack="150"/>
+<attack name="death" interval="1000" chance="11" length="8" spread="0" min="-10" max="-2">
+<attribute key="areaEffect" value="mortarea"/>
+</attack>
+<attack name="poisoncondition" interval="1000" chance="11" length="8" spread="3" min="-1" max="-2">
+<attribute key="areaEffect" value="poison"/>
+</attack>
+<attack name="physical" interval="1000" chance="8" radius="6" target ="0" min="-1" max="-2">
+<attribute key="areaEffect" value="groundshaker"/>
+</attack>
+<attack name="fire" interval="1000" chance="10" radius="7" target="1" min="-2" max="-3">
+<attribute key="areaEffect" value="firearea"/>
+</attack>
+</attacks>
+<defenses armor="16" defense="19"/>
+<elements>
+<element physicalPercent="1"/>
+<element holyPercent="1"/>
+<element deathPercent="10"/>
+<element firePercent="-1"/>
+<element energyPercent="-1"/>
+<element icePercent="15"/>
+<element earthPercent="1"/>
+</elements>
+<immunities>
+<immunity invisible="1"/>
+</immunities>
+<voices interval="5000" chance="10">
+<voice sentence="Zrp zrp!"/>
+</voices>
+</monster>

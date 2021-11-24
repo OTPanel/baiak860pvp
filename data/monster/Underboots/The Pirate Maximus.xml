@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="The Pirate Maximus" nameDescription="a the pirate maximus" race="blood" experience="1050" speed="630" manacost="775">
+  <health now="135000" max="135000"/>
+  <look type="98" head="0" body="0" legs="0" feet="0" corpse="6080"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="1"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag staticattack="90"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="0"/>
+  </flags>
+    <attacks>
+    <attack name="melee" interval="1000" skill="80" attack="705"/>
+    <attack name="physical" interval="1000" chance="25" range="7" min="-888" max="-1000">
+		<attribute key="shootEffect" value="throwingstar"/>
+			</attack>
+    <attack name="melee" interval="1000" chance="30" range="7" radius="3" target="0" min="-1200" max="-1550">
+		<attribute key="areaEffect" value="rednote"/>
+</attack>
+</attacks>
+  <defenses armor="25" defense="20"/>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="0"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="0"/>
+    <immunity drunk="0"/>
+    <immunity invisible="1"/>
+  </immunities>
+<loot>
+		<item id="2148" chance="100000" countmax="100" /> -- gold coin
+		<item id="2152" chance="49000" countmax="5" /> -- platinum coin
+		<item id="1987" chance="100000" > -- bag
+		<item id="2498" chance="3333"/> --Royal Helmet
+		<item id="2492" chance="1400"/> --DSM
+			<inside>
+				<item id="6500" chance="1818" countmax="1" /> -- demonic essence
+				<item id="2148" chance="1538" countmax="1" /> -- soul orb
+				<item id="2547" chance="4000" countmax="15" /> -- power bolt
+				<item id="2466" chance="2888"/> --Golden armor
+			</inside>
+		</item>
+	</loot>
+</monster>

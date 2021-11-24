@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Instance Ancient" script="data/npc/scripts/Instance Ancient.lua" walkinterval="0" floorchange="0">
+    <health now="100" max="100"/>
+    <look type="325" head="0" body="97" legs="1" feet="79" addons="1"/>
+    <parameters>
+		<parameter key="message_greet_pt" value="Olá |PLAYERNAME|, eu sou o guardião da Instance do Baiak Online. Você quer saber {como funciona} ou quer tentar {entrar} na Instance?" />
+		<parameter key="message_greet_en" value="Hello |PLAYERNAME|, I am the guardian of Baiak Online's Instance. Do you want to know {how it works} or do you wish to try to {get in} to the Instance?" />
+        </parameters>
+</npc>

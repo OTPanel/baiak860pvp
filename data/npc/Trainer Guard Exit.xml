@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Trainer Guard" script="data/npc/scripts/Trainer Guard Exit.lua" walkinterval="0" floorchange="0">
+    <health now="100" max="100"/>
+    <look type="131" head="114" body="114" legs="38" feet="97" addons="3"/>
+    <parameters>
+		<parameter key="message_greet" value="Já cansou de treinar, |PLAYERNAME|? Se quiser você pode {sair} da área especial." />
+		<parameter key="message_farewell" value="Adeus |PLAYERNAME|." />
+        </parameters>
+</npc>

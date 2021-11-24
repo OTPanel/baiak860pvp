@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Mirrorem" script="data/npc/scripts/default.lua" walkinterval="0" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="325" head="114" body="94" legs="114" feet="0" addons="2"/>
+<parameters>
+  <parameter key="module_shop" value="1" />
+  <parameter key="message_greet" value="Ola |PLAYERNAME|! Eu negocio alguns itens que podem ser minerados, basta dizer {trade}. " />
+  <parameter key="shop_buyable" value="pick,2553,100"/>
+  <parameter key="shop_sellable" value="sulphur,5904,300000;stone,1293,100;life crystal,2177,1200;violet gem,2153,800;small,2149,2000;small,2145,2000;small,2146,2000;small,2147,2000;small,2150,2000;worm,3976,80;skull,2229,400;pearl,2143,1100;pearl,2144,1100;gem,2158,800;gem,2155,800;gem,2154,800;gem,2156,800;gem,2155,800;small stone,1294,800"/>
+</parameters>
+</npc>

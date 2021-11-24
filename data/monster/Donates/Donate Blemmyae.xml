@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Donate Blemmyae" nameDescription="a donate blemmyae" race="blood" experience="11730" speed="360" manacost="0">
+  <health now="9840" max="9840"/>
+  <look type="303" corpse="6068"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="300"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1700" min="-300" max="-380"/>
+    <attack name="physical" interval="2000" chance="30" length="8" spread="3" min="-250" max="-350">
+      <attribute key="areaEffect" value="bluebubble"/>
+    </attack>
+    <attack name="poison" interval="3000" chance="32" length="8" spread="3" min="-260" max="-300">
+      <attribute key="areaEffect" value="poison"/>
+    </attack>
+  </attacks>
+  <defenses armor="25" defense="35">
+    <defense name="healing" interval="1000" chance="25" min="200" max="700">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+  <elements>
+	<element earthPercent="100"/>
+	<element icePercent="40"/>
+	<element holyPercent="25"/>
+	<element physicalPercent="-15"/>
+	<element energyPercent="-10"/>
+  </elements>
+  <immunities>
+    <immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="Kill"/>
+    <voice sentence="KILLLL!"/>
+  </voices>
+  <loot>
+		<item id="2148" countmax="21" chance="75000" /><!-- gold coin -->
+		<item id="2520" chance="3000" /><!-- demon shield -->
+		<item id="2466" chance="2000" /><!-- golden armor -->
+		<item id="2470" chance="5000" /><!-- golden legs -->
+		<item id="2195" chance="5000"/> <!-- boh -->
+	</loot>
+</monster>

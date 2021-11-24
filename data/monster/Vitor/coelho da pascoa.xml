@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Coelho Da Pascoa" nameDescription="um coelho da pascoa" race="blood" experience="90000" speed="290" manacost="0">
+  <health now="780000" max="780000"/>
+  <look type="262" head="69" body="66" legs="69" feet="66" corpse="7338"/>
+  <targetchange interval="2000" chance="5"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="0"/>
+    <flag staticattack="50"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="8"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+  </attacks>
+  <defenses armor="6" defense="7"/>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="0"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="0"/>
+    <immunity drunk="0"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <loot>
+    <item id="6543" countmax="3" chance="3000"/>
+    <item id="6544" countmax="3" chance="3000"/>
+    <item id="6545" countmax="3" chance="3000"/>
+  </loot>
+</monster>

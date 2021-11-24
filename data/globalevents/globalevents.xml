@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<globalevents>
+	
+	<!--PvPCastle-->
+	<globalevent name="Catle_Open" time="21:00" event="script" value="events/realCastle.lua"/>
+	<globalevent name="Castle_Close" time="22:00" event="script" value="events/realCastleClose.lua"/>
+	
+	<!-- Broadcast Castle -->
+	<globalevent name="castle" time="20:55" event="script" value="castle1.lua"/>
+	
+	<!-- Henrique -->
+	<globalevent name="checkTop" interval="600000" event="script" value="AtualizarTopLevelePatente.lua"/>
+	<globalevent name="monsterBoostStart" type="startup" event="script" value="monsterBoost.lua"/>
+	<globalevent name="monsterBoostThink" interval="2000" event="script" value="monsterBoost.lua" />
+	<globalevent name="eventos" interval="10000" event="script" value="eventsHenrique.lua"/>
+	<globalevent name="loteria" time="19:00" event="script" value="vipLottery.lua"/>
+	<globalevent name="checkhouses" type="start" event="script" value="inactiveHouses.lua"/>
+	
+	<!-- war anti entrosa -->
+	<globalevent name="citys_war_checks" interval="60000" event="script" value="entrosa/citys_war.lua"/>
+	<globalevent name="citys_war_shutdown" type="shutdown" event="script" value="entrosa/citys_war.lua"/>
+	
+
+	<!-- Events -->
+	<globalevent name="dttOpen" time="09:00" event="script" value="events/DTT.lua"/>
+    <globalevent name="StartSBW" time="10:00" event="script" value="events/SBW.lua"/>
+	<globalevent name="desertOpen" time="11:00" event="script" value="events/DesertWAR.lua"/>
+	<globalevent name="ctf" time="12:00" event="script" value="events/CTF.lua"/>
+    <globalevent name="firestorm" time="13:00" event="script" value="events/FireStorm.lua"/>
+	<globalevent name="GlobalBattle" interval="60000" event="script" value="events/Battlefield.lua"/>	
+	<globalevent name="dttOpen2" time="16:00" event="script" value="events/DTT.lua"/>	
+	<globalevent name="StartSBW2" time="17:00" event="script" value="events/SBW.lua"/>	
+	<globalevent name="desertOpen2" time="18:00" event="script" value="events/DesertWAR.lua"/>		
+	<globalevent name="ctf2" time="19:00" event="script" value="events/CTF.lua"/>
+	<globalevent name="firestorm2" time="20:00" event="script" value="events/FireStorm.lua"/>
+	<globalevent name="dttOpen3" time="23:00" event="script" value="events/DTT.lua"/>		
+	<globalevent name="StartSBW3" time="01:00" event="script" value="events/SBW.lua"/>	
+	<globalevent name="desertOpen3" time="02:00" event="script" value="events/DesertWAR.lua"/>	
+	<globalevent name="ctf3" time="03:00" event="script" value="events/CTF.lua"/>	
+    <globalevent name="firestorm3" time="04:00" event="script" value="events/FireStorm.lua"/>
+
+	
+	
+	<!-- interval events -->
+	<globalevent name="AnimatedSBW" interval="1500" event="script" value="events/SBW_animated.lua"/>	
+	<globalevent name="Stremoxy3" interval="2000" event="script" value="events/Stremoxy.lua"/>	
+	<globalevent name="GlobalStart" type="start" event="script" value="events/BattleGlobalStart.lua"/>
+	<globalevent name="Stremoxy" time="18:30" event="script" value="events/Stremoxy.lua"/>	
+
+	<!-- Others -->
+	<globalevent name="start" type="startup" event="script" value="start.lua"/>
+	<globalevent name="init" type="startup" event="script" value="init.lua"/>
+    <globalevent name="playersrecord" type="record" event="script" value="record.lua"/>
+
+	<!-- Interval -->
+	<globalevent name="GlobalSave" time="05:55" event="script" value="GlobalSave.lua"/>
+	<globalevent name="shop" interval="30000" event="script" value="shop.lua"/>
+	<globalevent name="shopguild" interval="10000" event="script" value="shopguild.lua"/>
+   	<globalevent name="save" interval="2500000" event="script" value="save.lua"/>
+	<globalevent name="clean" interval="3000000" event="script" value="clean.lua"/>
+	<globalevent name="tiles" interval="3000" event="script" value="tiles.lua"/>
+	<globalevent name="mensagem" interval="600000" event="script" value="mensagemts.lua"/>
+   
+   
+</globalevents>
